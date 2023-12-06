@@ -16,7 +16,6 @@ class merge_sort{
         for(int i = 0;i<l1;i++){
             m1[i] = arr[p+i];
         }
-        System.out.println();
         for(int i = 0;i<l2;i++){
             m2[i] = arr[mid + 1+i];
         }
@@ -42,7 +41,6 @@ class merge_sort{
     }
     public static void main(String args[]){
         int arr[] = {7,45,82,5,72,6,36,8};
-        // merge(arr, 0, arr, arr.length-1);
         partition(arr, 0, arr.length-1);
         for(int i = 0;i<arr.length;i++){
             System.out.println(arr[i]);
