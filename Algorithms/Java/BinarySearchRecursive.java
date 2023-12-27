@@ -1,4 +1,3 @@
-
 class BinarySearchRecursive {
     int searchPosition(int[] arr, int target, int start, int end) {
         if (start > end) {
