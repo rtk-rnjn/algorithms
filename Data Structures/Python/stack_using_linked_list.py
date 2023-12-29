@@ -6,9 +6,6 @@ class Node:
         self.data = data
         self.next = next_node
 
-    def __repr__(self) -> str:
-        return f"<Node data={self.data}>"
-
 
 class LinkedListIterator:
     def __init__(self, head: Node) -> None:
@@ -30,6 +27,9 @@ class LinkedList:
     def __repr__(self) -> str:
         return f"<LinkedList size={self.size}>"
 
+    def __iter__(self) -> LinkedListIterator:
+        return LinkedListIterator(self.head)
+
     def is_empty(self) -> bool:
         return self.size == 0
 
@@ -39,45 +39,7 @@ class LinkedList:
         self.head = new_node
         self.size += 1
 
-    def search(self, key: int) -> bool:
-        """Searches for the first node containing data that matches the key."""
-        current = self.head
-        while current:
-            if current.data == key:
-                return True
-            current = current.next
-        return False
-
-    def remove(self, key: int) -> None:
-        """Removes the first occurrence of a node that contains the key."""
-        current = self.head
-        previous = None
-        while current:
-            if current.data == key:
-                if previous:
-                    previous.next = current.next
-                else:
-                    self.head = current.next
-                self.size -= 1
-                return
-            previous = current
-            current = current.next
-
-    def reverse(self) -> None:
-        """Reverses the order of the nodes in the list."""
-        current = self.head
-        previous = None
-        while current:
-            next_node = current.next
-            current.next = previous
-            previous = current
-            current = next_node
-        self.head = previous
-
-    def __iter__(self) -> LinkedListIterator:
-        return LinkedListIterator(self.head)
-
-    def pop(self, index: int = None) -> int:
+    def pop(self, index: int) -> None:
         """Removes the node at the given index and returns its data."""
         if index is None:
             index = self.size - 1
@@ -94,3 +56,28 @@ class LinkedList:
             self.head = current.next
         self.size -= 1
         return current.data
+
+
+class Stack:
+    def __init__(self, stack_size: int) -> None:
+        self.__size = stack_size
+        self.__stack = LinkedList()
+
+    def push(self, key: int) -> None:
+        if self.is_full():
+            raise OverflowError("Stack is full.")
+        self.__stack.add(key)
+
+    def pop(self) -> int:
+        if self.is_empty():
+            raise IndexError("Stack is empty.")
+        return self.__stack.pop(0)
+
+    def is_empty(self) -> bool:
+        return self.__stack.is_empty()
+
+    def is_full(self) -> bool:
+        return self.__stack.size == self.__size
+
+    def __repr__(self) -> str:
+        return f"<Stack size={self.__size}>"

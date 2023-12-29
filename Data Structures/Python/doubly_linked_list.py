@@ -10,7 +10,7 @@ class DoublyNode:
         self.previous = previous_node
 
     def __repr__(self) -> str:
-        return f"<Node data: {self.data}>"
+        return f"<Node data={self.data}>"
 
 
 class DoublyLinkedListIterator:
