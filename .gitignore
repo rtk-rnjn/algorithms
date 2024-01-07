@@ -2,3 +2,4 @@
 .exe
 *.class
 .vscode
+node_modules
