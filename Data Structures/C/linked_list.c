@@ -17,7 +17,7 @@ void print(struct node *head)
     }
 }
 
-struct node *insert(struct node *head, int data)
+struct node *insert_data(struct node *head, int data)
 {
     struct node *temp = (struct node *)malloc(sizeof(struct node));
     if (temp == NULL)
@@ -46,7 +46,7 @@ struct node *insert(struct node *head, int data)
     return head;
 }
 
-void freeList(struct node *head)
+void f_list(struct node *head)
 {
     struct node *temp;
     while (head != NULL)
@@ -60,13 +60,13 @@ void freeList(struct node *head)
 int main()
 {
     struct node *head = NULL;
-    head = insert(head, 1);
-    head = insert(head, 2);
-    head = insert(head, 3);
+    head = insert_data(head, 1);
+    head = insert_data(head, 2);
+    head = insert_data(head, 3);
 
     print(head);
 
-    freeList(head);
+    f_list(head);
 
     return 0;
 }

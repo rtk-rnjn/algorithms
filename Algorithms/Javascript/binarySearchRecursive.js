@@ -20,4 +20,3 @@ let arr = [1, 2, 3, 4, 5, 6];
 let len = arr.length;
 binarySearch(arr, 0, len - 1, 3);
 binarySearch(arr, 0, len - 1, 7);
-return 0;

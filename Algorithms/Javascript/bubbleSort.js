@@ -14,4 +14,3 @@ for (i = 0; i < arr.length; i++) {
   console.log("%d ", arr[i]);
 }
 console.log("\n");
-return 0;
