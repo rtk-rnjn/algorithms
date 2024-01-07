@@ -1,0 +1,31 @@
+name: C/C++ Syntax Checker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '16'  # Adjust to the latest Java version
+
+      - name: Set up Maven
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'maven'
+          java-version: '3.8.1'  # Adjust to the latest Maven version
+
+      - name: Check Java syntax
+        run: mvn -B validate
