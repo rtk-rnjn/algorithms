@@ -3,3 +3,4 @@
 *.class
 .vscode
 .out
+node_modules

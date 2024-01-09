@@ -70,39 +70,17 @@ void display()
 
 int main()
 {
-    int choice, element;
-
-    while (1 == 1)
+    for (int i = 0; i < 10; i++)
     {
-        printf("0. Display\n");
-        printf("1. Push\n");
-        printf("2. Pop\n");
-        printf("3. Peek\n");
-        printf("4. Exit\n");
-
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
-
-        switch (choice)
-        {
-        case 0:
-            display();
-            break;
-        case 1:
-            printf("Enter the element to be pushed: ");
-            scanf("%d", &element);
-            push(element);
-            break;
-        case 2:
-            pop();
-            break;
-        case 3:
-            printf("The top element is: %d\n", peek());
-            break;
-        case 4:
-            return 0;
-        default:
-            printf("Invalid choice\n");
-        }
+        push(i);
     }
+
+    printf("The top element is: %d\n", peek());
+
+    pop();
+    pop();
+
+    display();
+
+    return 0;
 }

@@ -75,40 +75,19 @@ void display()
 
 int main()
 {
-    int choice, element;
-
-    while (1 == 1)
+    for (int i = 0; i < 10; i++)
     {
-        printf("1. Insert\n");
-        printf("2. Delete\n");
-        printf("3. Peek\n");
-        printf("4. Display\n");
-        printf("5. Exit\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
-
-        switch (choice)
-        {
-        case 1:
-            printf("Enter the element to be inserted: ");
-            scanf("%d", &element);
-            insert(element);
-            break;
-        case 2:
-            delete ();
-            break;
-        case 3:
-            printf("The front element is: %d\n", peek());
-            break;
-        case 4:
-            display();
-            break;
-        case 5:
-            return 0;
-        default:
-            printf("Invalid choice\n");
-        }
+        insert(i);
     }
+
+    printf("The front element is: %d\n", peek());
+
+    for (int i = 0; i < 5; i++)
+    {
+        delete();
+    }
+
+    display();
 
     return 0;
 }
