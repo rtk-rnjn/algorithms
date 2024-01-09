@@ -21,11 +21,5 @@ jobs:
           distribution: 'adopt'
           java-version: '19'
 
-      - name: Set up Maven 3.9.5
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'maven'
-          java-version: '3.9.5'
-
-      - name: Check Java syntax
-        run: mvn -B validate
+      - name: Check Java Syntax
+        run: find . -name '*.java' -exec javac -Xlint:all -Xdiags:verbose -d temp/ {} \;
