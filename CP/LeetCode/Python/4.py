@@ -7,8 +7,8 @@ class Solution:
     def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         nums = sorted(nums1 + nums2)
         n = len(nums)
-        return (nums[n//2] + nums[n//2-1]) / 2 if n % 2 == 0 else nums[n//2]
-        
+        return (nums[n // 2] + nums[n // 2 - 1]) / 2 if n % 2 == 0 else nums[n // 2]
+
 
 if __name__ == "__main__":
     nums1 = [1, 3]
