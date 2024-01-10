@@ -4,3 +4,6 @@
 .vscode
 .out
 node_modules
+*~
+out/
+build/
