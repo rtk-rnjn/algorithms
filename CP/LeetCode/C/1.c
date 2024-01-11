@@ -30,6 +30,7 @@ int main()
 
     int *result = twoSum(nums, numsSize, target);
     printf("%d %d\n", result[0], result[1]);
+    free(result);
 
     return 0;
 }
