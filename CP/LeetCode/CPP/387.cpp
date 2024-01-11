@@ -1,7 +1,10 @@
 // 387.First Unique Character in a String
+
 #include <bits/stdc++.h>
 #include <iostream>
+
 using namespace std;
+
 class Solution
 {
 public:
