@@ -1,6 +1,6 @@
 # Algorithms
 
-> This repository is under development. Please check back later for more information
+This repository is under development. Please check back later for more information
 
 ---
 
