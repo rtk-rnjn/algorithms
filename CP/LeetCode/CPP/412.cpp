@@ -1,6 +1,7 @@
 // 412. Fizz Buzz
+
 #include <iostream>
-#include </stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
