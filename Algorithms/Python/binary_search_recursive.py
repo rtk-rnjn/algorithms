@@ -9,7 +9,9 @@ def binary_search_recursive(arr: list[int], target: int) -> int:
     return binary_search_recursive_helper(arr, target, 0, len(arr) - 1)
 
 
-def binary_search_recursive_helper(arr: list[int], target: int, left: int, right: int) -> int:
+def binary_search_recursive_helper(
+    arr: list[int], target: int, left: int, right: int
+) -> int:
     if left > right:
         return -1
 
@@ -21,7 +23,7 @@ def binary_search_recursive_helper(arr: list[int], target: int, left: int, right
         return binary_search_recursive_helper(arr, target, mid + 1, right)
     else:
         return binary_search_recursive_helper(arr, target, left, mid - 1)
-    
+
 
 if __name__ == "__main__":
     arr = [1, 2, 3, 4, 5, 6]

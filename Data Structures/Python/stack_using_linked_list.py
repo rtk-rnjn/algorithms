@@ -6,6 +6,11 @@ class Node:
         self.data = data
         self.next = next_node
 
+    def __repr__(self) -> str:
+        return f"<Node data={self.data} next={self.next}>"
+
+    def __str__(self) -> str:
+        return f"{self.data} -> {self.next}"
 
 class LinkedListIterator:
     def __init__(self, head: Node) -> None:
