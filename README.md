@@ -1,6 +1,6 @@
 # ALGORITHMS
 
--This is a Algorithms repository made by the students of Galgotias University(section-6).
+This is a Algorithms repository made by the students of Galgotias University(section-6).
 
 ## Table of Contents
 
@@ -10,8 +10,6 @@
 - [Contact](#contact)
 
 ## Features
-
--
 
 ## Contributing
 
