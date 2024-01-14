@@ -2,12 +2,15 @@
 
 using namespace std;
 
-int partition(int arr[], int start, int end) {
+int partition(int arr[], int start, int end)
+{
     int pivot = arr[start];
 
     int count = 0;
-    for (int i = start + 1; i <= end; i++) {
-        if (arr[i] <= pivot) {
+    for (int i = start + 1; i <= end; i++)
+    {
+        if (arr[i] <= pivot)
+        {
             count++;
         }
     }
@@ -17,17 +20,21 @@ int partition(int arr[], int start, int end) {
 
     int i = start, j = end;
 
-    while (i < pivotIndex && j > pivotIndex) {
+    while (i < pivotIndex && j > pivotIndex)
+    {
 
-        while (arr[i] <= pivot) {
+        while (arr[i] <= pivot)
+        {
             i++;
         }
 
-        while (arr[j] > pivot) {
+        while (arr[j] > pivot)
+        {
             j--;
         }
 
-        if (i < pivotIndex && j > pivotIndex) {
+        if (i < pivotIndex && j > pivotIndex)
+        {
             swap(arr[i++], arr[j--]);
         }
     }
@@ -35,7 +42,8 @@ int partition(int arr[], int start, int end) {
     return pivotIndex;
 }
 
-void quickSort(int arr[], int start, int end) {
+void quickSort(int arr[], int start, int end)
+{
     if (start >= end)
         return;
     int p = partition(arr, start, end);
@@ -43,14 +51,16 @@ void quickSort(int arr[], int start, int end) {
     quickSort(arr, p + 1, end);
 }
 
-int main() {
+int main()
+{
 
     int arr[] = {9, 3, 4, 2, 1, 8};
     int n = 6;
 
     quickSort(arr, 0, n - 1);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
 

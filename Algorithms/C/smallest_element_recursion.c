@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-int smallest_element_recursive(int* arr, int len) {
-    if (len == 0) {
+int smallest_element_recursive(int *arr, int len)
+{
+    if (len == 0)
+    {
         return 0;
     }
-    if (len == 1) {
+    if (len == 1)
+    {
         printf("Smallest element is %d\n", arr[0]);
         return arr[0];
     }
@@ -13,7 +16,8 @@ int smallest_element_recursive(int* arr, int len) {
     return arr[0] < smallest ? arr[0] : smallest;
 }
 
-int main() {
+int main()
+{
     int arr[] = {1, 2, 3, 4, 5, 6};
     int len = sizeof(arr) / sizeof(arr[0]);
 

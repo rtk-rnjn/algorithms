@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-void reverse_string_recursive(char* str, int len) {
-    if (len == 0) {
+void reverse_string_recursive(char *str, int len)
+{
+    if (len == 0)
+    {
         return;
     }
-    if (len == 1) {
+    if (len == 1)
+    {
         return;
     }
 
@@ -15,9 +18,10 @@ void reverse_string_recursive(char* str, int len) {
     reverse_string_recursive(str + 1, len - 2);
 }
 
-int main() {
+int main()
+{
     char str[] = "Hello World";
-    int len = sizeof(str) / sizeof(str[0]) - 1;  // -1 to exclude NULL terminator
+    int len = sizeof(str) / sizeof(str[0]) - 1; // -1 to exclude NULL terminator
 
     reverse_string_recursive(str, len);
     printf("%s\n", str);
