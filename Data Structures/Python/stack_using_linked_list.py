@@ -12,6 +12,7 @@ class Node:
     def __str__(self) -> str:
         return f"{self.data} -> {self.next}"
 
+
 class LinkedListIterator:
     def __init__(self, head: Node) -> None:
         self.current = head

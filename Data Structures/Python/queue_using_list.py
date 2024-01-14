@@ -25,7 +25,7 @@ class Queue:
             if self.front > self.rear:
                 self.front = self.rear = -1
             return item
-        
+
     def __repr__(self) -> str:
         return f"Queue({self.queue})"
 
