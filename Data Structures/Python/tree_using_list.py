@@ -21,10 +21,10 @@ class Tree:
     def __init__(self, ls: list[int]) -> None:
         self.__ls = ls
 
-    def build_tree(self) -> TreeNode:
+    def build_tree(self) -> TreeNode | None:
         return self.__build_tree(0)
 
-    def __build_tree(self, index: int) -> TreeNode:
+    def __build_tree(self, index: int) -> TreeNode | None:
         if index >= len(self.__ls):
             return None
         return TreeNode(

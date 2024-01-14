@@ -2,7 +2,7 @@ from __future__ import annotations
 
 
 class Node:
-    def __init__(self, data: int, next_node: Node = None) -> None:
+    def __init__(self, data: int | None, next_node: Node | None = None) -> None:
         self.data = data
         self.next = next_node
 
@@ -14,7 +14,7 @@ class LinkedListIterator:
     def __init__(self, head: Node) -> None:
         self.current = head
 
-    def __next__(self) -> Node:
+    def __next__(self) -> int | None:
         if self.current is None:
             raise StopIteration
         data = self.current.data
@@ -23,7 +23,7 @@ class LinkedListIterator:
 
 
 class LinkedList:
-    def __init__(self, head: Node = None) -> None:
+    def __init__(self, head: Node | None = None) -> None:
         self.head = head
         self.size = 0
 
@@ -75,9 +75,12 @@ class LinkedList:
         self.head = previous
 
     def __iter__(self) -> LinkedListIterator:
-        return LinkedListIterator(self.head)
+        if self.head:
+            return LinkedListIterator(self.head)
 
-    def pop(self, index: int = None) -> int:
+        raise StopIteration()
+
+    def pop(self, index: int | None = None) -> int | None:
         """Removes the node at the given index and returns its data."""
         if index is None:
             index = self.size - 1
@@ -87,10 +90,13 @@ class LinkedList:
         previous = None
         for _ in range(index):
             previous = current
-            current = current.next
-        if previous:
+            if current:
+                current = current.next
+        if previous and current:
             previous.next = current.next
-        else:
+        elif current:
             self.head = current.next
         self.size -= 1
-        return current.data
+
+        if current:
+            return current.data
