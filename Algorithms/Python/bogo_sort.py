@@ -1,19 +1,20 @@
 from __future__ import annotations
+
 import random
+from typing import TypeVar
+
+T = TypeVar("T", bound=int | float)
 
 
-def bogo_sort(ls: list[int]) -> list[int]:
+def bogo_sort(ls: list[T]) -> list[T]:
     while not is_sorted(ls):
         random.shuffle(ls)
 
     return ls
 
 
-def is_sorted(ls: list[int]) -> bool:
-    for i in range(len(ls) - 1):
-        if ls[i] > ls[i + 1]:
-            return False
-    return True
+def is_sorted(ls: list[T]) -> bool:
+    return all(ls[i] <= ls[i + 1] for i in range(len(ls) - 1))
 
 
 if __name__ == "__main__":

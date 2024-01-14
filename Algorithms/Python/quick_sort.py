@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from typing import TypeVar
 
-def partition(arr: list[int], low: int, high: int) -> int:
+T = TypeVar("T", bound=int | float)
+
+
+def partition(arr: list[T], low: int, high: int) -> int:
     """
     Partition the array around the pivot.
     """
@@ -16,7 +20,7 @@ def partition(arr: list[int], low: int, high: int) -> int:
     return i + 1
 
 
-def quicksort(arr: list[int]) -> list:
+def quicksort(arr: list[T]) -> list[T]:
     """
     Sort the array using the quicksort algorithm.
     """
@@ -24,7 +28,7 @@ def quicksort(arr: list[int]) -> list:
     return arr
 
 
-def quicksort_helper(arr: list[int], low: int, high: int) -> None:
+def quicksort_helper(arr: list[T], low: int, high: int) -> None:
     """
     Helper function for quicksort.
     """
