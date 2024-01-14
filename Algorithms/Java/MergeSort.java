@@ -20,6 +20,7 @@ class MergeSort {
         for (int i = 0; i < l2; i++) {
             m2[i] = arr[mid + 1 + i];
         }
+
         int n1 = 0;
         int k = p;
         int n2 = 0;
