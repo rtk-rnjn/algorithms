@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void reversearray(int arr[], int s, int e)
+void reversearray(int *arr, int s, int e)
 {
 
     while (s < e)
@@ -9,7 +9,6 @@ void reversearray(int arr[], int s, int e)
         s++;
         e--;
     }
-    free(arr);
 }
 int main()
 {
