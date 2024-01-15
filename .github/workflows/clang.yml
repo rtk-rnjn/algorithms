@@ -3,8 +3,19 @@ name: C/C++ Syntax Checker
 on:
   push:
     branches: [ main ]
+    paths:
+      - '**/*.c'
+      - '**/*.cpp'
+
   pull_request:
     branches: [ main ]
+    paths:
+      - '**/*.c'
+      - '**/*.cpp'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
