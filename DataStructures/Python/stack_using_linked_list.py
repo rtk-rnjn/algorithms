@@ -56,12 +56,14 @@ class LinkedList:
             raise IndexError("Index out of range.")
         current = self.head
         previous = None
+
         for _ in range(index):
             previous = current
-            current = current.next
-        if previous:
+            if current:
+                current = current.next
+        if previous and current:
             previous.next = current.next
-        else:
+        elif current:
             self.head = current.next
         self.size -= 1
         if current:

@@ -117,7 +117,11 @@ class DoublyLinkedList:
 
         current = self.head
         for _ in range(index - 1):
-            current = current.next
+            if current:
+                current = current.next
+
+        assert current is not None
+
         new_node = DoublyNode(data, current.next, current)
         if current and current.next:
             current.next.previous = new_node
@@ -138,6 +142,9 @@ class DoublyLinkedList:
         for _ in range(index):
             if current:
                 current = current.next
+
+        assert current is not None
+
         data = current.data
         if current and current.previous:
             current.previous.next = current.next
