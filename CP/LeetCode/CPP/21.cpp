@@ -1,8 +1,6 @@
 // 21. Merge Two Sorted Lists
 
 #include <iostream>
-#include <unordered_map>
-#include <string>
 
 using namespace std;
 
@@ -42,7 +40,7 @@ public:
             p2 = p2->next;
         }
         p0 = head;
-        while (p1 && p2)
+        while (p1 != NULL && p2 != NULL)
         {
             if (int(p1->val) >= int(p2->val))
             {
@@ -85,7 +83,7 @@ void free_list(ListNode *head)
 void display(ListNode *head)
 {
     ListNode *temp = head;
-    while (temp)
+    while (temp != NULL)
     {
         cout << "[" << temp << " " << temp->val << " -> " << temp->next << "] -> ";
         temp = temp->next;
@@ -112,7 +110,7 @@ int main()
     // display(mergedHead);
 
     ListNode *temp = mergedHead;
-    while (temp)
+    while (temp != NULL)
     {
         cout << temp->val << " ";
         temp = temp->next;

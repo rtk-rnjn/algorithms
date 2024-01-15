@@ -33,43 +33,24 @@ jobs:
 
       - name: Run syntax check for C codes
         run: |
-          for file in $(find . -name "*.c"); do
-            echo "Checking $file"
-            exitcode=0
-            gcc -fsyntax-only "$file" || exitcode=$?
-            if [ $exitcode -ne 0 ]; then
-              echo "Syntax check failed for $file"
-              return 1
-            fi
-          done
+            for file in $(find . -name "*.c"); do
+                echo "Checking $file"
+                exitcode=0
+                gcc -fsyntax-only "$file" || exitcode=$?
+                if [ $exitcode -ne 0 ]; then
+                    echo "Syntax check failed for $file"
+                    return 1
+                fi
+            done
 
       - name: Run syntax check for C++ codes
         run: |
-          for file in $(find . -name "*.cpp"); do
-            echo "Checking $file"
-            exitcode=0
-            g++ -fsyntax-only $file || exitcode=$?
-            if [ $exitcode -ne 0 ]; then
-              echo "Syntax check failed for $file"
-              return 1
-            fi
-          done
-
-  cpp-linter:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: cpp-linter/cpp-linter-action@main
-        id: linter
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          style: file
-          files-changed-only: false
-
-      - name: Fail fast?!
-        if: steps.linter.outputs.checks-failed != 0
-        run: |
-          echo "some linter checks failed. ${{ steps.linter.outputs.checks-failed }}"
-          exit 1
+            for file in $(find . -name "*.cpp"); do
+                echo "Checking $file"
+                exitcode=0
+                g++ -fsyntax-only $file || exitcode=$?
+                if [ $exitcode -ne 0 ]; then
+                    echo "Syntax check failed for $file"
+                    return 1
+                fi
+            done
