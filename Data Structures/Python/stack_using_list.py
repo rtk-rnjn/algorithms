@@ -42,3 +42,13 @@ class Stack:
 
     def __repr__(self) -> str:
         return f"<Stack size={self.__size} top={self.__top}>"
+
+    def __str__(self) -> str:
+        """Pretty prints the stack."""
+        string = ""
+        for i in range(self.__top, -1, -1):
+            string += f"| {self.__stack[i]:^3} |\n"
+
+            if i == self.__top:
+                string += f"|{'-' * 5}|\n"
+        return string

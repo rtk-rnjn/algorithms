@@ -26,18 +26,5 @@ class Queue:
                 self.front = self.rear = -1
             return item
 
-
-if __name__ == "__main__":
-    queue = Queue(5)
-    queue.enqueue(1)
-    queue.enqueue(2)
-    queue.enqueue(3)
-    queue.enqueue(4)
-    queue.enqueue(5)
-
-    print(queue.dequeue())
-    print(queue.dequeue())
-    print(queue.dequeue())
-    print(queue.dequeue())
-    print(queue.dequeue())
-    print(queue.dequeue())
+    def __repr__(self) -> str:
+        return f"Queue({self.queue})"

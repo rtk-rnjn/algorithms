@@ -1,16 +1,23 @@
 #include <stdio.h>
 
-void findNonCommonElements(int arr1[], int m, int arr2[], int n) {
+void findNonCommonElements(int arr1[], int m, int arr2[], int n)
+{
     int i = 0, j = 0;
 
-    while (i < m && j < n) {
-        if (arr1[i] < arr2[j]) {
+    while (i < m && j < n)
+    {
+        if (arr1[i] < arr2[j])
+        {
             printf("%d ", arr1[i]);
             i++;
-        } else if (arr1[i] > arr2[j]) {
+        }
+        else if (arr1[i] > arr2[j])
+        {
             printf("%d ", arr2[j]);
             j++;
-        } else {
+        }
+        else
+        {
             // Both elements are equal, move both pointers
             i++;
             j++;
@@ -18,18 +25,21 @@ void findNonCommonElements(int arr1[], int m, int arr2[], int n) {
     }
 
     // Print remaining elements of the arrays if any
-    while (i < m) {
+    while (i < m)
+    {
         printf("%d ", arr1[i]);
         i++;
     }
 
-    while (j < n) {
+    while (j < n)
+    {
         printf("%d ", arr2[j]);
         j++;
     }
 }
 
-int main() {
+int main()
+{
     int arr1[] = {1, 2, 3, 4, 5, 6};
     int m = sizeof(arr1) / sizeof(arr1[0]);
 
