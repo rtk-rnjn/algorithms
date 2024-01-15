@@ -5,8 +5,19 @@ name: JavaScript Linting
 on:
   push:
     branches: [ main ]
+    paths:
+      - '**/*.js'
+      - '**/*.jsx'
+
   pull_request:
     branches: [ main ]
+    paths:
+      - '**/*.js'
+      - '**/*.jsx'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:

@@ -18,5 +18,4 @@
             return Math.min(left, right);
         }
     }
-    
-}
+ }
