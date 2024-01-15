@@ -1,0 +1,51 @@
+name: C/C++ Memory Check
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.cpp'
+
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**/*.cpp'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install build essentials (if needed)
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential valgrind
+
+      - name: Compile C++ Codes
+        run: |
+          for file in $(find . -name "*.cpp"); do
+            echo "Compiling $file"
+            g++ -o ${file%.*}.out $file
+          done
+
+      - name: Run memory check
+        run: |
+          for file in $(find . -name "*.out"); do
+            echo "Checking $file"
+            exitcode=0
+            valgrind --leak-check=full --error-exitcode=1 $file > /dev/null 2>&1 || exitcode=$?
+            if [ $exitcode -ne 0 ]; then
+              echo "Memory check failed for $file"
+              output=$(valgrind --leak-check=full $file)
+              echo "$output"
+              return 1
+            fi
+          done

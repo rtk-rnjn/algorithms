@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct tree
 {
@@ -54,10 +55,29 @@ void postorder(struct tree *root)
     printf("%d ", root->data);
 }
 
+void free_tree(struct tree *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    free_tree(root->left);
+    free_tree(root->right);
+    free(root);
+}
+
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5, 6};
     struct tree *root = build_tree(arr, 6, 0);
+
+    if (root == NULL)
+    {
+        printf("Tree is empty\n");
+        free(root);
+
+        return 0;
+    }
 
     inorder(root);
     printf("\n");
@@ -68,6 +88,6 @@ int main()
     postorder(root);
     printf("\n");
 
-    free(root);
+    free_tree(root);
     return 0;
 }
