@@ -1,12 +1,8 @@
 // String Reverse using String Builder
 
-import java.util.*;
-
-public class StringReverse {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        StringBuilder sb = new StringBuilder(sc.nextLine());
-
+class StringReverse {
+    public static String reverse(String str) {
+        StringBuilder sb = new StringBuilder(str);
         for (int i = 0; i < sb.length() / 2; i++) {
             int front = i;
             int back = sb.length() - i - 1;
@@ -17,8 +13,11 @@ public class StringReverse {
             sb.setCharAt(front, backChar);
             sb.setCharAt(back, frontChar);
         }
+        return sb.toString();
+    }
 
-        sc.close();
-        System.out.println(sb);
+    public static void main(String args[]) {
+        String str = "Hello World";
+        System.out.println(reverse(str));
     }
 }
