@@ -29,4 +29,8 @@ int main()
     {
         cout << arr[i];
     }
+
+    free(arr);
+    
+    return 0;
 }
