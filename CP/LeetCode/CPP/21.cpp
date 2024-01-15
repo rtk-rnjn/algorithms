@@ -1,11 +1,11 @@
-// Merge Two Sorted Lists
+// 21. Merge Two Sorted Lists
+
 #include <iostream>
 #include <unordered_map>
 #include <string>
 
 using namespace std;
 
-// Definition for singly-linked list.
 struct ListNode
 {
     int val;
@@ -70,31 +70,55 @@ public:
     }
 };
 
+void free_list(ListNode *head)
+{
+    ListNode *p = head;
+    while (p)
+    {
+        ListNode *temp = p;
+        p = p->next;
+
+        delete temp;
+    }
+}
+
+void display(ListNode *head)
+{
+    ListNode *temp = head;
+    while (temp)
+    {
+        cout << "[" << temp << " " << temp->val << " -> " << temp->next << "] -> ";
+        temp = temp->next;
+    }
+    cout << "NULL\n";
+}
+
 int main()
 {
     Solution s;
     ListNode *list1 = new ListNode(1);
     ListNode *list2 = new ListNode(2);
-    ListNode *list3 = new ListNode(4);
+    ListNode *list3 = new ListNode(3);
     ListNode *list4 = new ListNode(1);
-    ListNode *list5 = new ListNode(3);
-    ListNode *list6 = new ListNode(4);
+    ListNode *list5 = new ListNode(2);
+    ListNode *list6 = new ListNode(3);
+
     list1->next = list2;
     list2->next = list3;
     list4->next = list5;
     list5->next = list6;
-    ListNode *result = s.mergeTwoLists(list1, list4);
-    while (result)
+    ListNode *mergedHead = s.mergeTwoLists(list1, list4);
+
+    // display(mergedHead);
+
+    ListNode *temp = mergedHead;
+    while (temp)
     {
-        cout << result->val << " ";
-        result = result->next;
+        cout << temp->val << " ";
+        temp = temp->next;
     }
-    free(list1);
-    free(list2);
-    free(list3);
-    free(list4);
-    free(list5);
-    free(list6);
+
+    free_list(mergedHead);
 
     return 0;
 }
