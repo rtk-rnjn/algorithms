@@ -3,7 +3,10 @@ from __future__ import annotations
 
 class DoublyNode:
     def __init__(
-        self, data: int, next_node: DoublyNode = None, previous_node: DoublyNode = None
+        self,
+        data: int,
+        next_node: DoublyNode | None = None,
+        previous_node: DoublyNode | None = None,
     ) -> None:
         self.data = data
         self.next = next_node
@@ -17,7 +20,7 @@ class DoublyLinkedListIterator:
     def __init__(self, head: DoublyNode) -> None:
         self.current = head
 
-    def __next__(self) -> DoublyNode:
+    def __next__(self) -> int | None:
         if self.current is None:
             raise StopIteration
         data = self.current.data
@@ -26,7 +29,7 @@ class DoublyLinkedListIterator:
 
 
 class DoublyLinkedList:
-    def __init__(self, head: DoublyNode = None) -> None:
+    def __init__(self, head: DoublyNode | None = None) -> None:
         self.head = head
         self.size = 0
 
@@ -73,17 +76,21 @@ class DoublyLinkedList:
             current = current.next
 
     def __iter__(self) -> DoublyLinkedListIterator:
-        return DoublyLinkedListIterator(self.head)
+        if self.head:
+            return DoublyLinkedListIterator(self.head)
+
+        raise StopIteration()
 
     def __len__(self) -> int:
         return self.size
 
-    def __getitem__(self, index: int) -> DoublyNode:
+    def __getitem__(self, index: int) -> DoublyNode | None:
         if index < 0 or index >= self.size:
             raise IndexError("Index out of range")
         current = self.head
         for _ in range(index):
-            current = current.next
+            if current:
+                current = current.next
         return current
 
     def __setitem__(self, index: int, data: int) -> None:
@@ -91,8 +98,11 @@ class DoublyLinkedList:
             raise IndexError("Index out of range")
         current = self.head
         for _ in range(index):
-            current = current.next
-        current.data = data
+            if current:
+                current = current.next
+
+        if current:
+            current.data = data
 
     def insert(self, index: int, data: int) -> None:
         """Inserts a new node containing data at the given
@@ -109,12 +119,14 @@ class DoublyLinkedList:
         for _ in range(index - 1):
             current = current.next
         new_node = DoublyNode(data, current.next, current)
-        if current.next:
+        if current and current.next:
             current.next.previous = new_node
-        current.next = new_node
-        self.size += 1
 
-    def pop(self, index: int = None) -> int:
+        if current:
+            current.next = new_node
+            self.size += 1
+
+    def pop(self, index: int | None = None) -> int:
         """Removes the node at the given index position and returns its data.
         If no index is specified, removes and returns the last item in the list."""
         if index is None:
@@ -124,13 +136,14 @@ class DoublyLinkedList:
 
         current = self.head
         for _ in range(index):
-            current = current.next
+            if current:
+                current = current.next
         data = current.data
-        if current.previous:
+        if current and current.previous:
             current.previous.next = current.next
         else:
             self.head = current.next
-        if current.next:
+        if current and current.next:
             current.next.previous = current.previous
         self.size -= 1
         return data

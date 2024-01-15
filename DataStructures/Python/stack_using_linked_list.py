@@ -2,7 +2,7 @@ from __future__ import annotations
 
 
 class Node:
-    def __init__(self, data: int, next_node: Node = None) -> None:
+    def __init__(self, data: int, next_node: Node | None = None) -> None:
         self.data = data
         self.next = next_node
 
@@ -12,11 +12,12 @@ class Node:
     def __str__(self) -> str:
         return f"{self.data} -> {self.next}"
 
+
 class LinkedListIterator:
     def __init__(self, head: Node) -> None:
         self.current = head
 
-    def __next__(self) -> Node:
+    def __next__(self) -> int:
         if self.current is None:
             raise StopIteration
         data = self.current.data
@@ -25,7 +26,7 @@ class LinkedListIterator:
 
 
 class LinkedList:
-    def __init__(self, head: Node = None) -> None:
+    def __init__(self, head: Node | None = None) -> None:
         self.head = head
         self.size = 0
 
@@ -33,7 +34,10 @@ class LinkedList:
         return f"<LinkedList size={self.size}>"
 
     def __iter__(self) -> LinkedListIterator:
-        return LinkedListIterator(self.head)
+        if self.head:
+            return LinkedListIterator(self.head)
+
+        raise StopIteration()
 
     def is_empty(self) -> bool:
         return self.size == 0
@@ -44,7 +48,7 @@ class LinkedList:
         self.head = new_node
         self.size += 1
 
-    def pop(self, index: int) -> None:
+    def pop(self, index: int) -> int | None:
         """Removes the node at the given index and returns its data."""
         if index is None:
             index = self.size - 1
@@ -60,7 +64,8 @@ class LinkedList:
         else:
             self.head = current.next
         self.size -= 1
-        return current.data
+        if current:
+            return current.data
 
 
 class Stack:
@@ -73,7 +78,7 @@ class Stack:
             raise OverflowError("Stack is full.")
         self.__stack.add(key)
 
-    def pop(self) -> int:
+    def pop(self) -> int | None:
         if self.is_empty():
             raise IndexError("Stack is empty.")
         return self.__stack.pop(0)

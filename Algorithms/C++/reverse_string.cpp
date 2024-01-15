@@ -12,6 +12,8 @@ int reverse_string(char *string, int size)
         string[i] = string[size - i - 1];
         string[size - i - 1] = temp;
     }
+
+    return 0;
 }
 
 int main()

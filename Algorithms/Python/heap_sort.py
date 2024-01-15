@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from typing import TypeVar
 
-def heap_sort(ls: list[int]) -> list[int]:
+T = TypeVar("T", bound=int | float)
+
+
+def heap_sort(ls: list[T]) -> list[T]:
     size = len(ls)
     for i in range(size // 2 - 1, -1, -1):
         heapify(ls, size, i)
@@ -12,7 +16,7 @@ def heap_sort(ls: list[int]) -> list[int]:
     return ls
 
 
-def heapify(ls: list[int], size: int, index: int) -> None:
+def heapify(ls: list[T], size: int, index: int) -> None:
     largest = index
     left = 2 * index + 1
     right = 2 * index + 2

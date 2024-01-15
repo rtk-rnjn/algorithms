@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from typing import TypeVar
 
-def bubble_sort(arr: list[int]) -> list[int]:
+T = TypeVar("T", bound=int | float)
+
+
+def bubble_sort(arr: list[T]) -> list[T]:
     """
     Bubble sort algorithm to sort the array in ascending order.
     """

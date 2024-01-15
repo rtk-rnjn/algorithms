@@ -2,8 +2,12 @@
 .exe
 *.class
 .vscode
-.out
+*.out
 node_modules
 *~
 out/
 build/
+tempCodeRunnerFile.*
+tempCodeRunnerFile
+test/
+test.*

@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from typing import TypeVar
 
-def duplicate_numbers(arr: list[int]) -> list[int]:
+T = TypeVar("T")
+
+
+def duplicate_numbers(arr: list[T]) -> list[T]:
     """
     Print the duplicate numbers in the array.
     """
@@ -15,6 +19,8 @@ def duplicate_numbers(arr: list[int]) -> list[int]:
             print(f"{item} appears {count} times")
 
         seen.add(item)
+
+    return arr
 
 
 if __name__ == "__main__":
