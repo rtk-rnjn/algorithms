@@ -2,7 +2,7 @@
 .exe
 *.class
 .vscode
-.out
+*.out
 node_modules
 *~
 out/
