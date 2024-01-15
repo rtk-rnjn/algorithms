@@ -9,6 +9,7 @@ void reversearray(int arr[], int s, int e)
         s++;
         e--;
     }
+    free(arr);
 }
 int main()
 {
@@ -30,7 +31,5 @@ int main()
         cout << arr[i];
     }
 
-    free(arr);
-    
-    return 0;
+        return 0;
 }
