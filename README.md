@@ -4,7 +4,7 @@ This is a Algorithms repository made by the students of Galgotias University (se
 
 ## Contributing
 
-All contributions are welcome!
+All contributions are welcome! But please have a look at the [STYLE_GUIDE.md](STYLE_GUIDE.md) before contributing.
 
 ## License
 

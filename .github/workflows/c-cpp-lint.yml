@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install build essentials (if needed)
         run: |
@@ -33,24 +33,24 @@ jobs:
 
       - name: Run syntax check for C codes
         run: |
-          for file in $(find . -name "*.c"); do
-            echo "Checking $file"
-            exitcode=0
-            gcc -fsyntax-only "$file" || exitcode=$?
-            if [ $exitcode -ne 0 ]; then
-              echo "Syntax check failed for $file"
-              return 1
-            fi
-          done
+            for file in $(find . -name "*.c"); do
+                echo "Checking $file"
+                exitcode=0
+                gcc -fsyntax-only "$file" || exitcode=$?
+                if [ $exitcode -ne 0 ]; then
+                    echo "Syntax check failed for $file"
+                    return 1
+                fi
+            done
 
       - name: Run syntax check for C++ codes
         run: |
-          for file in $(find . -name "*.cpp"); do
-            echo "Checking $file"
-            exitcode=0
-            g++ -fsyntax-only $file || exitcode=$?
-            if [ $exitcode -ne 0 ]; then
-              echo "Syntax check failed for $file"
-              return 1
-            fi
-          done
+            for file in $(find . -name "*.cpp"); do
+                echo "Checking $file"
+                exitcode=0
+                g++ -fsyntax-only $file || exitcode=$?
+                if [ $exitcode -ne 0 ]; then
+                    echo "Syntax check failed for $file"
+                    return 1
+                fi
+            done
