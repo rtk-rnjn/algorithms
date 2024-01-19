@@ -1,8 +1,9 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void binary_search(int *arr, int len, int target)
+void binary_search(vector<int> arr, int len, int target)
 {
     int left = 0, right = len - 1;
     int mid;
@@ -30,7 +31,7 @@ void binary_search(int *arr, int len, int target)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     binary_search(arr, 10, 4);
 
     return 0;

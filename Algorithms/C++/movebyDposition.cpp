@@ -1,8 +1,9 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void reversearray(int *arr, int start, int end)
+void reversearray(vector<int> arr, int start, int end)
 {
     while (start < end)
     {
@@ -14,7 +15,7 @@ void reversearray(int *arr, int start, int end)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5};
+    vector<int> arr = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
     int d = 2;
 

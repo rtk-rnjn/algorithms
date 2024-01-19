@@ -1,11 +1,12 @@
 #include <climits>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main()
 {
-    int arr[] = {-1, -11, 5, 6, 7, 9};
+    vector<int> arr = {-1, -11, 5, 6, 7, 9};
     int size = 6;
 
     int largest = INT_MIN;
