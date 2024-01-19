@@ -1,5 +1,5 @@
-#include <iostream>
 #include <climits>
+#include <iostream>
 
 using namespace std;
 
@@ -28,8 +28,9 @@ int main()
     int arr[] = {4, 5, 6, 7, 45, 8, 9, 8};
 
     int size = 8;
-
     int ans = secondlargest(arr, size);
 
     cout << "the second largest element in array is :" << ans << endl;
+
+    return 0;
 }
