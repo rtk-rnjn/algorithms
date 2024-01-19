@@ -32,32 +32,32 @@ There is no need to comment the `return args[0]` line, as it is obvious what it 
 
 ### Naming
 
-| Language        | Type          | Naming Convention | Example       |
-| --------------- | ------------- | ------------------ | ------------- |
-| **Python**      | Variables     | `snake_case`       | `my_variable` |
-|                 | Functions     | `snake_case`       | `my_function` |
-|                 | Classes       | `PascalCase`       | `MyClass`     |
-|                 | Constants     | `UPPER_SNAKE_CASE`  | `MY_CONSTANT` |
-|                 | Modules       | `snake_case`       | `my_module`   |
-| **C++**         | Variables     | `snake_case`       | `my_variable` |
-|                 | Functions     | `snake_case`       | `my_function` |
-|                 | Classes       | `PascalCase`       | `MyClass`     |
-|                 | Constants     | `UPPER_SNAKE_CASE`  | `MY_CONSTANT` |
-|                 | Namespaces    | `snake_case`       | `my_namespace`|
-|                 | Exceptions    | `PascalCase`       | `MyException` |
-| **C**           | Variables     | `snake_case`       | `my_variable` |
-|                 | Functions     | `snake_case`       | `my_function` |
-|                 | Constants     | `UPPER_SNAKE_CASE`  | `MY_CONSTANT` |
-| **JavaScript**  | Variables     | `camelCase`        | `myVariable`  |
-|                 | Functions     | `camelCase`        | `myFunction`  |
-|                 | Classes       | `PascalCase`       | `MyClass`     |
-|                 | Constants     | `UPPER_SNAKE_CASE`  | `MY_CONSTANT` |
-|                 | Modules       | `snake_case`       | `my_module`   |
-| **Java**        | Variables     | `camelCase`        | `myVariable`  |
-|                 | Functions     | `camelCase`        | `myFunction`  |
-|                 | Classes       | `PascalCase`       | `MyClass`     |
-|                 | Constants     | `UPPER_SNAKE_CASE`  | `MY_CONSTANT` |
-|                 | Packages      | `snake_case`       | `my_package`  |
+| Language       | Type       | Naming Convention  | Example        |
+| -------------- | ---------- | ------------------ | -------------- |
+| **Python**     | Variables  | `snake_case`       | `my_variable`  |
+|                | Functions  | `snake_case`       | `my_function`  |
+|                | Classes    | `PascalCase`       | `MyClass`      |
+|                | Constants  | `UPPER_SNAKE_CASE` | `MY_CONSTANT`  |
+|                | Modules    | `snake_case`       | `my_module`    |
+| **C++**        | Variables  | `snake_case`       | `my_variable`  |
+|                | Functions  | `snake_case`       | `my_function`  |
+|                | Classes    | `PascalCase`       | `MyClass`      |
+|                | Constants  | `UPPER_SNAKE_CASE` | `MY_CONSTANT`  |
+|                | Namespaces | `snake_case`       | `my_namespace` |
+|                | Exceptions | `PascalCase`       | `MyException`  |
+| **C**          | Variables  | `snake_case`       | `my_variable`  |
+|                | Functions  | `snake_case`       | `my_function`  |
+|                | Constants  | `UPPER_SNAKE_CASE` | `MY_CONSTANT`  |
+| **JavaScript** | Variables  | `camelCase`        | `myVariable`   |
+|                | Functions  | `camelCase`        | `myFunction`   |
+|                | Classes    | `PascalCase`       | `MyClass`      |
+|                | Constants  | `UPPER_SNAKE_CASE` | `MY_CONSTANT`  |
+|                | Modules    | `snake_case`       | `my_module`    |
+| **Java**       | Variables  | `camelCase`        | `myVariable`   |
+|                | Functions  | `camelCase`        | `myFunction`   |
+|                | Classes    | `PascalCase`       | `MyClass`      |
+|                | Constants  | `UPPER_SNAKE_CASE` | `MY_CONSTANT`  |
+|                | Packages   | `snake_case`       | `my_package`   |
 
 ### Imports
 

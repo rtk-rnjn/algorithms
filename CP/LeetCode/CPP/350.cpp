@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution
 {
-public:
+  public:
     vector<int> intersect(vector<int> &nums1, vector<int> &nums2)
     {
         int size1 = nums1.size();

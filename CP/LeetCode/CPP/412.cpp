@@ -1,13 +1,13 @@
 // 412. Fizz Buzz
 
-#include <iostream>
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 class Solution
 {
-public:
+  public:
     vector<string> fizzBuzz(int n)
     {
         vector<string> result;
