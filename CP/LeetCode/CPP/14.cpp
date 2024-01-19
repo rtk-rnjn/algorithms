@@ -1,13 +1,13 @@
 // Longest common prefix
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class Solution
 {
-public:
+  public:
     string longestCommonPrefix(vector<string> &strs)
     {
         int min_size = strs[0].size();

@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution
 {
-public:
+  public:
     vector<int> twoSum(vector<int> &nums, int target)
     {
         vector<int> result;

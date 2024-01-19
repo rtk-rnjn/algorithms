@@ -1,22 +1,19 @@
 // Valid Parentheses
 #include <iostream>
 #include <stack>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
 
 using namespace std;
 
 class Solution
 {
-public:
+  public:
     bool isValid(string s)
     {
         stack<char> st;
         int flag = 0;
-        unordered_map<char, char> brackets{
-            {'(', ')'},
-            {'{', '}'},
-            {'[', ']'}};
+        unordered_map<char, char> brackets{{'(', ')'}, {'{', '}'}, {'[', ']'}};
         if ((s[0] == '}' || s[0] == ']' || s[0] == ')'))
         {
             return false;
@@ -36,7 +33,8 @@ public:
                 st.push(s[i]);
                 flag += 1;
             }
-            else if (!st.empty() && !(s[i] == '[' || s[i] == '{' || s[i] == '('))
+            else if (!st.empty() &&
+                     !(s[i] == '[' || s[i] == '{' || s[i] == '('))
             {
                 if (brackets[st.top()] != s[i])
                 {
