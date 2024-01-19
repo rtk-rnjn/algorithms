@@ -1,28 +1,27 @@
 #include <iostream>
-using namespace std;
-void reversearray(int *arr, int s, int e)
-{
 
-    while (s < e)
+using namespace std;
+
+void reversearray(int *arr, int start, int end)
+{
+    while (start < end)
     {
-        swap(arr[s], arr[e]);
-        s++;
-        e--;
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
     }
 }
+
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
-    int D;
+    int d = 2;
 
-    cout << "enter the D position " << endl;
-    cin >> D;
+    d = d % size;
 
-    D = D % size;
-
-    reversearray(arr, 0, D - 1);
-    reversearray(arr, D, size - 1);
+    reversearray(arr, 0, d - 1);
+    reversearray(arr, d, size - 1);
     reversearray(arr, 0, size - 1);
 
     for (int i = 0; i < size; i++)
@@ -30,5 +29,5 @@ int main()
         cout << arr[i];
     }
 
-        return 0;
+    return 0;
 }
