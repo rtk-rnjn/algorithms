@@ -71,7 +71,7 @@ public:
 void free_list(ListNode *head)
 {
     ListNode *p = head;
-    while (p)
+    while (p != NULL)
     {
         ListNode *temp = p;
         p = p->next;
@@ -106,8 +106,6 @@ int main()
     list4->next = list5;
     list5->next = list6;
     ListNode *mergedHead = s.mergeTwoLists(list1, list4);
-
-    // display(mergedHead);
 
     ListNode *temp = mergedHead;
     while (temp != NULL)

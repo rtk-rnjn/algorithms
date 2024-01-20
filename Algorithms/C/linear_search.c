@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int linear_search(int arr[], int target, int length)
+int linear_search(const int arr[], int target, int length)
 {
     for (int i = 0; i < length; i++)
     {
@@ -19,6 +19,7 @@ int main()
     int target = 3;
     int length = sizeof(arr) / sizeof(arr[0]);
     int result = linear_search(arr, target, length);
+
     printf("Index at: %d", result);
 
     return 0;
