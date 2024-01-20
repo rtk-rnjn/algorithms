@@ -12,25 +12,28 @@ public:
     {
         int min_size = strs[0].size();
         bool flag = false;
-        for (int i = 0; i < strs.size(); i++)
+        int _strs_size = strs.size();
+        for (int i = 0; i < _strs_size; i++)
         {
-            if (min_size >= strs[i].size())
+            int _strs_i_size = strs[i].size();
+
+            if (min_size >= _strs_i_size)
             {
-                min_size = strs[i].size();
+                min_size = _strs_i_size;
             }
         }
         string str = "";
-        if (strs.size() == 1)
+        if (_strs_size == 1)
         {
             str = strs[0];
         }
         for (int i = 0; i < min_size; i++)
         {
-            for (int j = 0; j < strs.size() - 1; j++)
+            for (int j = 0; j < _strs_size - 1; j++)
             {
                 if (strs[j][i] == strs[j + 1][i] && !flag)
                 {
-                    if (j == strs.size() - 2)
+                    if (j == _strs_size - 2)
                     {
                         str += strs[0][i];
                     }

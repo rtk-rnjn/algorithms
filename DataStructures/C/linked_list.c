@@ -7,16 +7,6 @@ struct node
     struct node *next;
 };
 
-void print(struct node *head)
-{
-    struct node *temp = head;
-    while (temp != NULL)
-    {
-        printf("%d ", temp->data);
-        temp = temp->next;
-    }
-}
-
 struct node *insert_data(struct node *head, int data)
 {
     struct node *temp = (struct node *)malloc(sizeof(struct node));
@@ -57,15 +47,51 @@ void f_list(struct node *head)
     }
 }
 
+void display(struct node *head)
+{
+    struct node *temp = head;
+    while (temp != NULL)
+    {
+
+        printf("[%d] -> ", temp->data);
+        temp = temp->next;
+    }
+
+    printf("nil\n");
+}
+
+void delete_node(struct node* node) {
+    struct node* temp = node->next;
+    node->data = temp->data;
+    node->next = temp->next;
+    free(temp);
+}
+
+void delete_node_at(struct node* head, int index) {
+    struct node* temp = head;
+    for (int i = 0; i < index - 1; i++) {
+        temp = temp->next;
+    }
+    struct node* temp1 = temp->next;
+    temp->next = temp1->next;
+    free(temp1);
+}
+
 int main()
 {
     struct node *head = NULL;
-    head = insert_data(head, 1);
-    head = insert_data(head, 2);
-    head = insert_data(head, 3);
+    for (int i = 0; i < 5; i++)
+    {
+        head = insert_data(head, i);
+    }
 
-    print(head);
+    display(head);
+    delete_node(head->next->next);
 
+    display(head);
+    delete_node_at(head, 3);
+
+    display(head);
     f_list(head);
 
     return 0;

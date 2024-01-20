@@ -19,7 +19,9 @@ public:
             {'C', 100},
             {'D', 500},
             {'M', 1000}};
-        for (int i = 0; i < s.size() - 1; i++)
+        
+        int size = s.size();
+        for (int i = 0; i < size - 1; i++)
         {
             if (symbol[s[i]] < symbol[s[i + 1]])
             {
@@ -30,7 +32,7 @@ public:
                 result += symbol[s[i]];
             }
         }
-        result += symbol[s[s.size() - 1]];
+        result += symbol[s[size - 1]];
         return result;
     }
 };

@@ -13,6 +13,8 @@ public:
     {
         stack<char> st;
         int flag = 0;
+        int string_size = s.size();
+
         unordered_map<char, char> brackets{
             {'(', ')'},
             {'{', '}'},
@@ -21,11 +23,11 @@ public:
         {
             return false;
         }
-        if (s.size() < 2)
+        if (string_size < 2)
         {
             return false;
         }
-        for (int i = 0; i < s.size(); i++)
+        for (int i = 0; i < string_size; i++)
         {
             if (st.empty() && (s[i] == '}' || s[i] == ']' || s[i] == ')'))
             {

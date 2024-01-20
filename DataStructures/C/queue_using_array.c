@@ -27,7 +27,7 @@ int insert(int element)
     return 0;
 }
 
-int delete()
+int delete ()
 {
     if (FRONT == -1 || FRONT > REAR)
     {
@@ -84,7 +84,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        delete ();
+        delete();
     }
 
     display();

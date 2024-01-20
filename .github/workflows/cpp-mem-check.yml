@@ -33,7 +33,7 @@ jobs:
         run: |
           for file in $(find . -name "*.cpp"); do
             echo "Compiling $file"
-            g++ -o ${file%.*}.out $file
+            g++ -Wall -Wextra -Wpedantic -Werror -o ${file%.*}.out $file
           done
 
       - name: Run memory check
@@ -46,6 +46,6 @@ jobs:
               echo "Memory check failed for $file"
               output=$(valgrind --leak-check=full $file)
               echo "$output"
-              return 1
+              exit 1
             fi
           done
