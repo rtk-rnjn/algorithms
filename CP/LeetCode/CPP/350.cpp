@@ -45,7 +45,7 @@ int main()
 
     Solution testcase;
     vector<int> result = testcase.intersect(nums1, nums2);
-    for (auto i : result)
+    for (const auto& i : result)
     {
         cout << i << " ";
     }

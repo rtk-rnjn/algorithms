@@ -3,28 +3,23 @@
 
 using namespace std;
 
-void bubble_sort(vector<int> &arr)
+void selection_sort(vector<int> &arr)
 {
     int n = arr.size();
-    bool swapped;
 
     for (int i = 0; i < n - 1; i++)
     {
-        swapped = false;
+        int min_index = i;
 
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = i + 1; j < n; j++)
         {
-            if (arr[j] > arr[j + 1])
+            if (arr[j] < arr[min_index])
             {
-                swap(arr[j], arr[j + 1]);
-                swapped = true;
+                min_index = j;
             }
         }
 
-        if (!swapped)
-        {
-            break;
-        }
+        swap(arr[i], arr[min_index]);
     }
 }
 
@@ -39,7 +34,7 @@ int main()
     }
     cout << endl;
 
-    bubble_sort(array);
+    selection_sort(array);
 
     cout << "Sorted array: ";
     for (const int &num : array)

@@ -38,7 +38,7 @@ int main()
 {
     Solution s;
     vector<string> result = s.fizzBuzz(15);
-    for (auto i : result)
+    for (const auto& i : result)
     {
         cout << i << " ";
     }
