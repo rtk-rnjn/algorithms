@@ -9,7 +9,6 @@ int linear_search(const int arr[], int target, int length)
             return i;
         }
     }
-
     return -1;
 }
 
