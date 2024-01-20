@@ -1,8 +1,9 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void reverse_array(int arr[], int size)
+void reverse_array(vector<int> arr, int size)
 {
     int start = 0;
     int end = size - 1;
@@ -17,7 +18,7 @@ void reverse_array(int arr[], int size)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5};
+    vector<int> arr = {1, 2, 3, 4, 5};
     int size = 5;
 
     reverse_array(arr, size);

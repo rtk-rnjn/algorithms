@@ -1,16 +1,16 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-int reverse_string(char *string, int size)
+int reverse_string(string str, int size)
 {
     char temp;
 
     for (int i = 0; i < size / 2; i++)
     {
-        temp = string[i];
-        string[i] = string[size - i - 1];
-        string[size - i - 1] = temp;
+        temp = str[i];
+        str[i] = str[size - i - 1];
+        str[size - i - 1] = temp;
     }
 
     return 0;
@@ -18,11 +18,13 @@ int reverse_string(char *string, int size)
 
 int main()
 {
-    char string[] = "Hello World!";
-    int size = sizeof(string) / sizeof(string[0]) - 1; // -1 to exclude NULL
+    string str = "Hello World";
 
-    reverse_string(string, size);
-    cout << string;
+    int size = sizeof(str) / sizeof(str[0]) - 1;
+    
+
+    reverse_string(str, size);
+    cout << str << endl;
 
     return 0;
 }

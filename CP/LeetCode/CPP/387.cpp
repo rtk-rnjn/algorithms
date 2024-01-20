@@ -1,7 +1,9 @@
 // 387.First Unique Character in a String
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 #include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -19,7 +21,7 @@ public:
                 max = s[i];
             }
         }
-        int hash[max + 1];
+        vector<int> hash(max + 1);
         for (int i = 0; i < max + 1; i++)
         {
             hash[i] = 0;

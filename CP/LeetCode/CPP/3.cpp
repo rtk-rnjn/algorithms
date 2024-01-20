@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-
+#include <vector>
 using namespace std;
 
 class Solution
@@ -14,7 +14,7 @@ public:
         int start = 0;
         int end = 0;
         int len = s.length();
-        int hash[256] = {0};
+        vector<int> hash(256);
         while (end < len)
         {
             if (hash[s[end]] == 0)

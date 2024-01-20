@@ -1,8 +1,9 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int partition(int arr[], int start, int end)
+int partition(vector<int> arr, int start, int end)
 {
     int pivot = arr[start];
 
@@ -42,7 +43,7 @@ int partition(int arr[], int start, int end)
     return pivotIndex;
 }
 
-void quickSort(int arr[], int start, int end)
+void quickSort(vector<int> arr, int start, int end)
 {
     if (start >= end)
         return;
@@ -54,7 +55,7 @@ void quickSort(int arr[], int start, int end)
 int main()
 {
 
-    int arr[] = {9, 3, 4, 2, 1, 8};
+    vector<int> arr = {9, 3, 4, 2, 1, 8};
     int n = 6;
 
     quickSort(arr, 0, n - 1);

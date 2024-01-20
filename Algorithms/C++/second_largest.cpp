@@ -1,9 +1,10 @@
 #include <climits>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int secondlargest(int arr[], int size)
+int secondlargest(vector<int> arr, int size)
 {
     int slargest = INT_MIN;
     int largest = arr[0];
@@ -25,7 +26,7 @@ int secondlargest(int arr[], int size)
 }
 int main()
 {
-    int arr[] = {4, 5, 6, 7, 45, 8, 9, 8};
+    vector<int> arr = {4, 5, 6, 7, 45, 8, 9, 8};
 
     int size = 8;
     int ans = secondlargest(arr, size);
