@@ -47,6 +47,7 @@ void quickSort(vector<int> arr, int start, int end)
 {
     if (start >= end)
         return;
+
     int p = partition(arr, start, end);
     quickSort(arr, start, p - 1);
     quickSort(arr, p + 1, end);
@@ -54,7 +55,6 @@ void quickSort(vector<int> arr, int start, int end)
 
 int main()
 {
-
     vector<int> arr = {9, 3, 4, 2, 1, 8};
     int n = 6;
 
