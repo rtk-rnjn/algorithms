@@ -21,7 +21,6 @@ int main()
     string str = "Hello World";
 
     int size = sizeof(str) / sizeof(str[0]) - 1;
-    
 
     reverse_string(str, size);
     cout << str << endl;

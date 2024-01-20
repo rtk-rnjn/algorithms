@@ -9,7 +9,7 @@ using namespace std;
 
 class Solution
 {
-public:
+  public:
     int firstUniqChar(string s)
     {
         int size = s.size();
