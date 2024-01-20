@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void smallest_element(int *arr, int len, int *smallest, int *index)
+void smallest_element(const int arr[], int len, int *smallest, int *index)
 {
     *smallest = arr[0];
     *index = 0;

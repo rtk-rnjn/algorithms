@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int single_occurrance(int *arr, int len)
+int single_occurrance(const int arr[], int len)
 {
     int result = 0;
     for (int i = 0; i < len; i++)

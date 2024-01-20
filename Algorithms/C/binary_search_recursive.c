@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void binary_search(int *arr, int left, int right, int target)
+void binary_search(const int arr[], int left, int right, int target)
 {
     if (left > right)
     {

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void binary_search(int *arr, int len, int target)
+void binary_search(const int arr[], int len, int target)
 {
     int left = 0, right = len - 1;
     int mid;
