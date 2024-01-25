@@ -1,19 +1,15 @@
 #include <stdio.h>
 
-int G_COUNT = 0;
-
 void hanoi_tower(int n, char from, char to, char aux)
 {
     if (n == 1)
     {
-        G_COUNT++;
-        printf("%02d Move disk 1 from %c to %c\n", G_COUNT, from, to);
+        printf("Move disk 1 from %c to %c\n", from, to);
         return;
     }
 
     hanoi_tower(n - 1, from, aux, to);
-    G_COUNT++;
-    printf("%02d Move disk %d from %c to %c\n", G_COUNT, n, from, to);
+    printf("Move disk %d from %c to %c\n", n, from, to);
     hanoi_tower(n - 1, aux, to, from);
 }
 
