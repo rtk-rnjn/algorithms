@@ -26,24 +26,3 @@ name = "python"
 
 [[analyzers]]
 name = "cxx"
-
-[[transformers]]
-name = "clang-format"
-
-[[transformers]]
-name = "isort"
-
-[[transformers]]
-name = "black"
-
-[[transformers]]
-name = "ruff"
-
-[[transformers]]
-name = "standardjs"
-
-[[transformers]]
-name = "prettier"
-
-[[transformers]]
-name = "gofmt"
