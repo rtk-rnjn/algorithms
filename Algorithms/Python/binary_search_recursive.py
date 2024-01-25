@@ -19,10 +19,9 @@ def binary_search_recursive_helper(
 
     if arr[mid] == target:
         return mid
-    elif arr[mid] < target:
+    if arr[mid] < target:
         return binary_search_recursive_helper(arr, target, mid + 1, right)
-    else:
-        return binary_search_recursive_helper(arr, target, left, mid - 1)
+    return binary_search_recursive_helper(arr, target, left, mid - 1)
 
 
 if __name__ == "__main__":
