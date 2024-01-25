@@ -18,5 +18,5 @@ def bubble_sort(arr: list[T]) -> list[T]:
 
 
 if __name__ == "__main__":
-    arr = [2, 5, 3, 1, 4, 6]
-    print(bubble_sort(arr))  # [1, 2, 3, 4, 5, 6]
+    numbers = [2, 5, 3, 1, 4, 6]
+    print(bubble_sort(numbers))  # [1, 2, 3, 4, 5, 6]

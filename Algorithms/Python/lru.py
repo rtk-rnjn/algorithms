@@ -61,21 +61,3 @@ class LRU(Generic[KT, VT]):
 
     def __repr__(self) -> str:
         return f"<LRU cache={self.cache} queue={self.__queue}>"
-
-
-if __name__ == "__main__":
-    lru = LRU[str, int](5)
-
-    lru["one"] = 1
-    lru["two"] = 2
-    lru["three"] = 3
-    lru["four"] = 4
-    lru["five"] = 5
-    print(lru)
-    lru["six"] = 6
-    print(lru)
-    lru["three"]
-    print(lru)
-    lru["six"]
-
-    print(lru)

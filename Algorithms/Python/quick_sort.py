@@ -39,5 +39,5 @@ def quicksort_helper(arr: list[T], low: int, high: int) -> None:
 
 
 if __name__ == "__main__":
-    arr = [1, 5, 2, 7, 3, 9, 4, 6, 8]
-    print(quicksort(arr))  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    numbers = [1, 5, 2, 7, 3, 9, 4, 6, 8]
+    print(quicksort(numbers))  # [1, 2, 3, 4, 5, 6, 7, 8, 9]

@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 
-def string_reverse(string: str) -> str:
+def string_reverse(string_to_reverse: str) -> str:
     """
     Reverse the string.
     """
-    return string[::-1]
+    return string_to_reverse[::-1]
 
 
 if __name__ == "__main__":

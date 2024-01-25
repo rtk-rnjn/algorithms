@@ -18,5 +18,5 @@ def is_sorted(ls: list[T]) -> bool:
 
 
 if __name__ == "__main__":
-    ls = [3, 4, 2, 1, 5]
-    print(bogo_sort(ls))
+    numbers = [3, 4, 2, 1, 5]
+    print(bogo_sort(numbers))

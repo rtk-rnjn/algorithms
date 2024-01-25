@@ -24,8 +24,8 @@ def duplicate_numbers(arr: list[T]) -> list[T]:
 
 
 if __name__ == "__main__":
-    arr = [1, 2, 3, 4, 5, 4, 3, 2, 1, 6, 6]
-    duplicate_numbers(arr)
+    numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1, 6, 6]
+    duplicate_numbers(numbers)
     # 1 appears 2 times
     # 2 appears 2 times
     # 3 appears 2 times

@@ -1,9 +1,4 @@
- class SmallestElement {
-    public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
-        System.out.println(smallestElement(arr));
-    }
-    
+class SmallestElement {
     public static int smallestElement(int[] arr) {
         return smallestElement(arr, 0, arr.length - 1);
     }
@@ -18,4 +13,10 @@
             return Math.min(left, right);
         }
     }
- }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4, 5 };
+        System.out.println(smallestElement(arr));
+    }
+
+}

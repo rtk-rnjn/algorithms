@@ -30,6 +30,6 @@ def heapify(ls: list[T], size: int, index: int) -> None:
 
 
 if __name__ == "__main__":
-    ls = [1, 5, 3, 2, 6, 8, 7, 4]
-    heap_sort(ls)
-    print(ls)
+    numbers = [1, 5, 3, 2, 6, 8, 7, 4]
+    heap_sort(numbers)
+    print(numbers)
