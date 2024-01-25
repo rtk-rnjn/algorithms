@@ -4,7 +4,8 @@ using namespace std;
 
 void hanoi_tower(int n, char from, char to, char aux)
 {
-    if (n == 1) {
+    if (n == 1)
+    {
         cout << "Move disk 1 from " << from << " to " << to << endl;
         return;
     }
@@ -18,6 +19,6 @@ int main()
 {
     int n = 4;
     hanoi_tower(n, 'A', 'C', 'B');
-    
+
     return 0;
 }

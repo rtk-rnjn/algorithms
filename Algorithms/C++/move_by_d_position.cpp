@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void reversearray(vector<int>& arr, int start, int end)
+void reversearray(vector<int> &arr, int start, int end)
 {
     while (start < end)
     {

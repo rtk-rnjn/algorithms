@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution
 {
-public:
+  public:
     vector<int> intersect(vector<int> &nums1, vector<int> &nums2)
     {
         int size1 = nums1.size();
@@ -45,7 +45,7 @@ int main()
 
     Solution testcase;
     vector<int> result = testcase.intersect(nums1, nums2);
-    for (const auto& i : result)
+    for (const auto &i : result)
     {
         cout << i << " ";
     }

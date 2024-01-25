@@ -60,19 +60,22 @@ void display(struct node *head)
     printf("nil\n");
 }
 
-void delete_node(struct node* node) {
-    struct node* temp = node->next;
+void delete_node(struct node *node)
+{
+    struct node *temp = node->next;
     node->data = temp->data;
     node->next = temp->next;
     free(temp);
 }
 
-void delete_node_at(struct node* head, int index) {
-    struct node* temp = head;
-    for (int i = 0; i < index - 1; i++) {
+void delete_node_at(struct node *head, int index)
+{
+    struct node *temp = head;
+    for (int i = 0; i < index - 1; i++)
+    {
         temp = temp->next;
     }
-    struct node* temp1 = temp->next;
+    struct node *temp1 = temp->next;
     temp->next = temp1->next;
     free(temp1);
 }

@@ -15,7 +15,7 @@ struct ListNode
 
 class Solution
 {
-public:
+  public:
     ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
     {
         if (list1 == NULL)
@@ -85,7 +85,8 @@ void display(ListNode *head)
     ListNode *temp = head;
     while (temp != NULL)
     {
-        cout << "[" << temp << " " << temp->val << " -> " << temp->next << "] -> ";
+        cout << "[" << temp << " " << temp->val << " -> " << temp->next
+             << "] -> ";
         temp = temp->next;
     }
     cout << "NULL\n";

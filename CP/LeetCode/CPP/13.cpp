@@ -1,25 +1,20 @@
 // Roman to Integer
 #include <iostream>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
 
 using namespace std;
 
 class Solution
 {
-public:
+  public:
     int romanToInt(string s)
     {
         int result = 0;
-        unordered_map<char, int> symbol{
-            {'I', 1},
-            {'V', 5},
-            {'X', 10},
-            {'L', 50},
-            {'C', 100},
-            {'D', 500},
-            {'M', 1000}};
-        
+        unordered_map<char, int> symbol{{'I', 1},   {'V', 5},   {'X', 10},
+                                        {'L', 50},  {'C', 100}, {'D', 500},
+                                        {'M', 1000}};
+
         int size = s.size();
         for (int i = 0; i < size - 1; i++)
         {

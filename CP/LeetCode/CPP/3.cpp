@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution
 {
-public:
+  public:
     int lengthOfLongestSubstring(string s)
     {
         int max = 0;

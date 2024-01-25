@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution
 {
-public:
+  public:
     int removeDuplicates(vector<int> &nums)
     {
         int p1 = 1;

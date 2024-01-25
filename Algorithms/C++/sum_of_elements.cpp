@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int sum(vector<int>arr, int size)
+int sum(vector<int> arr, int size)
 {
     int sum = 0;
     for (int i = 0; i < size; i++)
