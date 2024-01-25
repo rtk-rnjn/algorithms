@@ -25,6 +25,6 @@ def binary_search_recursive_helper(
 
 
 if __name__ == "__main__":
-    arr = [1, 2, 3, 4, 5, 6]
-    print(binary_search_recursive(arr, 3))  # 2
-    print(binary_search_recursive(arr, 7))  # -1
+    numbers = [1, 2, 3, 4, 5, 6]
+    print(binary_search_recursive(numbers, 3))  # 2
+    print(binary_search_recursive(numbers, 7))  # -1

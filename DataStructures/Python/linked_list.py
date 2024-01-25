@@ -98,5 +98,4 @@ class LinkedList:
             self.head = current.next
         self.size -= 1
 
-        if current:
-            return current.data
+        return current.data if current else None
