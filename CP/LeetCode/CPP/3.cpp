@@ -9,7 +9,7 @@ using namespace std;
 class Solution
 {
     public:
-        int lengthOfLongestSubstring(const string s)
+        int lengthOfLongestSubstring(const string &s)
         {
             int max = 0;
             int start = 0;

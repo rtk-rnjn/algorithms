@@ -8,7 +8,7 @@ using namespace std;
 class Solution
 {
     public:
-        int romanToInt(const string s)
+        int romanToInt(const string &s)
         {
             int result = 0;
             unordered_map<char, int> symbol{{'I', 1},   {'V', 5},   {'X', 10},
