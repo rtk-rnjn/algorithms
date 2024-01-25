@@ -38,10 +38,10 @@ struct node *insert_data(struct node *head, int data)
 
 void f_list(struct node *head)
 {
-    struct node *temp;
+    
     while (head != NULL)
     {
-        temp = head;
+        struct node *temp = head;
         head = head->next;
         free(temp);
     }
