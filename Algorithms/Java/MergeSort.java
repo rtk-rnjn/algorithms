@@ -11,9 +11,10 @@ class MergeSort {
     }
 
     public static void merge(int arr[], int p, int mid, int q) {
-        int l1 = mid - p + 1, l2 = q - mid;
-        int m1[] = new int[l1];
-        int m2[] = new int[l2];
+        int l1 = mid - p + 1;
+        int l2 = q - mid;
+        int[] m1 = new int[l1];
+        int[] m2 = new int[l2];
         for (int i = 0; i < l1; i++) {
             m1[i] = arr[p + i];
         }
@@ -44,8 +45,8 @@ class MergeSort {
     public static void main(String args[]) {
         int[] arr = { 7, 45, 82, 5, 72, 6, 36, 8 };
         partition(arr, 0, arr.length - 1);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 }

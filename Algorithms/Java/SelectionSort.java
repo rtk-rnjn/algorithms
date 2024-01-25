@@ -1,7 +1,8 @@
 class SelectionSort {
     public static void selectionSort(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
-            int min = arr[i], index = i;
+            int min = arr[i];
+            int index = i;
             for (int j = i; j < arr.length; j++) {
                 if (min > arr[j]) {
                     index = j;

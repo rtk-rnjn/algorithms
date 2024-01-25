@@ -2,12 +2,12 @@
 
 void binary_search(const int arr[], int len, int target)
 {
-    int left = 0, right = len - 1;
-    int mid;
+    int left = 0;
+    int right = len;
 
     while (left < right)
     {
-        mid = (left + right) / 2;
+        int mid = (left + right) / 2;
         if (arr[mid] == target)
         {
             printf("Found %d at index %d\n", target, mid);
@@ -28,9 +28,9 @@ void binary_search(const int arr[], int len, int target)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6};
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int len = sizeof(arr) / sizeof(arr[0]);
     binary_search(arr, len, 3);
-    binary_search(arr, len, 7);
+
     return 0;
 }

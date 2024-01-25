@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void reverse_array(vector<int> arr, int size)
+void reverse_array(vector<int> &arr, int size)
 {
     int start = 0;
     int end = size - 1;
@@ -19,7 +19,7 @@ void reverse_array(vector<int> arr, int size)
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5};
-    int size = 5;
+    int size = arr.size();
 
     reverse_array(arr, size);
 

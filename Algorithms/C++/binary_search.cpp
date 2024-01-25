@@ -5,15 +5,15 @@ using namespace std;
 
 void binary_search(vector<int> arr, int len, int target)
 {
-    int left = 0, right = len - 1;
-    int mid;
+    int left = 0;
+    int right = len;
 
     while (left < right)
     {
-        mid = (left + right) / 2;
+        int mid = (left + right) / 2;
         if (arr[mid] == target)
         {
-            printf("Found %d at index %d\n", target, mid);
+            cout << "Found " << target << " at index " << mid << endl;
             return;
         }
         else if (arr[mid] < target)
@@ -26,13 +26,13 @@ void binary_search(vector<int> arr, int len, int target)
         }
     }
 
-    cout << "Not found" << target;
+    cout << "Not found " << target << endl;
 }
 
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    binary_search(arr, 10, 4);
+    binary_search(arr, arr.size(), 3);
 
     return 0;
 }

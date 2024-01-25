@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int partition(vector<int> arr, int start, int end)
+int partition(vector<int> &arr, int start, int end)
 {
     int pivot = arr[start];
 
@@ -43,7 +43,7 @@ int partition(vector<int> arr, int start, int end)
     return pivotIndex;
 }
 
-void quickSort(vector<int> arr, int start, int end)
+void quickSort(vector<int> &arr, int start, int end)
 {
     if (start >= end)
         return;

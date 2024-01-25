@@ -3,9 +3,9 @@
 
 using namespace std;
 
-void heapify(vector<int> arr, int size, int i);
+void heapify(vector<int> &arr, int size, int i);
 
-void heap_sort(vector<int> arr, int size)
+void heap_sort(vector<int> &arr, int size)
 {
     for (int i = size / 2 - 1; i >= 0; i--)
     {
@@ -13,7 +13,7 @@ void heap_sort(vector<int> arr, int size)
     }
 }
 
-void heapify(vector<int> arr, int size, int i)
+void heapify(vector<int> &arr, int size, int i)
 {
     int largest = i;
     int left = 2 * i + 1;
@@ -36,11 +36,11 @@ void heapify(vector<int> arr, int size, int i)
     }
 }
 
-void print_array(vector<int> arr, int size)
+void print_array(vector<int> &arr)
 {
-    for (int i = 0; i < size; i++)
+    for (const int &num : arr)
     {
-        cout << arr[i] << " ";
+        cout << num << " ";
     }
 }
 
@@ -50,6 +50,6 @@ int main()
     int size = arr.size();
 
     heap_sort(arr, size);
-    print_array(arr, size);
+    print_array(arr);
     return 0;
 }
