@@ -1,6 +1,12 @@
 version = 1
 
 [[analyzers]]
+name = "go"
+
+  [analyzers.meta]
+  import_root = "github.com/rtk-rnjn/algorithms"
+
+[[analyzers]]
 name = "test-coverage"
 
 [[analyzers]]
@@ -38,3 +44,6 @@ name = "standardjs"
 
 [[transformers]]
 name = "prettier"
+
+[[transformers]]
+name = "gofmt"
