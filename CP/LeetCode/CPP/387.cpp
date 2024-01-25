@@ -9,36 +9,36 @@ using namespace std;
 
 class Solution
 {
-public:
-    int firstUniqChar(string s)
-    {
-        int size = s.size();
-        int max = int(s[0]);
-        for (int i = 0; i < size; i++)
+    public:
+        int firstUniqChar(string s)
         {
-            if (int(s[i]) > max)
+            int size = s.size();
+            int max = int(s[0]);
+            for (int i = 0; i < size; i++)
             {
-                max = s[i];
+                if (int(s[i]) > max)
+                {
+                    max = s[i];
+                }
             }
-        }
-        vector<int> hash(max + 1);
-        for (int i = 0; i < max + 1; i++)
-        {
-            hash[i] = 0;
-        }
-        for (int i = 0; i < size; i++)
-        {
-            hash[int(s[i])] += 1;
-        }
-        for (int i = 0; i < size; i++)
-        {
-            if (hash[int(s[i])] == 1)
+            vector<int> hash(max + 1);
+            for (int i = 0; i < max + 1; i++)
             {
-                return i;
+                hash[i] = 0;
             }
+            for (int i = 0; i < size; i++)
+            {
+                hash[int(s[i])] += 1;
+            }
+            for (int i = 0; i < size; i++)
+            {
+                if (hash[int(s[i])] == 1)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
-        return -1;
-    }
 };
 
 int main()

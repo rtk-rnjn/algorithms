@@ -7,26 +7,26 @@ using namespace std;
 
 class Solution
 {
-public:
-    vector<int> twoSum(vector<int> &nums, int target)
-    {
-        vector<int> result;
-        int size = nums.size();
-        for (int i = 0; i < size; i++)
+    public:
+        vector<int> twoSum(vector<int> &nums, int target)
         {
-            int temp = target - nums[i];
-            for (int j = i + 1; j < size; j++)
+            vector<int> result;
+            int size = nums.size();
+            for (int i = 0; i < size; i++)
             {
-                if (nums[j] == temp)
+                int temp = target - nums[i];
+                for (int j = i + 1; j < size; j++)
                 {
-                    result.push_back(i);
-                    result.push_back(j);
-                    return result;
+                    if (nums[j] == temp)
+                    {
+                        result.push_back(i);
+                        result.push_back(j);
+                        return result;
+                    }
                 }
             }
+            return result;
         }
-        return result;
-    }
 };
 
 int main()

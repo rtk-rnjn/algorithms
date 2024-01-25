@@ -4,4 +4,12 @@ UseTab: Never
 BreakBeforeBraces: Allman
 AlignAfterOpenBracket: Align
 AlignOperands: true
-AllowShortIfStatementsOnASingleLine: false
+AlignTrailingComments: true
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+BreakBeforeBinaryOperators: false
+IndentAccessModifiers: true
+AccessModifierOffset: -4
+SortIncludes: false
+NamespaceIndentation: All

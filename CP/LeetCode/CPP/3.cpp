@@ -3,46 +3,47 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
 
 class Solution
 {
-public:
-    int lengthOfLongestSubstring(string s)
-    {
-        int max = 0;
-        int start = 0;
-        int end = 0;
-        int len = s.length();
-        vector<int> hash(256);
-        while (end < len)
+    public:
+        int lengthOfLongestSubstring(const string s)
         {
-            if (hash[s[end]] == 0)
+            int max = 0;
+            int start = 0;
+            int end = 0;
+            int len = s.length();
+            vector<int> hash(256);
+            while (end < len)
             {
-                hash[s[end]] = 1;
-                end++;
-            }
-            else
-            {
-                if (end - start > max)
+                if (hash[s[end]] == 0)
                 {
-                    max = end - start;
+                    hash[s[end]] = 1;
+                    end++;
                 }
-                while (s[start] != s[end])
+                else
                 {
-                    hash[s[start]] = 0;
+                    if (end - start > max)
+                    {
+                        max = end - start;
+                    }
+                    while (s[start] != s[end])
+                    {
+                        hash[s[start]] = 0;
+                        start++;
+                    }
                     start++;
+                    end++;
                 }
-                start++;
-                end++;
             }
+            if (end - start > max)
+            {
+                max = end - start;
+            }
+            return max;
         }
-        if (end - start > max)
-        {
-            max = end - start;
-        }
-        return max;
-    }
 };
 
 int main(void)

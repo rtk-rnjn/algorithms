@@ -4,7 +4,10 @@
 
 int lengthOfLongestSubstring(char *s)
 {
-    int i = 0, j = 0, max = 0;
+    int i = 0;
+    int j = 0;
+    int max = 0;
+
     int hash[128] = {0};
     while (s[j] != '\0')
     {

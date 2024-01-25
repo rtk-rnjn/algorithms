@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void binary_search(vector<int> arr, int len, int target)
+void binary_search(const vector<int> &arr, int len, int target)
 {
     int left = 0;
     int right = len;

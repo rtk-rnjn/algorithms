@@ -6,66 +6,72 @@ using namespace std;
 
 struct ListNode
 {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+        int val;
+        ListNode *next;
+        ListNode() : val(0), next(nullptr)
+        {
+        }
+        ListNode(int x) : val(x), next(nullptr)
+        {
+        }
+        ListNode(int x, ListNode *next) : val(x), next(next)
+        {
+        }
 };
 
 class Solution
 {
-public:
-    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
-    {
-        if (list1 == NULL)
+    public:
+        ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
         {
-            return list2;
-        }
-        else if (list2 == NULL)
-        {
-            return list1;
-        }
-        ListNode *p1 = list1, *p2 = list2;
-        ListNode *head;
-        ListNode *p0;
-        if (list1->val < list2->val)
-        {
-            head = list1;
-            p1 = p1->next;
-        }
-        else
-        {
-            head = list2;
-            p2 = p2->next;
-        }
-        p0 = head;
-        while (p1 != NULL && p2 != NULL)
-        {
-            if (int(p1->val) >= int(p2->val))
+            if (list1 == NULL)
             {
-                p0->next = p2;
-                p0 = p2;
-                p2 = p2->next;
+                return list2;
             }
-            else if (p1->val < p2->val)
+            else if (list2 == NULL)
             {
-                p0->next = p1;
-                p0 = p1;
+                return list1;
+            }
+            ListNode *p1 = list1, *p2 = list2;
+            ListNode *head;
+            ListNode *p0;
+            if (list1->val < list2->val)
+            {
+                head = list1;
                 p1 = p1->next;
             }
-        }
+            else
+            {
+                head = list2;
+                p2 = p2->next;
+            }
+            p0 = head;
+            while (p1 != NULL && p2 != NULL)
+            {
+                if (int(p1->val) >= int(p2->val))
+                {
+                    p0->next = p2;
+                    p0 = p2;
+                    p2 = p2->next;
+                }
+                else if (p1->val < p2->val)
+                {
+                    p0->next = p1;
+                    p0 = p1;
+                    p1 = p1->next;
+                }
+            }
 
-        if (p1 == NULL)
-        {
-            p0->next = p2;
+            if (p1 == NULL)
+            {
+                p0->next = p2;
+            }
+            else if (p2 == NULL)
+            {
+                p0->next = p1;
+            }
+            return head;
         }
-        else if (p2 == NULL)
-        {
-            p0->next = p1;
-        }
-        return head;
-    }
 };
 
 void free_list(ListNode *head)
@@ -85,7 +91,8 @@ void display(ListNode *head)
     ListNode *temp = head;
     while (temp != NULL)
     {
-        cout << "[" << temp << " " << temp->val << " -> " << temp->next << "] -> ";
+        cout << "[" << temp << " " << temp->val << " -> " << temp->next
+             << "] -> ";
         temp = temp->next;
     }
     cout << "NULL\n";
