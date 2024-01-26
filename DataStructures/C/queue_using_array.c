@@ -7,7 +7,7 @@ int QUEUE[SIZE];
 int FRONT = -1;
 int REAR = -1;
 
-int insert(int element)
+int enqueue(int element)
 {
     if (REAR == SIZE - 1)
     {
@@ -27,7 +27,7 @@ int insert(int element)
     return 0;
 }
 
-int delete ()
+int dequeue()
 {
     if (FRONT == -1 || FRONT > REAR)
     {
@@ -77,14 +77,14 @@ int main()
 {
     for (int i = 0; i < 10; i++)
     {
-        insert(i);
+        enqueue(i);
     }
 
     printf("The front element is: %d\n", peek());
 
     for (int i = 0; i < 5; i++)
     {
-        delete();
+        dequeue();
     }
 
     display();

@@ -2,4 +2,4 @@ Checks: 'clang-diagnostic-*,clang-analyzer-*,bugprone-*,modernize-*,performance-
 
 Werror: 'false'
 FormatStyle: 'file'
-HeaderFilterRegex: '.*'
+IncludeStyle: 'llvm'

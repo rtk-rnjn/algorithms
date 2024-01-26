@@ -6,21 +6,21 @@ using namespace std;
 
 class Solution
 {
-    public:
-        int removeDuplicates(vector<int> &nums)
+public:
+    int removeDuplicates(vector<int> &nums)
+    {
+        int p1 = 1;
+        int size = nums.size();
+        for (int i = 1; i < size; i++)
         {
-            int p1 = 1;
-            int size = nums.size();
-            for (int i = 1; i < size; i++)
+            if (nums[i] != nums[i - 1])
             {
-                if (nums[i] != nums[i - 1])
-                {
-                    nums[p1] = nums[i];
-                    p1++;
-                }
+                nums[p1] = nums[i];
+                p1++;
             }
-            return p1;
         }
+        return p1;
+    }
 };
 
 int main()
