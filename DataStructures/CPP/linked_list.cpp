@@ -78,8 +78,8 @@ int popAtEnd(Node **head)
         ptr = ptr->next;
     }
     int data = ptr->next->data;
-    ptr->next = NULL;
     free(ptr->next);
+    ptr->next = NULL;
 
     return data;
 }
@@ -96,9 +96,9 @@ int popAtFirst(Node **head)
 int deleteAtIndex(Node **head, int index)
 {
     Node *ptr = *head;
-    for (int i = 1; i < index - 1; i++)
+    if (ptr->next != NULL)
     {
-        if (ptr->next != NULL)
+        for (int i = 1; i < index - 1; i++)
         {
             ptr = ptr->next;
         }
@@ -110,14 +110,13 @@ int deleteAtIndex(Node **head, int index)
     return data;
 }
 
-void deleteList(Node **head)
+void deleteList(Node *head)
 {
-    Node *ptr = *head;
-    while ((*head) != NULL)
+    while (head != NULL)
     {
-        free(ptr);
-        *head = (*head)->next;
-        ptr = *head;
+        struct Node *temp = head;
+        head = head->next;
+        free(temp);
     }
 }
 
@@ -126,9 +125,10 @@ void transversal(Node *head)
     Node *ptr = head;
     while (ptr != NULL)
     {
-        cout << ptr->data << endl;
+        cout<<"[" <<ptr->data<< "] -> " ;
         ptr = ptr->next;
     }
+    cout<<"NULL";
 }
 int main()
 {
@@ -144,5 +144,5 @@ int main()
     popAtFirst(&head);
     deleteAtIndex(&head, 2);
     transversal(head);
-    deleteList(&head);
+    deleteList(head);
 }
