@@ -15,19 +15,19 @@ class Solution
             {
                 if (i % 3 == 0 && i % 5 == 0)
                 {
-                    result.push_back("FizzBuzz");
+                    result.emplace_back("FizzBuzz");
                 }
                 else if (i % 3 == 0)
                 {
-                    result.push_back("Fizz");
+                    result.emplace_back("Fizz");
                 }
                 else if (i % 5 == 0)
                 {
-                    result.push_back("Buzz");
+                    result.emplace_back("Buzz");
                 }
                 else
                 {
-                    result.push_back(to_string(i));
+                    result.emplace_back(to_string(i));
                 }
             }
             return result;
