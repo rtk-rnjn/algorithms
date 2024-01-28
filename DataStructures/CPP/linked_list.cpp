@@ -9,6 +9,18 @@ public:
     Node *next;
 };
 
+int length(Node *head)
+{
+    int count = 0;
+    Node *ptr = head;
+    while (ptr != NULL)
+    {
+        count++;
+        ptr = ptr->next;
+    }
+    return count;
+}
+
 void pushAtFirst(Node **head, int newData)
 {
     Node *p = new Node();
@@ -137,17 +149,7 @@ void transversal(Node *head)
     cout<<"NULL";
 }
 
-int length(Node *head)
-{
-    int count = 0;
-    Node *ptr = head;
-    while (ptr != NULL)
-    {
-        count++;
-        ptr = ptr->next;
-    }
-    return count;
-}
+
 int main()
 {
     Node *head = new Node();
