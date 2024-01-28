@@ -56,7 +56,7 @@ void insertAt(Node **head, int index, int newData)
     {
         pushAtFirst(head, newData);
     }
-    else
+    else if(index<=length(*head))
     {
         for (int i = 2; i < index; i++)
         {
@@ -73,9 +73,11 @@ void insertAt(Node **head, int index, int newData)
 int popAtEnd(Node **head)
 {
     Node *ptr = *head;
-    while (ptr->next->next)
-    {
-        ptr = ptr->next;
+    if(ptr->next!=NULL){
+        while (ptr->next->next)
+        {
+            ptr = ptr->next;
+        }
     }
     int data = ptr->next->data;
     free(ptr->next);
@@ -95,6 +97,9 @@ int popAtFirst(Node **head)
 
 int deleteAtIndex(Node **head, int index)
 {
+    if(index==1){
+        return popAtFirst(head);
+    }
     Node *ptr = *head;
     if (ptr->next != NULL)
     {
@@ -114,10 +119,11 @@ void deleteList(Node *head)
 {
     while (head != NULL)
     {
-        struct Node *temp = head;
+        Node *temp = head;
         head = head->next;
         free(temp);
     }
+    head = NULL;
 }
 
 void transversal(Node *head)
@@ -129,6 +135,18 @@ void transversal(Node *head)
         ptr = ptr->next;
     }
     cout<<"NULL";
+}
+
+int length(Node *head)
+{
+    int count = 0;
+    Node *ptr = head;
+    while (ptr != NULL)
+    {
+        count++;
+        ptr = ptr->next;
+    }
+    return count;
 }
 int main()
 {
