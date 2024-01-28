@@ -57,6 +57,7 @@ void pushAtLast(Node **head, int newData)
 void insertAt(Node **head, int index, int newData)
 {
     Node *p = new Node();
+    int size = length(*head);
     if (p == NULL)
     {
         cout << "Memory Allocation Failed";
@@ -68,7 +69,7 @@ void insertAt(Node **head, int index, int newData)
     {
         pushAtFirst(head, newData);
     }
-    else if(index<=length(*head))
+    else if(index<=size)
     {
         for (int i = 2; i < index; i++)
         {
@@ -85,6 +86,13 @@ void insertAt(Node **head, int index, int newData)
 int popAtEnd(Node **head)
 {
     Node *ptr = *head;
+    if(ptr==NULL){
+        cout<<"List is Empty";
+        exit(1);
+    }
+    if(ptr->next==NULL){
+        return popAtFirst(head);
+    }
     if(ptr->next!=NULL){
         while (ptr->next->next)
         {
@@ -109,6 +117,11 @@ int popAtFirst(Node **head)
 
 int deleteAtIndex(Node **head, int index)
 {
+    int size = length(*head);
+    if(index>size){
+        cout<<"Index Out of Range";
+        exit(1);
+    }
     if(index==1){
         return popAtFirst(head);
     }
