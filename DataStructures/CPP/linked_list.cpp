@@ -54,7 +54,7 @@ void insertAt(Node **head, int index, int newData)
     Node *ptr = *head;
     if (index == 1)
     {
-        pushAtFirst(&(*head), newData);
+        pushAtFirst(head, newData);
     }
     else
     {
