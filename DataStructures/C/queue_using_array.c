@@ -1,93 +1,119 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-#define SIZE 100
+#define SIZE 10
 
 int QUEUE[SIZE];
 
-int FRONT = -1;
-int REAR = -1;
+int front = 0;
+int rear = 0;
 
-int enqueue(int element)
+bool is_empty()
 {
-    if (REAR == SIZE - 1)
+    return front == rear;
+}
+
+bool is_full()
+{
+    return rear == SIZE;
+}
+
+void enqueue(int data)
+{
+    if (is_full())
     {
-        printf("Queue Overflow\n");
-        return -1;
-    }
-    else
-    {
-        if (FRONT == -1)
-        {
-            FRONT = 0;
-        }
-        REAR++;
-        QUEUE[REAR] = element;
+        printf("Queue is full\n");
+        return;
     }
 
-    return 0;
+    QUEUE[rear++] = data;
 }
 
 int dequeue()
 {
-    if (FRONT == -1 || FRONT > REAR)
+    if (is_empty())
     {
-        printf("Queue Underflow\n");
+        printf("Queue is empty\n");
         return -1;
     }
-    else
-    {
-        FRONT++;
-    }
 
-    return 0;
+    return QUEUE[front++];
 }
 
 int peek()
 {
-    if (FRONT == -1 || FRONT > REAR)
+    if (is_empty())
     {
-        printf("Queue Underflow\n");
+        printf("Queue is empty\n");
         return -1;
     }
-    else
-    {
-        return QUEUE[FRONT];
-    }
+
+    return QUEUE[front];
 }
 
-void display()
+int queue_size()
 {
-    if (FRONT == -1 || FRONT > REAR)
+    if (is_empty())
     {
-        printf("Queue Underflow\n");
+        return 0;
+    }
+
+    if (is_full())
+    {
+        return SIZE;
+    }
+
+    return rear - front;
+}
+
+void print_queue()
+{
+    if (is_empty())
+    {
+        printf("Queue is empty\n");
         return;
     }
-    else
+
+    printf("Queue [%d]: ", queue_size());
+    for (int i = front; i < rear; i++)
     {
-        printf("The queue is: ");
-        for (int i = FRONT; i <= REAR; i++)
-        {
-            printf("%d ", QUEUE[i]);
-        }
-        printf("\n");
+        printf("%d ", QUEUE[i]);
     }
+    printf("\n");
 }
 
 int main()
 {
-    for (int i = 0; i < 10; i++)
-    {
-        enqueue(i);
-    }
+    print_queue();
 
-    printf("The front element is: %d\n", peek());
+    enqueue(1);
+    enqueue(2);
+    enqueue(3);
+    enqueue(4);
+    enqueue(5);
+    print_queue();
 
-    for (int i = 0; i < 5; i++)
-    {
-        dequeue();
-    }
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+    print_queue();
 
-    display();
+    enqueue(6);
+    enqueue(7);
+    enqueue(8);
+    enqueue(9);
+    enqueue(10);
+    print_queue();
 
-    return 0;
+    enqueue(11);
+    print_queue();
+
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+    printf("Dequeue: %d\n", dequeue());
+
+    print_queue();
 }

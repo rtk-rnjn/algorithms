@@ -65,11 +65,11 @@ We use absolute imports, and we try to import only the needed functions/classes.
 
 ## Linting
 
-We use [flake8](https://flake8.pycqa.org/en/latest/) for linting in Python.
-We use [clang-format](https://clang.llvm.org/docs/ClangFormat.html) for linting in C++.
-We use [clang-format](https://clang.llvm.org/docs/ClangFormat.html) for linting in C.
-We use [eslint](https://eslint.org/) for linting in JavaScript.
-We use [checkstyle](https://checkstyle.sourceforge.io/) for linting in Java.
+- We use [flake8](https://flake8.pycqa.org/en/latest/) for linting in Python.
+- We use [clang-format](https://clang.llvm.org/docs/ClangFormat.html) for linting in C++.
+- We use [clang-format](https://clang.llvm.org/docs/ClangFormat.html) for linting in C.
+- We use [eslint](https://eslint.org/) for linting in JavaScript.
+- We use [checkstyle](https://checkstyle.sourceforge.io/) for linting in Java.
 
 ## Others
 
@@ -100,6 +100,140 @@ clang -Wall -Wextra -Werror main.c -o main
 # MSVC
 cl /W4 /WX main.c
 ```
+
+### Style Guide for C/C++
+
+We have `.clang-format` file and `.clang-tidy` file for C/C++.
+
+```yml
+# .clang-format
+
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+BreakBeforeBraces: Allman
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignTrailingComments: true
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+BreakBeforeBinaryOperators: false
+AccessModifierOffset: -4
+SortIncludes: false
+NamespaceIndentation: All
+ColumnLimit: 120
+```
+
+#### Explanation for `.clang-format`
+
+- `BasedOnStyle: LLVM`: A style that is close to LLVM's style ([LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html#name-types-functions-variables-and-enumerators-properly)).
+
+- `IndentWidth: 4`: We use 4 spaces for indentation.
+
+- `UseTab: Never`: We use spaces for indentation.
+
+- `BreakBeforeBraces: Allman`: We use Allman style braces, i.e. we put the opening brace on a new line.
+
+```c
+// Allman style
+if (1 == 1)
+{
+    printf("Hello, World!\n");
+}
+
+struct node
+{
+    int data;
+    struct node *next;
+};
+```
+
+- `AlignAfterOpenBracket: Align`: We align the arguments after the opening bracket.
+
+```c
+someLongFunction(argument1,
+                 argument2);
+```
+
+- `AlignOperands: true`: We align the operands, (horizontal align operands of binary and ternary expressions).
+
+```c
+int aaa = bbbbbbbbbbbbbbb +
+          ccccccccccccccc;
+```
+
+- `AlignTrailingComments: true`: We align the trailing comments.
+
+```c
+int a;  // comment
+int ab; // comment
+
+int abc;  // comment
+int abcd; // comment
+```
+
+- `AllowShortFunctionsOnASingleLine: false`: We don't allow short functions on a single line.
+
+- `AllowShortIfStatementsOnASingleLine: true`: We allow short if statements on a single line.
+
+- `AllowShortLoopsOnASingleLine: true`: We allow short loops on a single line.
+
+- `BreakBeforeBinaryOperators: false`: We don't break before binary operators.
+
+```c
+int a = 1 + 2;
+```
+
+- `AccessModifierOffset: -4`: We use `-4` as the offset for access modifiers.
+
+```cpp
+class MyClass
+{
+public:
+    int a;
+    int b;
+}
+```
+
+- `SortIncludes: false`: We don't sort the includes.
+
+- `NamespaceIndentation: All`: We indent all the namespaces.
+
+```cpp
+namespace my_namespace
+{
+    int a;
+    int b;
+}
+```
+
+- `ColumnLimit: 120`: We try to keep the line length under 120 characters.
+
+---
+
+```yml
+# .clang-tidy
+
+Checks: 'clang-diagnostic-*,clang-analyzer-*,bugprone-*,modernize-*,performance-*,readability-*,-readability-identifier-length,-modernize-use-trailing-return-type,-readability-magic-numbers'
+FormatStyle: 'file'
+HeaderFilterRegex: '.*'
+```
+
+##### Explanation for `.clang-tidy`
+
+- Checks:
+  - `clang-diagnostic-*`: All the warnings from Clang.
+  - `clang-analyzer-*`: All the warnings from Clang Analyzer.
+  - `bugprone-*`: All the warnings from bugprone.
+  - `modernize-*`: All the warnings from modernize.
+  - `performance-*`: All the warnings from performance.
+  - `readability-*`: All the warnings from readability.
+  - `-readability-identifier-length`: We ignore the warning from readability-identifier-length.
+  - `-modernize-use-trailing-return-type`: We ignore the warning from modernize-use-trailing-return-type.
+  - `-readability-magic-numbers`: We ignore the warning from readability-magic-numbers.
+
+Read Docs at [clang-tidy](https://clang.llvm.org/extra/clang-tidy/)
 
 ## Python
 

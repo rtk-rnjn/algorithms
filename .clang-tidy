@@ -1,3 +1,3 @@
-Checks: 'clang-diagnostic-*,clang-analyzer-*,bugprone-*,modernize-*,performance-*,readability-*,-readability-identifier-length,-modernize-use-trailing-return-type'
+Checks: 'clang-diagnostic-*,clang-analyzer-*,bugprone-*,modernize-*,performance-*,readability-*,-readability-identifier-length,-modernize-use-trailing-return-type,-readability-magic-numbers'
 FormatStyle: 'file'
 HeaderFilterRegex: '.*'
