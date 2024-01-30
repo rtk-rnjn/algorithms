@@ -58,11 +58,11 @@ jobs:
       - name: Install clang-tidy and other tools
         run: |
           sudo apt update
-          sudo apt install -y clang-tidy clang-format
+          sudo apt install -y clang-tidy clang-format clang-tools clang clangd
       
       - name: Check clang-tidy, clang-format
         run: |
-          clang-tidy --version && clang-format --version
+            clang-tidy --version && clang-format --version
       
       - name: Run clang-tidy for C codes
         run: |
