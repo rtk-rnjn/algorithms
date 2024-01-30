@@ -10,6 +10,7 @@ const bubbleSort = (arr) => {
 
 const arr = [5, 4, 3, 2, 1, 6, 7, 8, 9, 10, 0];
 bubbleSort(arr);
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
+
+arr.forEach((item) => {
+    console.log(item);
+});

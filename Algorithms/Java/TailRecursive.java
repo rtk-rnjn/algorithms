@@ -1,10 +1,10 @@
 class TailRecursive {
 
-    public static int factorial(int n) {
+    public static int factorial(final int n) {
         return factorial(n, 1);
     }
 
-    public static int factorial(int n, int result) {
+    public static int factorial(final int n, final int result) {
         if (n == 0) {
             return result;
         } else {
@@ -12,7 +12,7 @@ class TailRecursive {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println(factorial(5));
     }
 }
