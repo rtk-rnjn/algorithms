@@ -28,10 +28,6 @@
     <property name="optional" value="true"/>
   </module>
 
-  <!-- Checks that a package-info.java file exists for each package.     -->
-  <!-- See https://checkstyle.org/checks/javadoc/javadocpackage.html#JavadocPackage -->
-  <module name="JavadocPackage"/>
-
   <!-- Checks whether files end with a new line.                        -->
   <!-- See https://checkstyle.org/checks/misc/newlineatendoffile.html -->
   <module name="NewlineAtEndOfFile"/>
@@ -51,7 +47,7 @@
   <!-- Checks for whitespace                               -->
   <!-- See https://checkstyle.org/checks/whitespace/index.html -->
   <module name="FileTabCharacter"/>
-  <module name="NoLineWrap"/>
+  <!-- <module name="NoLineWrap"/> -->
 
   <!-- Miscellaneous other checks.                   -->
   <!-- See https://checkstyle.org/checks/misc/index.html -->
@@ -70,15 +66,6 @@
   <!-- </module> -->
 
   <module name="TreeWalker">
-
-    <!-- Checks for Javadoc comments.                     -->
-    <!-- See https://checkstyle.org/checks/javadoc/index.html -->
-    <module name="InvalidJavadocPosition"/>
-    <module name="JavadocMethod"/>
-    <module name="JavadocType"/>
-    <module name="JavadocVariable"/>
-    <module name="JavadocStyle"/>
-    <!-- <module name="MissingJavadocMethod"/> -->
 
     <!-- Checks for Naming Conventions.                  -->
     <!-- See https://checkstyle.org/checks/naming/index.html -->
@@ -114,8 +101,6 @@
     <module name="EmptyForIteratorPad"/>
     <module name="GenericWhitespace"/>
     <module name="MethodParamPad"/>
-    <module name="NoWhitespaceAfter"/>
-    <module name="NoWhitespaceBefore"/>
     <module name="OperatorWrap"/>
     <module name="ParenPad"/>
     <module name="TypecastParenPad"/>

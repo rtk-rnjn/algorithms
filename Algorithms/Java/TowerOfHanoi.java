@@ -1,28 +1,28 @@
 class TowerOfHanoi {
-    public static void toh3(final int n, final char A, final char B, final char C) {
+    public static void toh3(final int n, final char rodA, final char rodB, final char rodC) {
         if (n == 1) {
-            System.out.println(A + "->" + C);
+            System.out.println(rodA + "->" + rodC);
             // return;
         } else if (n > 1) {
-            toh3(n - 1, A, C, B);
-            System.out.println(A + "->" + C);
-            toh3(n - 1, B, A, C);
+            toh3(n - 1, rodA, rodC, rodB);
+            System.out.println(rodA + "->" + rodC);
+            toh3(n - 1, rodB, rodA, rodC);
         }
     }
 
-    public static void toh4(final int n, final char A, final char B, final char C, final char D) {
+    public static void toh4(final int n, final char rodA, final char rodB, final char rodC, final char rodD) {
         if (n == 0) {
             return;
         }
         if (n == 1) {
-            System.out.println(A + "->" + D);
+            System.out.println(rodA + "->" + rodD);
             return;
         } else {
-            toh4(n - 2, A, C, D, B);
-            System.out.println(A + "->" + C);
-            System.out.println(A + "->" + D);
-            System.out.println(C + "->" + D);
-            toh4(n - 2, B, A, C, D);
+            toh4(n - 2, rodA, rodC, rodD, rodB);
+            System.out.println(rodA + "->" + rodC);
+            System.out.println(rodA + "->" + rodD);
+            System.out.println(rodC + "->" + rodD);
+            toh4(n - 2, rodB, rodA, rodC, rodD);
         }
     }
 

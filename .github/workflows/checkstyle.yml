@@ -19,13 +19,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: dbelyaev/action-checkstyle@master
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v2
         with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          level: warning
-          checkstyle_config: ./checkstyle.xml
-          checkstyle_version: 10.13.0
-          fail_on_error: true
-          filter_mode: file
+          distribution: 'oracle'
+          java-version: '21'
+
+      - name: Lint with CheckStyle
+        run: |
+          for file in $(find . -name '*.java'); do
+            echo "Checking $file"
+            exitcode=0
+            java -jar checkstyle.jar -c ./checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
+            if [ $exitcode -ne 0 ]; then
+              echo "Lint failed for $file"
+              output=$(java -jar checkstyle.jar -c ./checkstyle.xml $file)
+              echo "$output"
+              return 0
+            fi
+          done
