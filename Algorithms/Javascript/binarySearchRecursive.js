@@ -21,8 +21,8 @@ const target = 8;
 
 const index = binarySearch(arr, 0, arr.length - 1, target);
 
-if (index == -1) {
-    console.log("Not found");
+if (index === -1) {
+    console.log('Not found');
 } else {
-    console.log("Found at index: " + index);
+    console.log('Found at index: ' + index);
 }
