@@ -1,5 +1,5 @@
 const partition = (arr, left, right) => {
-    let pivot = arr[right];
+    const pivot = arr[right];
     let i = left - 1;
     for (let j = left; j < right; j++) {
         if (arr[j] < pivot) {
@@ -13,7 +13,7 @@ const partition = (arr, left, right) => {
 
 const quickSort = (arr, left, right) => {
     if (left < right) {
-        let pivot = partition(arr, left, right);
+        const pivot = partition(arr, left, right);
         quickSort(arr, left, pivot - 1);
         quickSort(arr, pivot + 1, right);
     }

@@ -1,6 +1,4 @@
-
 const binarySearch = (arr, left, right, target) => {
-
     if (left > right) {
         return -1;
     }
@@ -13,20 +11,18 @@ const binarySearch = (arr, left, right, target) => {
 
     if (arr[mid] > target) {
         return binarySearch(arr, left, mid - 1, target);
-    }
-    else {
+    } else {
         return binarySearch(arr, mid + 1, right, target);
     }
-}
+};
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 const target = 8;
 
-let index = binarySearch(arr, 0, arr.length - 1, target);
+const index = binarySearch(arr, 0, arr.length - 1, target);
 
 if (index == -1) {
     console.log("Not found");
-}
-else {
+} else {
     console.log("Found at index: " + index);
 }
