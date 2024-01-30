@@ -9,14 +9,13 @@ char *countAndSay(int n)
     result[0] = '1';
     result[1] = '\0';
 
-    int i, j, k;
     int count;
     char temp[5000];
 
-    for (i = 1; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
-        j = 0;
-        k = 0;
+        int j = 0;
+        int k = 0;
         while (result[j] != '\0')
         {
             count = 1;
@@ -25,7 +24,7 @@ char *countAndSay(int n)
                 count++;
                 j++;
             }
-            temp[k++] = count + '0';
+            temp[k++] = (char)(count + '0');
             temp[k++] = result[j];
             j++;
         }

@@ -33,11 +33,9 @@ jobs:
           for file in $(find . -name '*.java'); do
             echo "Checking $file"
             exitcode=0
-            java -jar checkstyle.jar -c ./checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
+            java -jar ./utils/checkstyle.jar -c ./utils/checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
             if [ $exitcode -ne 0 ]; then
-              echo "Lint failed for $file"
-              output=$(java -jar checkstyle.jar -c ./checkstyle.xml $file)
+              output=$(java -jar ./utils/checkstyle.jar -c ./utils/checkstyle.xml $file)
               echo "$output"
-              exit 0
             fi
           done

@@ -14,7 +14,7 @@ void binary_search(const int arr[], int left, int right, int target)
         printf("Found %d at index %d\n", target, mid);
         return;
     }
-    else if (arr[mid] < target)
+    if (arr[mid] < target)
     {
         binary_search(arr, mid + 1, right, target);
     }

@@ -54,3 +54,20 @@ jobs:
                     return 1
                 fi
             done
+
+      - name: Install clang-tidy and other tools
+        run: |
+          sudo apt update
+          sudo apt install -y clang-tidy clang-format
+      
+      - name: Check clang-tidy, clang-format
+        run: |
+          clang-tidy --version && clang-format --version
+      
+      - name: Run clang-tidy for C codes
+        run: |
+            clang-tidy ./**/*.c
+      
+      - name: Run clang-tidy for C++ codes
+        run: |
+            clang-tidy ./**/*.cpp

@@ -5,7 +5,7 @@ using namespace std;
 
 void insertion_sort(vector<int> &arr)
 {
-    int n = arr.size();
+    int n = (int)arr.size();
 
     for (int i = 1; i < n; i++)
     {
