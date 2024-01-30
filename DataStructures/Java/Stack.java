@@ -6,12 +6,12 @@ class Stack {
 
     private ArrayList<Integer> stack;
 
-    public Stack(int size) {
+    Stack(final int size) {
         this.MAX_SIZE = size;
         this.stack = new ArrayList<Integer>(this.MAX_SIZE);
     }
 
-    public void push(int value) {
+    public void push(final int value) {
         if (this.TOP == this.MAX_SIZE) {
             System.out.println("Stack Overflow");
             return;
@@ -56,7 +56,7 @@ class Stack {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Stack stack = new Stack(5);
 
         stack.push(1);

@@ -1,7 +1,5 @@
-// String Reverse using String Builder
-
 class StringReverse {
-    public static String reverse(String str) {
+    public static String reverse(final String str) {
         StringBuilder sb = new StringBuilder(str);
         for (int i = 0; i < sb.length() / 2; i++) {
             int front = i;
@@ -16,7 +14,7 @@ class StringReverse {
         return sb.toString();
     }
 
-    public static void main(String args[]) {
+    public static void main(final String[] args) {
         String str = "Hello World";
         System.out.println(reverse(str));
     }

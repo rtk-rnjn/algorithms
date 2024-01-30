@@ -1,5 +1,5 @@
 class TowerOfHanoi {
-    public static void toh3(int n, char A, char B, char C) {
+    public static void toh3(final int n, final char A, final char B, final char C) {
         if (n == 1) {
             System.out.println(A + "->" + C);
             // return;
@@ -10,9 +10,10 @@ class TowerOfHanoi {
         }
     }
 
-    public static void toh4(int n, char A, char B, char C, char D) {
-        if (n == 0)
+    public static void toh4(final int n, final char A, final char B, final char C, final char D) {
+        if (n == 0) {
             return;
+        }
         if (n == 1) {
             System.out.println(A + "->" + D);
             return;
@@ -25,7 +26,7 @@ class TowerOfHanoi {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         toh4(3, 'A', 'B', 'C', 'D');
     }
 }

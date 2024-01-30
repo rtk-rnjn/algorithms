@@ -1,0 +1,33 @@
+name: reviewdog
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.java'
+
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**/*.java'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checkstyle:
+    name: runner
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dbelyaev/action-checkstyle@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          level: warning
+          checkstyle_config: ./checkstyle.xml
+          checkstyle_version: 10.13.0
+          fail_on_error: true
+          filter_mode: file

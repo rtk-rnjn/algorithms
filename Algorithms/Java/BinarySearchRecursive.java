@@ -1,5 +1,5 @@
 class BinarySearchRecursive {
-    int searchPosition(int[] arr, int target, int start, int end) {
+    int searchPosition(final int[] arr, final int target, final int start, final int end) {
         if (start > end) {
             return -1;
         }
@@ -13,7 +13,7 @@ class BinarySearchRecursive {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         BinarySearchRecursive bs = new BinarySearchRecursive();
         int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
         int target = 5;

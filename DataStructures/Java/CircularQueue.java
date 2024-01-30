@@ -7,12 +7,12 @@ class CircularQueue {
 
     private final int MAX_SIZE;
 
-    CircularQueue(int size) {
+    CircularQueue(final int size) {
         this.MAX_SIZE = size;
         this.queue = new ArrayList<Integer>(MAX_SIZE);
     }
 
-    public void enqueue(int data) {
+    public void enqueue(final int data) {
         if (this.isFull()) {
             System.out.println("Queue is full");
             return;
