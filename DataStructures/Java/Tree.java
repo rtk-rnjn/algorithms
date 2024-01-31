@@ -1,27 +1,29 @@
 public class Tree {
     static class Node {
+        //CSOFF: VisibilityModifier
         int data;
         Node left;
         Node right;
+        //CSON: VisibilityModifier
 
-        Node(int d) {
-            this.data = d;
+        Node(final int newData) {
+            this.data = newData;
             this.left = null;
             this.right = null;
         }
     }
 
-    Node root;
+    private Node root;
 
-    public void insert(int d) {
-        Node newNode = new Node(d);
+    public final void insert(final int data) {
+        Node newNode = new Node(data);
         if (this.root == null) {
             this.root = newNode;
             return;
         }
         Node temp = this.root;
         while (temp != null) {
-            if (d < temp.data) {
+            if (data < temp.data) {
                 if (temp.left == null) {
                     temp.left = newNode;
                     return;
@@ -37,62 +39,62 @@ public class Tree {
         }
     }
 
-    private void print(Node root, String prefix, boolean isLeft) {
-        if (root == null) {
+    private void print(final Node node, final String prefix, final boolean isLeft) {
+        if (node == null) {
             return;
         }
-        print(root.right, prefix + (isLeft ? "│   " : "    "), false);
-        System.out.println(prefix + (isLeft ? "└── " : "┌── ") + root.data);
-        print(root.left, prefix + (isLeft ? "    " : "│   "), true);
+        print(node.right, prefix + (isLeft ? "│   " : "    "), false);
+        System.out.println(prefix + (isLeft ? "└── " : "┌── ") + node.data);
+        print(node.left, prefix + (isLeft ? "    " : "│   "), true);
     }
 
-    public void print(boolean isLeft) {
+    public final void print(final boolean isLeft) {
         print(this.root, "", isLeft);
     }
 
-    public void inorder(Node root) {
-        if (root == null) {
+    public final void inorder(final Node node) {
+        if (node == null) {
             return;
         }
-        inorder(root.left);
-        System.out.print(root.data + " -> ");
-        inorder(root.right);
+        inorder(node.left);
+        System.out.print(node.data + " -> ");
+        inorder(node.right);
     }
 
-    public void inorder() {
+    public final void inorder() {
         inorder(this.root);
         System.out.println("null");
     }
 
-    public void preorder(Node root) {
-        if (root == null) {
+    public final void preorder(final Node node) {
+        if (node == null) {
             return;
         }
-        System.out.print(root.data + " -> ");
-        preorder(root.left);
-        preorder(root.right);
+        System.out.print(node.data + " -> ");
+        preorder(node.left);
+        preorder(node.right);
     }
 
-    public void preorder() {
+    public final void preorder() {
         preorder(this.root);
         System.out.println("null");
     }
 
-    public void postorder(Node root) {
-        if (root == null) {
+    public final void postorder(final Node node) {
+        if (node == null) {
             return;
         }
-        postorder(root.left);
-        postorder(root.right);
-        System.out.print(root.data + " -> ");
+        postorder(node.left);
+        postorder(node.right);
+        System.out.print(node.data + " -> ");
     }
 
-    public void postorder() {
+    public final void postorder() {
         postorder(this.root);
         System.out.println("null");
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Tree tree = new Tree();
         tree.insert(5);
         tree.insert(3);

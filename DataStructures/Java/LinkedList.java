@@ -1,22 +1,24 @@
 class LinkedList {
     static class Node {
+        //CSOFF: VisibilityModifier
         int data;
         Node next;
+        //CSOFF: VisibilityModifier
 
-        Node(int d) {
-            this.data = d;
+        Node(final int newData) {
+            this.data = newData;
             this.next = null;
         }
     }
 
-    protected Node head;
+    private Node head;
 
     LinkedList() {
         this.head = null;
     }
 
-    public void insertAtLast(int d) {
-        Node newNode = new Node(d);
+    public void insertAtLast(final int data) {
+        Node newNode = new Node(data);
         if (this.head == null) {
             this.head = newNode;
             return;
@@ -28,14 +30,14 @@ class LinkedList {
         temp.next = newNode;
     }
 
-    public void insertAtFirst(int d) {
-        Node newNode = new Node(d);
+    public void insertAtFirst(final int data) {
+        Node newNode = new Node(data);
         newNode.next = this.head;
         this.head = newNode;
     }
 
-    public void insertAfter(int d, int after) {
-        Node newNode = new Node(d);
+    public void insertAfter(final int data, final int after) {
+        Node newNode = new Node(data);
         Node temp = this.head;
         while (temp != null) {
             if (temp.data == after) {
@@ -56,17 +58,17 @@ class LinkedList {
         System.out.println("null");
     }
 
-    public void delete(int d) {
+    public void delete(final int data) {
         if (this.head == null) {
             return;
         }
-        if (this.head.data == d) {
+        if (this.head.data == data) {
             this.head = this.head.next;
             return;
         }
         Node temp = this.head;
         while (temp.next != null) {
-            if (temp.next.data == d) {
+            if (temp.next.data == data) {
                 temp.next = temp.next.next;
                 return;
             }
@@ -88,7 +90,7 @@ class LinkedList {
         this.head = prev;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         LinkedList list = new LinkedList();
         list.insertAtLast(1);
         list.insertAtLast(2);

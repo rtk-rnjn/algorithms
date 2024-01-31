@@ -155,6 +155,12 @@
                 default="checkstyle-xpath-suppressions.xml" />
       <property name="optional" value="true"/>
     </module>
+    <module name="SuppressionCommentFilter">
+        <property name="offCommentFormat" value="CSOFF\: ([\w\|]+)"/>
+        <property name="onCommentFormat" value="CSON\: ([\w\|]+)"/>
+        <property name="checkFormat" value="$1"/>
+    </module>
+
 
   </module>
 
