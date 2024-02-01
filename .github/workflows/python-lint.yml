@@ -45,3 +45,19 @@ jobs:
       run: |
         flake8 . --count --exit-zero --select=E9,F63,F7,F82 --ignore=E203,F401,F402,F403,F405,F404,F541 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=35 --max-line-length=150 --statistics
+
+    - name: Run Black Check
+      run: |
+        pip install black
+        black --check .
+    
+    - name: Setup node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Run Pyright
+      uses: jakebailey/pyright-action@v1
+      with:
+        version: '1.1.316'
+        warnings: false
