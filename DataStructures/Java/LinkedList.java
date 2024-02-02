@@ -1,4 +1,6 @@
 class LinkedList {
+    private Node head;
+
     static class Node {
         //CSOFF: VisibilityModifier
         int data;
@@ -10,8 +12,6 @@ class LinkedList {
             this.next = null;
         }
     }
-
-    private Node head;
 
     LinkedList() {
         this.head = null;

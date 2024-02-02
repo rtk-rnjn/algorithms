@@ -15,11 +15,10 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2)
     struct ListNode *temp = NULL;
     struct ListNode *prev = NULL;
     int carry = 0;
-    int sum;
 
     while (l1 != NULL || l2 != NULL)
     {
-        sum = carry + (l1 ? l1->val : 0) + (l2 ? l2->val : 0);
+        int sum = carry + (l1 ? l1->val : 0) + (l2 ? l2->val : 0);
         carry = (sum >= 10) ? 1 : 0;
         sum = sum % 10;
         temp = (struct ListNode *)malloc(sizeof(struct ListNode));

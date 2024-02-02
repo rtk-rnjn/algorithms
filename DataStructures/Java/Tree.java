@@ -1,4 +1,6 @@
 public class Tree {
+    private Node root;
+
     static class Node {
         //CSOFF: VisibilityModifier
         int data;
@@ -12,8 +14,6 @@ public class Tree {
             this.right = null;
         }
     }
-
-    private Node root;
 
     public final void insert(final int data) {
         Node newNode = new Node(data);

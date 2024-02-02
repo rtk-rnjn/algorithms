@@ -1,10 +1,13 @@
 public class DoublyLinkedList {
+    private Node head;
+    private Node tail;
+
     static class Node {
-        //CSOFF: VisibilityModifier
+        // CSOFF: VisibilityModifier
         int data;
         Node next;
         Node prev;
-        //CSON: VisibilityModifier
+        // CSON: VisibilityModifier
 
         Node(final int newData) {
             this.data = newData;
@@ -12,9 +15,6 @@ public class DoublyLinkedList {
             this.prev = null;
         }
     }
-
-    private Node head;
-    private Node tail;
 
     public DoublyLinkedList() {
         this.head = null;
