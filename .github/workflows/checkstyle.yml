@@ -28,9 +28,17 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: checkstyle.jar
+          key: ${{ runner.os }}-checkstyle-${{ hashFiles('**/checkstyle.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-checkstyle-
+
       - name: Downloading CheckStyle (10.13)
         run: |
-          wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13/checkstyle-10.13-all.jar -O ./checkstyle.jar
+          wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13.0/checkstyle-10.13.0-all.jar -O ./checkstyle.jar
 
       - name: Lint with CheckStyle
         run: |
