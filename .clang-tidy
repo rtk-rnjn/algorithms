@@ -14,6 +14,7 @@ Checks: '
     -bugprone-easily-swappable-parameters,
     -misc-no-recursion,
     -misc-non-private-member-variables-in-classes,
+    -performance-avoid-endl,
   '
 FormatStyle: 'file'
 HeaderFilterRegex: '.*'
