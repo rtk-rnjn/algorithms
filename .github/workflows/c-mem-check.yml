@@ -38,14 +38,18 @@ jobs:
 
       - name: Run memory check
         run: |
+          global_exitcode=0
           for file in $(find . -name "*.out"); do
             echo "Checking $file"
             exitcode=0
-            valgrind --leak-check=full --error-exitcode=1 $file > /dev/null 2>&1 || exitcode=$?
+            valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --error-exitcode=1 --tool=memcheck --vgdb=yes --track-origins=yes -s $file > /dev/null 2>&1 || exitcode=$?
             if [ $exitcode -ne 0 ]; then
               echo "Memory check failed for $file"
               output=$(valgrind --leak-check=full $file)
               echo "$output"
-              exit 1
+              if [ $global_exitcode -eq 0 ]; then
+                global_exitcode=$exitcode
+              fi
             fi
           done
+          exit 1

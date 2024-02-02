@@ -28,14 +28,25 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
+      - name: Downloading CheckStyle (10.13)
+        run: |
+          wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13/checkstyle-10.13-all.jar -O ./checkstyle.jar
+
       - name: Lint with CheckStyle
         run: |
+          global_exitcode=0
           for file in $(find . -name '*.java'); do
             echo "Checking $file"
             exitcode=0
-            java -jar ./utils/checkstyle.jar -c ./utils/checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
+            java -jar ./checkstyle.jar -c ./checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
             if [ $exitcode -ne 0 ]; then
-              output=$(java -jar ./utils/checkstyle.jar -c ./utils/checkstyle.xml $file)
+              output=$(java -jar ./checkstyle.jar -c ./checkstyle.xml $file)
               echo "$output"
+              if [ $global_exitcode -eq 0 ]; then
+                global_exitcode=$exitcode
+              fi
             fi
           done
+          if [ $global_exitcode -ne 0 ]; then
+            exit 1
+          fi

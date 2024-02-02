@@ -66,6 +66,7 @@ jobs:
       
       - name: Run clang-tidy for C/CPP codes
         run: |
+            global_exitcode=0
             for file in $(find . -name "*.c" -o -name "*.cpp"); do
                 echo "Running clang-tidy for $file"
                 exitcode=0
@@ -74,7 +75,12 @@ jobs:
                     output=$(clang-tidy $file -config-file='./.clang-tidy')
                     echo "clang-tidy failed for $file"
                     echo "$output"
-                    exit 1
+                    if [ $global_exitcode -eq 0 ]; then
+                        global_exitcode=1
+                    fi
                 fi
             done
+            if [ $global_exitcode -ne 0 ]; then
+                exit 1
+            fi
 
