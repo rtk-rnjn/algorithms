@@ -17,14 +17,14 @@ class Solution:
         # if not root:
         #     return 0
         # return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
-    
+
         # ---
 
         # Time Complexity of iterative solution is O(n) and Space Complexity is O(n)
 
         if not root:
             return 0
-        
+
         stack = [(root, 1)]
         depth = 0
 
@@ -36,7 +36,7 @@ class Solution:
                 stack.append((node.right, d + 1))
 
         return depth
-    
+
 
 if __name__ == "__main__":
     tree = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))

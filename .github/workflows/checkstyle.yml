@@ -38,7 +38,9 @@ jobs:
 
       - name: Downloading CheckStyle (10.13)
         run: |
-          wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13.0/checkstyle-10.13.0-all.jar -O ./checkstyle.jar
+          if [ ! -f ./checkstyle.jar ]; then
+            wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13.0/checkstyle-10.13.0-all.jar -O ./checkstyle.jar
+          fi
 
       - name: Lint with CheckStyle
         run: |
