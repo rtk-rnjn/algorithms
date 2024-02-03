@@ -4,7 +4,9 @@ from __future__ import annotations
 
 
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(
+        self, val: int = 0, left: TreeNode | None = None, right: TreeNode | None = None
+    ):
         self.val = val
         self.left = left
         self.right = right
@@ -25,7 +27,7 @@ class Solution:
         if not root:
             return 0
 
-        stack = [(root, 1)]
+        stack: list[tuple[TreeNode | None, int]] = [(root, 1)]
         depth = 0
 
         while stack:
