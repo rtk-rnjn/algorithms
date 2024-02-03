@@ -45,8 +45,7 @@ jobs:
             valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --error-exitcode=1 --tool=memcheck --vgdb=yes --track-origins=yes -s $file > /dev/null 2>&1 || exitcode=$?
             if [ $exitcode -ne 0 ]; then
               echo "Memory check failed for $file"
-              output=$(valgrind --leak-check=full $file)
-              echo "$output"
+              valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --error-exitcode=1 --tool=memcheck --vgdb=yes --track-origins=yes -s $file
               if [ $global_exitcode -eq 0 ]; then
                 global_exitcode=$exitcode
               fi
