@@ -1,4 +1,4 @@
-name: C/C++ Memory Check
+name: C/ Memory Checker
 
 on:
   push:
