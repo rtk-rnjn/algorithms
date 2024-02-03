@@ -1,59 +1,35 @@
-import java.util.Scanner;
-
 public class MatrixMultiplication {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the number of rows in matrix A: ");
-        int rowsA = sc.nextInt();
-        System.out.print("Enter the number of columns in matrix A: ");
-        int columnsA = sc.nextInt();
+        int[][] matrix1 = { { 1, 2, 3 }, { 4, 5, 6 } };
+        int[][] matrix2 = { { 7, 8 }, { 9, 10 }, { 11, 12 } };
 
-        System.out.print("Enter the number of rows in matrix B: ");
-        int rowsB = sc.nextInt();
-        System.out.print("Enter the number of columns in matrix B: ");
-        int columnsB = sc.nextInt();
+        int rows1 = matrix1.length;
+        int cols1 = matrix1[0].length;
+        int cols2 = matrix2[0].length;
 
-        if (columnsA != rowsB) {
+        if (cols1 != matrix2.length) {
             System.out.println("Matrices cannot be multiplied.");
-        } else {
-            int[][] A = new int[rowsA][columnsA];
-            int[][] B = new int[rowsB][columnsB];
-            int[][] C = new int[rowsA][columnsB];
+            return;
+        }
 
-            System.out.println("Enter elements of matrix A: ");
-            for (int i = 0; i < rowsA; i++) {
-                for (int j = 0; j < columnsA; j++) {
-                    A[i][j] = sc.nextInt();
+        int[][] result = new int[rows1][cols2];
+
+        for (int i = 0; i < rows1; i++) {
+            for (int j = 0; j < cols2; j++) {
+                for (int k = 0; k < cols1; k++) {
+                    result[i][j] += matrix1[i][k] * matrix2[k][j];
                 }
-            }
-
-            System.out.println("Enter elements of matrix B: ");
-            for (int i = 0; i < rowsB; i++) {
-                for (int j = 0; j < columnsB; j++) {
-                    B[i][j] = sc.nextInt();
-                }
-            }
-
-            for (int i = 0; i < rowsA; i++) {
-                for (int j = 0; j < columnsB; j++) {
-                    for (int k = 0; k < columnsA; k++) {
-                        C[i][j] += A[i][k] * B[k][j];
-                    }
-                }
-            }
-
-            System.out.println("Resultant matrix C: ");
-            for (int i = 0; i < rowsA; i++) {
-                for (int j = 0; j < columnsB; j++) {
-                    System.out.print(C[i][j] + " ");
-                }
-                System.out.println();
-
             }
         }
 
-        sc.close();
+        System.out.println("Result matrix: ");
+        for (int i = 0; i < rows1; i++) {
+            for (int j = 0; j < cols2; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
