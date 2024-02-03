@@ -19,7 +19,7 @@ void reverse_array(vector<int> &arr, int size)
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5};
-    int size = arr.size();
+    int size = (int)arr.size();
 
     reverse_array(arr, size);
 

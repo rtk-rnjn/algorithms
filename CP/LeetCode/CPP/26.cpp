@@ -7,10 +7,10 @@ using namespace std;
 class Solution
 {
 public:
-    int removeDuplicates(vector<int> &nums)
+    int removeDuplicates(vector<int> &nums)  // NOLINT
     {
         int p1 = 1;
-        int size = nums.size();
+        int size = (int)nums.size();
         for (int i = 1; i < size; i++)
         {
             if (nums[i] != nums[i - 1])

@@ -5,21 +5,21 @@ class CircularQueue {
     private int front = 0;
     private int rear = 0;
 
-    private final int MAX_SIZE;
+    private final int maxSize;
 
-    CircularQueue(int size) {
-        this.MAX_SIZE = size;
-        this.queue = new ArrayList<Integer>(MAX_SIZE);
+    CircularQueue(final int size) {
+        this.maxSize = size;
+        this.queue = new ArrayList<Integer>(maxSize);
     }
 
-    public void enqueue(int data) {
+    public void enqueue(final int data) {
         if (this.isFull()) {
             System.out.println("Queue is full");
             return;
         }
 
         queue.add(rear, data);
-        rear = (rear + 1) % MAX_SIZE;
+        rear = (rear + 1) % maxSize;
     }
 
     public int dequeue() {
@@ -29,7 +29,7 @@ class CircularQueue {
         }
 
         int data = queue.get(front);
-        front = (front + 1) % MAX_SIZE;
+        front = (front + 1) % maxSize;
         return data;
     }
 
@@ -38,7 +38,7 @@ class CircularQueue {
     }
 
     public boolean isFull() {
-        return (rear + 1) % MAX_SIZE == front;
+        return (rear + 1) % maxSize == front;
     }
 
     public void print() {
@@ -47,7 +47,7 @@ class CircularQueue {
             return;
         }
 
-        for (int i = front; i != rear; i = (i + 1) % MAX_SIZE) {
+        for (int i = front; i != rear; i = (i + 1) % maxSize) {
             System.out.print(queue.get(i) + " ");
         }
         System.out.println();

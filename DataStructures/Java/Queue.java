@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Queue {
+class Queue {
     private static final int SIZE = 10;
     private static ArrayList<Integer> queue = new ArrayList<>(SIZE);
     private static int front = 0;
@@ -14,7 +14,7 @@ public class Queue {
         return rear == SIZE;
     }
 
-    private static void enqueue(int data) {
+    private static void enqueue(final int data) {
         if (isFull()) {
             System.out.println("Queue is full");
             return;
@@ -50,7 +50,7 @@ public class Queue {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         printQueue();
 
         for (int i = 1; i <= 5; i++) {

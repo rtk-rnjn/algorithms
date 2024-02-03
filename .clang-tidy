@@ -1,3 +1,23 @@
-Checks: 'clang-diagnostic-*,clang-analyzer-*,bugprone-*,modernize-*,performance-*,readability-*,-readability-identifier-length,-modernize-use-trailing-return-type,-readability-magic-numbers'
+Checks: '
+    clang-diagnostic-*,
+    clang-analyzer-*,
+    bugprone-*,
+    modernize-*,
+    performance-*,
+    readability-*,
+    portability-*,
+    misc-*,
+
+    -readability-identifier-length,
+    -modernize-use-trailing-return-type,
+    -readability-magic-numbers,
+    -bugprone-easily-swappable-parameters,
+    -misc-no-recursion,
+    -misc-non-private-member-variables-in-classes,
+    -performance-avoid-endl,
+  '
 FormatStyle: 'file'
 HeaderFilterRegex: '.*'
+WarningsAsErrors: '*'
+AnalyzeTemporaryDtors: 'true'
+UseColor: 'true'

@@ -1,5 +1,5 @@
 class BinarySearch {
-    int searchPosition(int[] arr, int target) {
+    int searchPosition(final int[] arr, final int target) {
         int left = 0;
         int right = arr.length - 1;
 
@@ -16,7 +16,7 @@ class BinarySearch {
         return -1;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         BinarySearch bs = new BinarySearch();
         int[] arr = { 1, 2, 3, 4, 5 };
         System.out.println(bs.searchPosition(arr, 3));

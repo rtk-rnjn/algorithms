@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         # Time: O(n)

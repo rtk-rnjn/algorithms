@@ -8,7 +8,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<string> fizzBuzz(int n)
+    vector<string> fizzBuzz(int n)  // NOLINT
     {
         vector<string> result;
         for (int i = 1; i < n + 1; i++)

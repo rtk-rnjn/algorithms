@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void binary_search(const int arr[], int len, int target)
+void binary_search(const int arr[], int length, int target) // NOLINT
 {
     int left = 0;
-    int right = len;
+    int right = length;
 
     while (left < right)
     {
@@ -13,7 +13,7 @@ void binary_search(const int arr[], int len, int target)
             printf("Found %d at index %d\n", target, mid);
             return;
         }
-        else if (arr[mid] < target)
+        if (arr[mid] < target)
         {
             left = mid + 1;
         }

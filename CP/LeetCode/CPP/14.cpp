@@ -9,7 +9,7 @@ using namespace std;
 class Solution
 {
 public:
-    string longestCommonPrefix(vector<string> &strs)
+    string longestCommonPrefix(vector<string> &strs)  // NOLINT
     {
         int min_size = (int)strs[0].size();
         bool flag = false;

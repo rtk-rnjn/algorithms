@@ -82,7 +82,7 @@ int main()
     }
     cout << endl;
 
-    merge_sort(array, 0, array.size() - 1);
+    merge_sort(array, 0, (int)array.size() - 1);
 
     cout << "Sorted array: ";
     for (const int &num : array)

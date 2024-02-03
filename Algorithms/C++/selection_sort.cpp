@@ -5,7 +5,7 @@ using namespace std;
 
 void selection_sort(vector<int> &arr)
 {
-    int n = arr.size();
+    int n = (int)arr.size();
 
     for (int i = 0; i < n - 1; i++)
     {

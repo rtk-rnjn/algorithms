@@ -1,4 +1,5 @@
 // Roman to Integer
+
 #include <iostream>
 #include <unordered_map>
 #include <string>
@@ -8,12 +9,12 @@ using namespace std;
 class Solution
 {
 public:
-    int romanToInt(const string &s)
+    int romanToInt(const string &s)  // NOLINT
     {
         int result = 0;
         unordered_map<char, int> symbol{{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
 
-        int size = s.size();
+        int size = (int)s.size();
         for (int i = 0; i < size - 1; i++)
         {
             if (symbol[s[i]] < symbol[s[i + 1]])
