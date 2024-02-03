@@ -51,4 +51,6 @@ jobs:
               fi
             fi
           done
-          exit 1
+          if [ $global_exitcode -ne 0 ]; then
+            exit 1
+          fi
