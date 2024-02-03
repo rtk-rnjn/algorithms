@@ -1,5 +1,4 @@
 public class MatrixMultiplication {
-
     public static void main(String[] args) {
 
         int[][] matrix1 = { { 1, 2, 3 }, { 4, 5, 6 } };
@@ -25,9 +24,9 @@ public class MatrixMultiplication {
         }
 
         System.out.println("Result matrix: ");
-        for (int i = 0; i < rows1; i++) {
-            for (int j = 0; j < cols2; j++) {
-                System.out.print(result[i][j] + " ");
+        for (int[] rows : result) {
+            for (int num : rows) {
+                System.out.print(num + " ");
             }
             System.out.println();
         }
