@@ -5,8 +5,6 @@ from __future__ import annotations
 
 class Solution:
     def romanToInt(self, s: str) -> int:
-        # Time: O(n)
-        # Space: O(1)
         roman = {
             "I": 1,
             "V": 5,
