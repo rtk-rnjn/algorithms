@@ -17,7 +17,7 @@ public:
         int size = (int)s.size();
         for (int i = 0; i < size; i++)
         {
-            if (i < s.size() - 1 && map[s[i]] < map[s[i + 1]])
+            if (i < size - 1 && map[s[i]] < map[s[i + 1]])
             {
                 result -= map[s[i]];
             }

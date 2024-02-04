@@ -24,7 +24,7 @@ public class Example1 { // ⤶
 ```java
 public class Example2 { // ⤶
 // ⤶
-} // ⤶ // error, file does not end with a new line.
+} // error, file does not end with a new line.
 ```
 
 ### FileLength
