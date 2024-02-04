@@ -85,7 +85,7 @@ bool isValid(char *s)
 int main()
 {
     char s[] = "()";
-    printf("%d\n", isValid(s));
+    printf("%d\n", static_cast<int>(isValid(s)));
 
     return 0;
 }
