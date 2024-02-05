@@ -9,12 +9,12 @@ using namespace std;
 class Solution
 {
     public:
-        int lengthOfLongestSubstring(const string &s)
+        int lengthOfLongestSubstring(const string &s)  // NOLINT
         {
             int max = 0;
             int start = 0;
             int end = 0;
-            int len = s.length();
+            int len = (int)s.length();
             vector<int> hash(256);
             while (end < len)
             {
@@ -46,7 +46,7 @@ class Solution
         }
 };
 
-int main(void)
+int main()
 {
     Solution s;
     cout << s.lengthOfLongestSubstring("abcabcbb") << endl;

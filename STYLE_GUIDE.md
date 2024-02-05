@@ -258,6 +258,10 @@ print(data)
 python3 main.py
 ```
 
+## Java
+
+Please Look at [CHECKSTYLE.md](CHECKSTYLE_GUIDE.md) for Java.
+
 ---
 
 There is no tight bound to use annotations, type hints, or any other feature. You can use them as you like, but try to use them as much as possible.

@@ -1,4 +1,5 @@
-// Valid Parentheses
+// 20. Valid Parentheses
+
 #include <iostream>
 #include <stack>
 #include <string>
@@ -9,55 +10,39 @@ using namespace std;
 class Solution
 {
 public:
-    bool isValid(string s)
+    bool isValid(string s) // NOLINT
     {
         stack<char> st;
-        int flag = 0;
-        int string_size = (int)s.size();
-
-        unordered_map<char, char> brackets{{'(', ')'}, {'{', '}'}, {'[', ']'}};
-        if ((s[0] == '}' || s[0] == ']' || s[0] == ')'))
+        unordered_map<char, char> m;
+        m[')'] = '(';
+        m[']'] = '[';
+        m['}'] = '{';
+        for (char c : s)
         {
-            return false;
-        }
-        if (string_size < 2)
-        {
-            return false;
-        }
-        for (int i = 0; i < string_size; i++)
-        {
-            if (st.empty() && (s[i] == '}' || s[i] == ']' || s[i] == ')'))
+            if (c == '(' || c == '[' || c == '{')
             {
-                return false;
+                st.push(c);
             }
-            if (st.empty() && (s[i] == '[' || s[i] == '{' || s[i] == '('))
+            else
             {
-                st.push(s[i]);
-                flag += 1;
-            }
-            else if (!st.empty() && !(s[i] == '[' || s[i] == '{' || s[i] == '('))
-            {
-                if (brackets[st.top()] != s[i])
+                if (st.empty())
                 {
                     return false;
                 }
-
+                if (st.top() != m[c])
+                {
+                    return false;
+                }
                 st.pop();
-                flag -= 1;
-            }
-            else if ((s[i] == '[' || s[i] == '{' || s[i] == '('))
-            {
-                st.push(s[i]);
-                flag += 1;
             }
         }
-        return flag == 0;
+        return st.empty();
     }
 };
 
 int main()
 {
     Solution s;
-    cout << s.isValid("[]");
+    cout << s.isValid("[](])");
     return 0;
 }

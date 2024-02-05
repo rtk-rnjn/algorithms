@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int lengthOfLongestSubstring(char *s)
+int lengthOfLongestSubstring(char *s)  // NOLINT
 {
     int i = 0;
     int j = 0;

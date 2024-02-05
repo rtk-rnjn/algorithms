@@ -16,7 +16,7 @@ void binary_search(const vector<int> &arr, int len, int target)
             cout << "Found " << target << " at index " << mid << endl;
             return;
         }
-        else if (arr[mid] < target)
+        if (arr[mid] < target)
         {
             left = mid + 1;
         }
@@ -32,7 +32,7 @@ void binary_search(const vector<int> &arr, int len, int target)
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    binary_search(arr, arr.size(), 3);
+    binary_search(arr, (int)arr.size(), 3);
 
     return 0;
 }

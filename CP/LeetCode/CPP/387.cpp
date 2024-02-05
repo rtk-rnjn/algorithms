@@ -10,15 +10,15 @@ using namespace std;
 class Solution
 {
     public:
-        int firstUniqChar(string s)
+        int firstUniqChar(string s)  // NOLINT
         {
-            int size = s.size();
-            int max = int(s[0]);
+            int size = (int)s.size();
+            int max = static_cast<unsigned char>(s[0]);
             for (int i = 0; i < size; i++)
             {
-                if (int(s[i]) > max)
+                if (static_cast<unsigned char>(s[i]) > max)
                 {
-                    max = s[i];
+                    max = static_cast<unsigned char>(s[i]);
                 }
             }
             vector<int> hash(max + 1);

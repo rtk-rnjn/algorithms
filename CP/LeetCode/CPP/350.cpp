@@ -8,11 +8,12 @@ using namespace std;
 class Solution
 {
     public:
-        vector<int> intersect(vector<int> &nums1, vector<int> &nums2)
+        vector<int> intersect(vector<int> &nums1, vector<int> &nums2)  // NOLINT
         {
-            int size1 = nums1.size();
-            int size2 = nums2.size();
-            int i = 0, j = 0;
+            int size1 = (int)nums1.size();
+            int size2 = (int)nums2.size();
+            int i = 0;
+            int j = 0;
             sort(nums1.begin(), nums1.end());
             sort(nums2.begin(), nums2.end());
             vector<int> result;

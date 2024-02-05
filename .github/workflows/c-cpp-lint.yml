@@ -51,6 +51,36 @@ jobs:
                 g++ -fsyntax-only $file || exitcode=$?
                 if [ $exitcode -ne 0 ]; then
                     echo "Syntax check failed for $file"
-                    return 1
+                    exit 1
                 fi
             done
+
+      - name: Install clang-tidy and other tools
+        run: |
+          sudo apt update
+          sudo apt install -y clang-tidy clang-format clang-tools clang clangd cmake
+      
+      - name: Check clang-tidy, clang-format
+        run: |
+            clang-tidy --version && clang-format --version
+      
+      - name: Run clang-tidy for C/CPP codes
+        run: |
+            global_exitcode=0
+            for file in $(find . -name "*.c" -o -name "*.cpp"); do
+                echo "Running clang-tidy for $file"
+                exitcode=0
+                clang-tidy $file -config-file='./.clang-tidy' --quiet & > /dev/null 2>&1 || exitcode=$?
+                if [ $exitcode -ne 0 ]; then
+                    output=$(clang-tidy $file -config-file='./.clang-tidy')
+                    echo "clang-tidy failed for $file"
+                    echo "$output"
+                    if [ $global_exitcode -eq 0 ]; then
+                        global_exitcode=1
+                    fi
+                fi
+            done
+            if [ $global_exitcode -ne 0 ]; then
+                exit 1
+            fi
+

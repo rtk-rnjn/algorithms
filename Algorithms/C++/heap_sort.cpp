@@ -47,7 +47,7 @@ void print_array(vector<int> &arr)
 int main()
 {
     vector<int> arr = {12, 11, 13, 5, 6, 7};
-    int size = arr.size();
+    int size = (int)arr.size();
 
     heap_sort(arr, size);
     print_array(arr);

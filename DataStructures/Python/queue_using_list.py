@@ -31,4 +31,3 @@ class Queue(Generic[T]):
 
     def __repr__(self) -> str:
         return f"Queue({self.__queue})"
-

@@ -8,7 +8,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<int> twoSum(vector<int> &nums, int target)
+    vector<int> twoSum(vector<int> &nums, int target)  // NOLINT
     {
         vector<int> result;
         int size = (int)nums.size();

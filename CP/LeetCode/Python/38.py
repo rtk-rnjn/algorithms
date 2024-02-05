@@ -11,11 +11,11 @@ class Solution:
         prev = self.countAndSay(n - 1)
         res = ""
         count = 1
-        for i in range(len(prev)):
-            if i < len(prev) - 1 and prev[i] == prev[i + 1]:
+        for i, number in enumerate(prev):
+            if i < len(prev) - 1 and number == prev[i + 1]:
                 count += 1
             else:
-                res += str(count) + prev[i]
+                res += str(count) + number
                 count = 1
         return res
 
