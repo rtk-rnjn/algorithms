@@ -72,9 +72,8 @@ jobs:
                 exitcode=0
                 clang-tidy $file -config-file='./.clang-tidy' --quiet & > /dev/null 2>&1 || exitcode=$?
                 if [ $exitcode -ne 0 ]; then
-                    output=$(clang-tidy $file -config-file='./.clang-tidy')
                     echo "clang-tidy failed for $file"
-                    echo "$output"
+                    clang-tidy $file -config-file='./.clang-tidy'
                     if [ $global_exitcode -eq 0 ]; then
                         global_exitcode=1
                     fi

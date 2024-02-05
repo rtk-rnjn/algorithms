@@ -1,4 +1,4 @@
-name: Java Syntax Checker & Lint
+name: Java Syntax Checker
 
 on:
   push:
