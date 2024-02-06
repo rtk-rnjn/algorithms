@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// cppcheck-suppress constParameter
 int romanToInt(char *s) // NOLINT(readability-non-const-parameter)
 {
     int i = 0;

@@ -38,7 +38,9 @@ jobs:
 
       - name: Downloading CheckStyle (10.13)
         run: |
-          wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13.0/checkstyle-10.13.0-all.jar -O ./checkstyle.jar
+          if [ ! -f ./checkstyle.jar ]; then
+            wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13.0/checkstyle-10.13.0-all.jar -O ./checkstyle.jar
+          fi
 
       - name: Lint with CheckStyle
         run: |
@@ -48,8 +50,7 @@ jobs:
             exitcode=0
             java -jar ./checkstyle.jar -c ./checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
             if [ $exitcode -ne 0 ]; then
-              output=$(java -jar ./checkstyle.jar -c ./checkstyle.xml $file)
-              echo "$output"
+              java -jar ./checkstyle.jar -c ./checkstyle.xml $file
               if [ $global_exitcode -eq 0 ]; then
                 global_exitcode=$exitcode
               fi
