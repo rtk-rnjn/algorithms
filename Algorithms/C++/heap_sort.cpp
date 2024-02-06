@@ -36,7 +36,7 @@ void heapify(vector<int> &arr, int size, int i)
     }
 }
 
-void print_array(vector<int> &arr)
+void print_array(const vector<int> &arr)
 {
     for (const int &num : arr)
     {

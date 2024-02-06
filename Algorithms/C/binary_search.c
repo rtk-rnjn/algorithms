@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void binary_search(const int arr[], int length, int target) // NOLINT
+void binary_search(const int arr[], int length, int target) // NOLINT // cppcheck-suppress constParameter
 {
     int left = 0;
     int right = length;

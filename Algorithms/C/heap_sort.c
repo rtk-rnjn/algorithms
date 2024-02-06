@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void heapify(int arr[], int size, int i)  // NOLINT
+void heapify(int arr[], int size, int i)  // NOLINT // cppcheck-suppress constParameter
 {
     int largest = i;
     int left = 2 * i + 1;
