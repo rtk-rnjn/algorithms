@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int lengthOfLongestSubstring(char *s)  // NOLINT
+int lengthOfLongestSubstring(char *s) // NOLINT // cppcheck-suppress constParameter
 {
     int i = 0;
     int j = 0;
