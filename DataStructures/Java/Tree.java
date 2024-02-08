@@ -2,11 +2,11 @@ public class Tree {
     private Node root;
 
     static class Node {
-        //CSOFF: VisibilityModifier
+        // CSOFF: VisibilityModifier
         int data;
         Node left;
         Node right;
-        //CSON: VisibilityModifier
+        // CSON: VisibilityModifier
 
         Node(final int newData) {
             this.data = newData;
