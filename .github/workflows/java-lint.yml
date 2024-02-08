@@ -31,14 +31,4 @@ jobs:
           java-version: '17'
 
       - name: Check Java Syntax
-        run: |
-            for file in $(git diff --name-only HEAD^ HEAD | grep '\.java$'); do
-                echo "Checking $file"
-                exitcode=0
-                javac -Xlint:all $file || exitcode=$?
-                if [ $exitcode -ne 0 ]; then
-                    echo "Syntax check failed for $file"
-                    exit 1
-                fi
-            done
-
+        run: find . -name '*.java' -exec javac -Xlint:all -Xdiags:verbose -d temp/ {} \;

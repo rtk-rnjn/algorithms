@@ -36,7 +36,7 @@ jobs:
 
       - name: Compile C/C++ Codes
         run: |
-          for file in $(git diff --name-only HEAD^ HEAD | grep '\.cpp$\|\.c$'); do
+          for file in $(find . -name "*.c" -o -name "*.cpp"); do
             echo "Compiling $file"
             g++ -Wall -Wextra -Wpedantic -Werror -o ${file%.*}.out $file
           done

@@ -31,9 +31,21 @@ jobs:
           sudo apt update
           sudo apt install -y build-essential
 
-      - name: Run syntax check for C/C++ codes
+      - name: Run syntax check for C codes
         run: |
-            for file in $(git diff --name-only HEAD^ HEAD | grep '\.cpp$\|\.c$'); do
+            for file in $(find . -name "*.c"); do
+                echo "Checking $file"
+                exitcode=0
+                gcc -fsyntax-only "$file" || exitcode=$?
+                if [ $exitcode -ne 0 ]; then
+                    echo "Syntax check failed for $file"
+                    return 1
+                fi
+            done
+
+      - name: Run syntax check for C++ codes
+        run: |
+            for file in $(find . -name "*.cpp"); do
                 echo "Checking $file"
                 exitcode=0
                 g++ -fsyntax-only $file || exitcode=$?
@@ -55,7 +67,7 @@ jobs:
       - name: Run clang-tidy for C/CPP codes
         run: |
             global_exitcode=0
-            for file in $(git diff --name-only HEAD^ HEAD | grep '\.cpp$\|\.c$'); do
+            for file in $(find . -name "*.c" -o -name "*.cpp"); do
                 echo "Running clang-tidy for $file"
                 exitcode=0
                 clang-tidy $file -config-file='./.clang-tidy' --quiet & > /dev/null 2>&1 || exitcode=$?
