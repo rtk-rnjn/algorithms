@@ -1,20 +1,16 @@
 class LinkedList {
-    private Node head;
+    private Node head = null;
 
     static class Node {
-        //CSOFF: VisibilityModifier
+        // CSOFF: VisibilityModifier
         int data;
         Node next;
-        //CSOFF: VisibilityModifier
+        // CSOFF: VisibilityModifier
 
         Node(final int newData) {
             this.data = newData;
             this.next = null;
         }
-    }
-
-    LinkedList() {
-        this.head = null;
     }
 
     public void insertAtLast(final int data) {
