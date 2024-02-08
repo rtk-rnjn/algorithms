@@ -45,7 +45,7 @@ jobs:
       - name: Lint with CheckStyle
         run: |
           global_exitcode=0
-          for file in $(find . -name '*.java'); do
+          for file in $(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.java$'); do
             echo "Checking $file"
             exitcode=0
             java -jar ./checkstyle.jar -c ./checkstyle.xml $file > /dev/null 2>&1 || exitcode=$?
