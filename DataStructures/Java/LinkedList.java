@@ -73,17 +73,39 @@ class LinkedList {
     }
 
     public void reverse() {
-        Node prev = null;
-        Node curr = this.head;
-        Node next = null;
-        while (curr != null) {
-            next = curr.next;
-            curr.next = prev;
+        Node previousNode = null;
+        Node currentNode = this.head;
+        Node nextNode = null;
+        while (currentNode != null) {
+            nextNode = currentNode.next;
+            currentNode.next = previousNode;
 
-            prev = curr;
-            curr = next;
+            previousNode = currentNode;
+            currentNode = nextNode;
         }
-        this.head = prev;
+        this.head = previousNode;
+    }
+
+    void extend(final LinkedList list) {
+        if (this.head == null) {
+            this.head = list.head;
+            return;
+        }
+        Node temp = this.head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = list.head;
+    }
+
+    public int length() {
+        int length = 0;
+        Node temp = this.head;
+        while (temp != null) {
+            length++;
+            temp = temp.next;
+        }
+        return length;
     }
 
     public static void main(final String[] args) {

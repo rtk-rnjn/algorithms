@@ -10,23 +10,19 @@ class HeapSort {
         int left = 2 * index + 1;
         int right = 2 * index + 2;
 
-        // If right child is larger than largest so far
         if (right < size && arr[right] > arr[largest]) {
             largest = right;
         }
 
-        // If left child is larger than root
         if (left < size && arr[left] > arr[largest]) {
             largest = left;
         }
 
-        // If largest is not root
         if (largest != index) {
             int swap = arr[index];
             arr[index] = arr[largest];
             arr[largest] = swap;
 
-            // Recursively heapify the affected sub-tree
             heapify(arr, size, largest);
         }
     }
