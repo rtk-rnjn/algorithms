@@ -79,7 +79,5 @@ jobs:
                     fi
                 fi
             done
-            if [ $global_exitcode -ne 0 ]; then
-                exit 1
-            fi
+            exit $global_exitcode
 

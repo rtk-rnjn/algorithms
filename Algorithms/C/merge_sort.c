@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void merge(int arr[], int left, int mid, int right)
 {
     int len = right - left + 1;
-    int temp[len];
+
+    int *temp = (int *)malloc(len * sizeof(int));
+
     int index = 0;
     int i = left;
     int j = mid + 1;
@@ -30,6 +33,8 @@ void merge(int arr[], int left, int mid, int right)
     {
         arr[left++] = temp[k];
     }
+
+    free(temp);
 }
 
 void merge_sort(int arr[], int left, int right)
