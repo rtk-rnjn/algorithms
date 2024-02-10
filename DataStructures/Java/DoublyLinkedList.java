@@ -1,7 +1,4 @@
 public class DoublyLinkedList {
-    private Node head;
-    private Node tail;
-
     static class Node {
         // CSOFF: VisibilityModifier
         int data;
@@ -16,10 +13,8 @@ public class DoublyLinkedList {
         }
     }
 
-    public DoublyLinkedList() {
-        this.head = null;
-        this.tail = null;
-    }
+    private Node head = null;
+    private Node tail = null;
 
     public final void insertAtLast(final int data) {
         Node newNode = new Node(data);
