@@ -88,6 +88,8 @@ void display()
         printf("%d <-> ", temp->data);
         temp = temp->next;
     } while (temp != head);
+
+    printf("\n");
 }
 
 int main()
@@ -98,22 +100,15 @@ int main()
     }
     display();
 
-    printf("\n");
-
     for (int i = 10; i < 20; i++)
     {
         insert_at_first(i);
     }
-
     display();
-
-    printf("\n");
 
     delete_node(19);
 
     display();
-
-    printf("\n");
 
     delete_node(-5);
 

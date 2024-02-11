@@ -3,9 +3,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <stdlib.h>
 
 
-bool isNumber(char *s) // NOLINT
+bool isNumber(char s[]) // NOLINT
 {
     int i = 0;
     int len = (int)strlen(s);
@@ -80,7 +81,8 @@ bool isNumber(char *s) // NOLINT
 
 int main()
 {
-    char *s = "0.1.e10";
+    char s[] = "-1. ";
+
     printf("%d\n", isNumber(s));
     return 0;
 }
