@@ -1,4 +1,4 @@
-public class DoublyLinkedList {
+class DoublyCircularLinkedList {
     static class Node {
         // CSOFF: VisibilityModifier
         int data;
@@ -21,17 +21,23 @@ public class DoublyLinkedList {
         if (this.head == null) {
             this.head = newNode;
             this.tail = newNode;
+            this.head.next = this.head;
+            this.head.prev = this.head;
             return;
         }
         this.tail.next = newNode;
         newNode.prev = this.tail;
+        newNode.next = this.head;
+        this.head.prev = newNode;
         this.tail = newNode;
     }
 
     public final void insertAtFirst(final int data) {
         Node newNode = new Node(data);
         newNode.next = this.head;
+        newNode.prev = this.tail;
         this.head.prev = newNode;
+        this.tail.next = newNode;
         this.head = newNode;
     }
 
@@ -42,20 +48,12 @@ public class DoublyLinkedList {
             if (temp.data == after) {
                 newNode.next = temp.next;
                 newNode.prev = temp;
+                temp.next.prev = newNode;
                 temp.next = newNode;
                 return;
             }
             temp = temp.next;
         }
-    }
-
-    public final void print() {
-        Node temp = this.head;
-        while (temp != null) {
-            System.out.print(temp.data + " <-> ");
-            temp = temp.next;
-        }
-        System.out.println("null");
     }
 
     public final void delete(final int data) {
@@ -64,27 +62,59 @@ public class DoublyLinkedList {
         }
         if (this.head.data == data) {
             this.head = this.head.next;
-            this.head.prev = null;
+            this.head.prev = this.tail;
+            this.tail.next = this.head;
             return;
         }
         Node temp = this.head;
-        while (temp.next != null) {
-            if (temp.next.data == data) {
-                temp.next = temp.next.next;
-                if (temp.next != null) {
-                    temp.next.prev = temp;
-                }
+        while (temp != null) {
+            if (temp.data == data) {
+                temp.prev.next = temp.next;
+                temp.next.prev = temp.prev;
                 return;
             }
             temp = temp.next;
         }
     }
 
-    public static void main(final String[] args) {
-        DoublyLinkedList dll = new DoublyLinkedList();
-        for (int i : new int[] { 1, 2, 3, 4, 5 }) {
-            dll.insertAtLast(i);
+    public final void delete(final Node node) {
+        if (this.head == null) {
+            return;
         }
-        dll.print();
+        if (this.head == node) {
+            this.head = this.head.next;
+            this.head.prev = this.tail;
+            this.tail.next = this.head;
+            return;
+        }
+        Node temp = this.head;
+        while (temp != null) {
+            if (temp == node) {
+                temp.prev.next = temp.next;
+                temp.next.prev = temp.prev;
+                return;
+            }
+            temp = temp.next;
+        }
+    }
+
+    public final void print() {
+        Node temp = this.head;
+        do {
+            System.out.print(temp.data + " <-> ");
+            temp = temp.next;
+        } while (temp != this.head);
+    }
+
+    public static void main(final String[] args) {
+        CircularLinkedList list = new CircularLinkedList();
+        list.insertAtLast(1);
+        list.insertAtLast(2);
+        list.insertAtLast(3);
+        list.insertAtLast(4);
+        list.insertAtLast(5);
+        list.insertAtFirst(0);
+        list.insertAfter(6, 5);
+        list.print();
     }
 }

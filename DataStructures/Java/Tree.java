@@ -2,11 +2,11 @@ public class Tree {
     private Node root;
 
     static class Node {
-        //CSOFF: VisibilityModifier
+        // CSOFF: VisibilityModifier
         int data;
         Node left;
         Node right;
-        //CSON: VisibilityModifier
+        // CSON: VisibilityModifier
 
         Node(final int newData) {
             this.data = newData;
@@ -34,6 +34,32 @@ public class Tree {
                     temp.right = newNode;
                     return;
                 }
+                temp = temp.right;
+            }
+        }
+    }
+
+    public final void delete(final int data) {
+        if (this.root == null) {
+            return;
+        }
+        if (this.root.data == data) {
+            this.root = null;
+            return;
+        }
+        Node temp = this.root;
+        while (temp != null) {
+            if (temp.left != null && temp.left.data == data) {
+                temp.left = null;
+                return;
+            }
+            if (temp.right != null && temp.right.data == data) {
+                temp.right = null;
+                return;
+            }
+            if (data < temp.data) {
+                temp = temp.left;
+            } else {
                 temp = temp.right;
             }
         }
@@ -92,6 +118,32 @@ public class Tree {
     public final void postorder() {
         postorder(this.root);
         System.out.println("null");
+    }
+
+    public final int depth(final Node node) {
+        if (node == null) {
+            return 0;
+        }
+        int leftDepth = depth(node.left);
+        int rightDepth = depth(node.right);
+        return Math.max(leftDepth, rightDepth) + 1;
+    }
+
+    public final int depth() {
+        return depth(this.root);
+    }
+
+    public final int height(final Node node) {
+        if (node == null) {
+            return -1;
+        }
+        int leftHeight = height(node.left);
+        int rightHeight = height(node.right);
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    public final int height() {
+        return height(this.root);
     }
 
     public static void main(final String[] args) {

@@ -76,7 +76,7 @@ int main()
         printf("Tree is empty\n");
         free(root);
 
-        return 0;
+        return -1;
     }
 
     inorder(root);

@@ -9,7 +9,7 @@ struct Node
 
 struct Node *TOP = NULL;
 int SIZE = 0;
-int MAX_SIZE = 10;
+const int MAX_SIZE = 10;
 
 int push(int element)
 {

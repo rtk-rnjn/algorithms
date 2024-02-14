@@ -5,11 +5,13 @@ on:
     branches: [ main ]
     paths:
       - '**/*.cpp'
+      - '**/*.c'
 
   pull_request:
     branches: [ main ]
     paths:
       - '**/*.cpp'
+      - '**/*.c'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -24,14 +26,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install build essentials (if needed)
+      - name: Install build essentials and valgrind
         run: |
           sudo apt update
           sudo apt install -y build-essential valgrind
 
-      - name: Compile C++ Codes
+      - name: Valgrind version
+        run: valgrind --version
+
+      - name: Compile C/C++ Codes
         run: |
-          for file in $(find . -name "*.cpp"); do
+          for file in $(find . -name "*.c" -o -name "*.cpp"); do
             echo "Compiling $file"
             g++ -Wall -Wextra -Wpedantic -Werror -o ${file%.*}.out $file
           done
@@ -51,6 +56,4 @@ jobs:
               fi
             fi
           done
-          if [ $global_exit -ne 0 ]; then
-            exit 1
-          fi
+          exit $global_exitcode

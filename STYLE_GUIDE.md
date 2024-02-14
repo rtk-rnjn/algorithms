@@ -105,26 +105,6 @@ cl /W4 /WX main.c
 
 We have `.clang-format` file and `.clang-tidy` file for C/C++.
 
-```yml
-# .clang-format
-
-BasedOnStyle: LLVM
-IndentWidth: 4
-UseTab: Never
-BreakBeforeBraces: Allman
-AlignAfterOpenBracket: Align
-AlignOperands: true
-AlignTrailingComments: true
-AllowShortFunctionsOnASingleLine: false
-AllowShortIfStatementsOnASingleLine: true
-AllowShortLoopsOnASingleLine: true
-BreakBeforeBinaryOperators: false
-AccessModifierOffset: -4
-SortIncludes: false
-NamespaceIndentation: All
-ColumnLimit: 120
-```
-
 #### Explanation for `.clang-format`
 
 - `BasedOnStyle: LLVM`: A style that is close to LLVM's style ([LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html#name-types-functions-variables-and-enumerators-properly)).
@@ -211,14 +191,6 @@ namespace my_namespace
 - `ColumnLimit: 120`: We try to keep the line length under 120 characters.
 
 ---
-
-```yml
-# .clang-tidy
-
-Checks: 'clang-diagnostic-*,clang-analyzer-*,bugprone-*,modernize-*,performance-*,readability-*,-readability-identifier-length,-modernize-use-trailing-return-type,-readability-magic-numbers'
-FormatStyle: 'file'
-HeaderFilterRegex: '.*'
-```
 
 ##### Explanation for `.clang-tidy`
 

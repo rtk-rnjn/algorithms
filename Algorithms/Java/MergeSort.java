@@ -1,11 +1,11 @@
 class MergeSort {
-    public static void partition(final int[] arr, final int p, final int q) {
+    public static void mergeSort(final int[] arr, final int p, final int q) {
         if (p >= q) {
             return;
         }
         int mid = (q + p) / 2;
-        partition(arr, p, mid);
-        partition(arr, mid + 1, q);
+        mergeSort(arr, p, mid);
+        mergeSort(arr, mid + 1, q);
         merge(arr, p, mid, q);
 
     }
@@ -44,7 +44,7 @@ class MergeSort {
 
     public static void main(final String[] args) {
         int[] arr = { 7, 45, 82, 5, 72, 6, 36, 8 };
-        partition(arr, 0, arr.length - 1);
+        mergeSort(arr, 0, arr.length - 1);
         for (int i : arr) {
             System.out.print(i + " ");
         }

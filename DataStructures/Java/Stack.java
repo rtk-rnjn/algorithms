@@ -63,18 +63,18 @@ class Stack {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-        stack.print();  // Output: 1 2 3 4
+        stack.print(); // Output: 1 2 3 4
 
         stack.push(5);
-        stack.print();  // Output: 1 2 3 4 5
+        stack.print(); // Output: 1 2 3 4 5
 
-        stack.push(6);  // Output: Stack Overflow
-        stack.print();  // Output: 1 2 3 4 5
+        stack.push(6); // Output: Stack Overflow
+        stack.print(); // Output: 1 2 3 4 5
 
-        System.out.println("Peek: " + stack.peek());  // Output: 5
-        stack.print();  // Output: 1 2 3 4 5
+        System.out.println("Peek: " + stack.peek()); // Output: 5
+        stack.print(); // Output: 1 2 3 4 5
 
-        System.out.println("Pop: " + stack.pop());  // Output: 5
-        stack.print();  // Output: 1 2 3 4
+        System.out.println("Pop: " + stack.pop()); // Output: 5
+        stack.print(); // Output: 1 2 3 4
     }
 }

@@ -32,11 +32,6 @@ char pop()
     return popped;
 }
 
-char peek()
-{
-    return TOP->data;
-}
-
 bool isValid(char *s)
 {
     int i = 0;
