@@ -9,7 +9,7 @@ def insertion_sort(arr: list[T]) -> None:
     """Insertion sort algorithm to sort the array in ascending order."""
     n = len(arr)
     if n <= 1:
-        return arr
+        return
 
     for i in range(1, len(arr)):
         key = arr[i]
