@@ -1,16 +1,14 @@
 #include <iostream>
-#include<vector>
-
+#include <vector>
 
 using namespace std;
 
-class Stack{
-    public:
-
+class Stack
+{
+public:
     int size;
     int top = -1;
     vector<int> stack;
-
 
     Stack(int n)
     {
@@ -21,7 +19,7 @@ class Stack{
     {
         if (this->top == this->size - 1)
         {
-            cout<<("Stack Overflow\n");
+            cout << ("Stack Overflow\n");
             return -1;
         }
 
@@ -35,7 +33,7 @@ class Stack{
     {
         if (this->top == -1)
         {
-            cout<<("Stack Underflow\n");
+            cout << ("Stack Underflow\n");
             return -1;
         }
 
@@ -48,7 +46,7 @@ class Stack{
     {
         if (this->top == -1)
         {
-            cout<<("Stack Underflow\n");
+            cout << ("Stack Underflow\n");
             return -1;
         }
 
@@ -59,30 +57,29 @@ class Stack{
     {
         if (this->top == -1)
         {
-            cout<<("Stack Underflow\n");
+            cout << ("Stack Underflow\n");
             return;
         }
 
-        cout<<("The stack is: ");
+        cout << ("The stack is: ");
         for (int i = 0; i <= this->top; i++)
         {
-            cout<<(this->stack[i])<<" ";
+            cout << (this->stack[i]) << " ";
         }
-        cout<<("\n");
+        cout << ("\n");
     }
-
 };
 
-int main(){
-    Stack *s = new Stack(5);
-    s->push(3);
-    s->push(4);
-    s->push(5);
-    s->pop();
-    cout<<s->peek()<<endl;
-    s->display();
-    delete(s);
+int main()
+{
+    Stack s = Stack(5);
+    s.push(3);
+    s.push(4);
+    s.push(5);
+    s.pop();
 
+    cout << s.peek() << endl;
+    s.display();
 
     return 0;
 }
