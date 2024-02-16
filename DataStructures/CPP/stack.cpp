@@ -10,7 +10,7 @@ public:
     int top = -1;
     vector<int> stack;
 
-    Stack(int n)
+    explicit Stack(int n)
     {
         this->size = n;
     }
