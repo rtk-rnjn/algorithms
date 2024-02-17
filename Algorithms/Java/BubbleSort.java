@@ -8,19 +8,18 @@ class BubbleSort {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+
                     swapped = true;
-                    
                 }
-                
             }
-            if(!swapped){
+            if (!swapped) {
                 break;
             }
         }
     }
 
     public static void main(final String[] args) {
-        int[] arr = { 7, 45, 82, 5, 72, 6, 36, 8, 100, 99, 98, 97,0};
+        int[] arr = { 7, 45, 82, 5, 72, 6, 36, 8, 100, 99, 98, 97, 0};
         bubbleSort(arr);
 
         for (int i : arr) {
