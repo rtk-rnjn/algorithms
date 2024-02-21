@@ -1,33 +1,40 @@
 #include <stdio.h>
 
-void spiral_travel(int a[][4], int m, int n)
+#define ROW 4
+#define COL 4
+
+int row = ROW;
+int col = COL;
+
+void spiral_travel(int a[ROW][COL])
 {
-    int i;
     int k = 0;
     int l = 0;
-    while (k < m && l < n)
+    while (k < row && l < col)
     {
-        for (i = l; i < n; i++)
+        for (int i = l; i < col; i++)
         {
             printf("%d ", a[k][i]);
         }
         k++;
-        for (i = k; i < m; i++)
+        for (int i = k; i < row; i++)
         {
-            printf("%d ", a[i][n - 1]);
+            printf("%d ", a[i][col - 1]);
         }
-        n--;
-        if (k < m)
+        col--;
+
+        if (k < row)
         {
-            for (i = n - 1; i >= l; i--)
+            for (int i = col - 1; i >= l; i--)
             {
-                printf("%d ", a[m - 1][i]);
+                printf("%d ", a[row - 1][i]);
             }
-            m--;
+            row--;
         }
-        if (l < n)
+
+        if (l < col)
         {
-            for (i = m - 1; i >= k; i--)
+            for (int i = row - 1; i >= k; i--)
             {
                 printf("%d ", a[i][l]);
             }
@@ -38,7 +45,7 @@ void spiral_travel(int a[][4], int m, int n)
 
 int main()
 {
-    int a[4][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
-    spiral_travel(a, 4, 4);
+    int a[ROW][COL] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+    spiral_travel(a);
     return 0;
 }
