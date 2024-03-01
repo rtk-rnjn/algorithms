@@ -4,7 +4,23 @@ from __future__ import annotations
 
 
 class Solution:
+    # def count(self, s: str) -> str:
+    #     res = ""
+    #     count = 1
+    #     for i, number in enumerate(s):
+    #         if i < len(s) - 1 and number == s[i + 1]:
+    #             count += 1
+    #         else:
+    #             res += str(count) + number
+    #             count = 1
+    #     return res
+
     def countAndSay(self, n: int) -> str:
+        # if n == 1:
+        #     return "1"
+
+        # return self.count(self.countAndSay(n - 1))
+
         if n == 1:
             return "1"
 
