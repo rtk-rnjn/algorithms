@@ -11,7 +11,6 @@ class ListNode(Generic[T]):
     def __init__(self, val: T, next: ListNode[T] | None = None):
         self.val = val
         self.next = next
-    
     def __repr__(self) -> str:
         return f"{self.val} -> {self.next}"
 
