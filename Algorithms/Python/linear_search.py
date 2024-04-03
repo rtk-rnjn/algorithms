@@ -2,11 +2,7 @@ from __future__ import annotations
 
 
 def linear_search(arr: list[int], target: int) -> int:
-    for index, value in enumerate(arr):
-        if value == target:
-            return index
-
-    return -1
+    return next((index for index, value in enumerate(arr) if value == target), -1)
 
 
 if __name__ == "__main__":
