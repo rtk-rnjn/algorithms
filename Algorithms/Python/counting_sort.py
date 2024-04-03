@@ -34,5 +34,5 @@ def counting_sort(ls: list[int]) -> list[int]:
 
 
 if __name__ == "__main__":
-    arr = [1, 2, 3, 4, 3, 1, -1]
+    arr = [3, 1, 2, 4, 5, 1, 2, 3]
     print(counting_sort(arr))
