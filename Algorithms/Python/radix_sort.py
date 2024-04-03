@@ -13,6 +13,7 @@ def radix_sort(arr: list[int]) -> None:
         counting_sort(arr, exp, base)
         exp *= base
 
+
 def counting_sort(arr: list[int], exp: int, base: int) -> None:
     n = len(arr)
     output = [0] * n
