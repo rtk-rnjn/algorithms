@@ -13,7 +13,8 @@ class Queue(Generic[T]):
 
     def enqueue(self, item: T) -> None:
         if self.rear == self.size - 1:
-            raise IndexError("Queue is full")
+            msg = "Queue is full"
+            raise IndexError(msg)
         if self.front == -1:
             self.front = 0
         self.rear += 1
@@ -21,7 +22,8 @@ class Queue(Generic[T]):
 
     def dequeue(self) -> T | None:
         if self.front == -1:
-            raise IndexError("Queue is empty")
+            msg = "Queue is empty"
+            raise IndexError(msg)
 
         item = self.__queue[self.front]
         self.front += 1

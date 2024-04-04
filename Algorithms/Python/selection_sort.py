@@ -2,12 +2,11 @@ from __future__ import annotations
 
 from typing import TypeVar
 
-
 T = TypeVar("T", int, float)
 
 
 def selection_sort(arr: list[int]) -> None:
-    for i, num in enumerate(arr):
+    for i, _num in enumerate(arr):
         minimum = arr[i]
         index = i
         for j in range(i, len(arr)):

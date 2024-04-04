@@ -86,7 +86,8 @@ class DoublyLinkedList:
 
     def __getitem__(self, index: int) -> DoublyNode | None:
         if index < 0 or index >= self.size:
-            raise IndexError("Index out of range")
+            msg = "Index out of range"
+            raise IndexError(msg)
         current = self.head
         for _ in range(index):
             if current:
@@ -95,7 +96,8 @@ class DoublyLinkedList:
 
     def __setitem__(self, index: int, data: int) -> None:
         if index < 0 or index >= self.size:
-            raise IndexError("Index out of range")
+            msg = "Index out of range"
+            raise IndexError(msg)
         current = self.head
         for _ in range(index):
             if current:
@@ -109,7 +111,8 @@ class DoublyLinkedList:
         index position."""
 
         if index < 0 or index > self.size:
-            raise IndexError("Index out of range")
+            msg = "Index out of range"
+            raise IndexError(msg)
 
         if index == 0:
             self.add(data)
@@ -136,7 +139,8 @@ class DoublyLinkedList:
         if index is None:
             index = self.size - 1
         if index < 0 or index >= self.size:
-            raise IndexError("Index out of range")
+            msg = "Index out of range"
+            raise IndexError(msg)
 
         current = self.head
         for _ in range(index):

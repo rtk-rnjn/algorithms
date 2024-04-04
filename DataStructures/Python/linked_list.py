@@ -85,7 +85,8 @@ class LinkedList:
         if index is None:
             index = self.size - 1
         if index < 0 or index >= self.size:
-            raise IndexError("Index out of range.")
+            msg = "Index out of range."
+            raise IndexError(msg)
         current = self.head
         previous = None
         for _ in range(index):

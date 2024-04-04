@@ -10,14 +10,16 @@ class Stack:
     def push(self, item: int) -> None:
         """Pushes an item onto the stack."""
         if self.is_full():
-            raise OverflowError("Stack is full.")
+            msg = "Stack is full."
+            raise OverflowError(msg)
         self.__top += 1
         self.__stack[self.__top] = item  # type: ignore
 
     def pop(self) -> int:
         """Pops an item off the stack."""
         if self.is_empty():
-            raise IndexError("Stack is empty.")
+            msg = "Stack is empty."
+            raise IndexError(msg)
         item = self.__stack[self.__top]
         self.__top -= 1
         return item  # type: ignore
@@ -25,7 +27,8 @@ class Stack:
     def peek(self) -> int:
         """Returns the top item without removing it."""
         if self.is_empty():
-            raise IndexError("Stack is empty.")
+            msg = "Stack is empty."
+            raise IndexError(msg)
         return self.__stack[self.__top]  # type: ignore
 
     def is_empty(self) -> bool:

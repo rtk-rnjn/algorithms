@@ -33,14 +33,17 @@ class LRU(Generic[KT, VT]):
     def __setattr__(self, __name: str, __value: Any) -> None:
         if __name == "size":
             if not isinstance(__value, int):
-                raise TypeError("size must be an integer")
+                msg = "size must be an integer"
+                raise TypeError(msg)
             if __value <= 0:
-                raise ValueError("size must be greater than 0")
+                msg = "size must be greater than 0"
+                raise ValueError(msg)
         super().__setattr__(__name, __value)
 
     def __delattr__(self, __name: str) -> None:
         if __name == "size":
-            raise AttributeError("size cannot be deleted")
+            msg = "size cannot be deleted"
+            raise AttributeError(msg)
         super().__delattr__(__name)
 
     def __getitem__(self, key: KT) -> VT:

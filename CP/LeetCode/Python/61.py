@@ -8,7 +8,7 @@ T = TypeVar("T")
 
 
 class ListNode(Generic[T]):
-    def __init__(self, val: T, next: ListNode[T] | None = None):
+    def __init__(self, val: T, next: ListNode[T] | None = None):  # noqa
         self.val = val
         self.next = next
 
