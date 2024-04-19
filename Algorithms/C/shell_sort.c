@@ -1,11 +1,8 @@
-#include <iostream>
-#include <vector>
+#include <stdio.h>
 
-using namespace std;
 
-void shell_sort(vector<int> &arr, int shell)
+void shell_sort(int arr[], int size, int shell)
 {
-    int size = (int)arr.size();
     for (int gap = size / shell; gap > 0; gap /= shell)
     {
         for (int i = gap; i < size; i++)
@@ -23,13 +20,14 @@ void shell_sort(vector<int> &arr, int shell)
 
 int main()
 {
-    vector<int> arr = {12, 34, 54, 2, 3};
+    int arr[] = {12, 34, 54, 2, 3};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    shell_sort(arr, 2);
+    shell_sort(arr, n, 2);
 
-    for (int i : arr)
+    for (int i = 0; i < n; i++)
     {
-        cout << i << " ";
+        printf("%d ", arr[i]);
     }
 
     return 0;
