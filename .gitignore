@@ -12,3 +12,4 @@ tempCodeRunnerFile
 test/
 test.*
 .ipynb_checkpoints/
+tmp.sh
