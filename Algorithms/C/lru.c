@@ -15,7 +15,7 @@ typedef struct
     int size;
 } LRUCache;
 
-LRUCache *lRUCacheCreate(int capacity)
+LRUCache *LRUCacheCreate(int capacity)
 {
     LRUCache *cache = (LRUCache *)malloc(sizeof(LRUCache));
     cache->nodes = (Node *)malloc(sizeof(Node) * capacity);
@@ -28,7 +28,7 @@ LRUCache *lRUCacheCreate(int capacity)
     return cache;
 }
 
-int lRUCacheGet(LRUCache *obj, int key)
+int LRUCacheGet(LRUCache *obj, int key)
 {
     for (int i = 0; i < obj->size; i++)
     {
@@ -48,7 +48,7 @@ int lRUCacheGet(LRUCache *obj, int key)
     return -1;
 }
 
-void lRUCachePut(LRUCache *obj, int key, int value)
+void LRUCachePut(LRUCache *obj, int key, int value)
 {
     for (int i = 0; i < obj->size; i++)
     {
@@ -73,7 +73,7 @@ void lRUCachePut(LRUCache *obj, int key, int value)
     obj->nodes[0].value = value;
 }
 
-void lRUCacheFree(LRUCache *obj)
+void LRUCacheFree(LRUCache *obj)
 {
     free(obj->nodes);
     free(obj);
@@ -81,24 +81,24 @@ void lRUCacheFree(LRUCache *obj)
 
 int main()
 {
-    LRUCache *cache = lRUCacheCreate(2);
+    LRUCache *cache = LRUCacheCreate(2);
 
-    lRUCachePut(cache, 1, 1);
-    lRUCachePut(cache, 2, 2);
+    LRUCachePut(cache, 1, 1);
+    LRUCachePut(cache, 2, 2);
 
-    printf("%d\n", lRUCacheGet(cache, 1));
+    printf("%d\n", LRUCacheGet(cache, 1));
 
-    lRUCachePut(cache, 3, 3);
+    LRUCachePut(cache, 3, 3);
 
-    printf("%d\n", lRUCacheGet(cache, 2));
+    printf("%d\n", LRUCacheGet(cache, 2));
 
-    lRUCachePut(cache, 4, 4);
+    LRUCachePut(cache, 4, 4);
 
-    printf("%d\n", lRUCacheGet(cache, 1));
-    printf("%d\n", lRUCacheGet(cache, 3));
-    printf("%d\n", lRUCacheGet(cache, 4));
+    printf("%d\n", LRUCacheGet(cache, 1));
+    printf("%d\n", LRUCacheGet(cache, 3));
+    printf("%d\n", LRUCacheGet(cache, 4));
 
-    lRUCacheFree(cache);
+    LRUCacheFree(cache);
 
     return 0;
 }
