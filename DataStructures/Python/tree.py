@@ -98,7 +98,7 @@ class Tree(Generic[T]):
 
 
 if __name__ == "__main__":
-    tree = Tree([True])
+    tree = Tree([1, 2, 3, 4, 5, 6, 7, 8, 9])
     print(tree)
     print(tree.build_tree())
 
