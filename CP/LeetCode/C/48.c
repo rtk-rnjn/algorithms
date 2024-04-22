@@ -31,11 +31,11 @@ void rotate(int **matrix, int matrixSize, int *matrixColSize)
     *matrixColSize = matrixSize;
 }
 
-void printMatrix(int **matrix, int matrixSize, int matrixColSize)
+void print_matrix(int **matrix, int matrix_size, int matrix_col_size)
 {
-    for (int i = 0; i < matrixSize; i++)
+    for (int i = 0; i < matrix_size; i++)
     {
-        for (int j = 0; j < matrixColSize; j++)
+        for (int j = 0; j < matrix_col_size; j++)
         {
             printf("%d ", matrix[i][j]);
         }
@@ -45,9 +45,9 @@ void printMatrix(int **matrix, int matrixSize, int matrixColSize)
     printf("\n");
 }
 
-void free_matrix(int **matrix, int matrixSize)
+void free_matrix(int **matrix, int matrix_size)
 {
-    for (int i = 0; i < matrixSize; i++)
+    for (int i = 0; i < matrix_size; i++)
     {
         free(matrix[i]);
     }
@@ -56,12 +56,12 @@ void free_matrix(int **matrix, int matrixSize)
 
 int main()
 {
-    int matrixSize = 3;
-    int matrixColSize = 3;
-    int **matrix = (int **)malloc(sizeof(int *) * matrixSize);
-    for (int i = 0; i < matrixSize; i++)
+    int matrix_size = 3;
+    int matrix_col_size = 3;
+    int **matrix = (int **)malloc(sizeof(int *) * matrix_size);
+    for (int i = 0; i < matrix_size; i++)
     {
-        matrix[i] = (int *)malloc(sizeof(int) * matrixColSize);
+        matrix[i] = (int *)malloc(sizeof(int) * matrix_col_size);
     }
 
     matrix[0][0] = 1;
@@ -74,11 +74,11 @@ int main()
     matrix[2][1] = 8;
     matrix[2][2] = 9;
 
-    printMatrix(matrix, matrixSize, matrixColSize);
-    rotate(matrix, matrixSize, &matrixColSize);
-    printMatrix(matrix, matrixSize, matrixColSize);
+    print_matrix(matrix, matrix_size, matrix_col_size);
+    rotate(matrix, matrix_size, &matrix_col_size);
+    print_matrix(matrix, matrix_size, matrix_col_size);
 
-    free_matrix(matrix, matrixSize);
+    free_matrix(matrix, matrix_size);
 
     return 0;
 }
