@@ -5,7 +5,7 @@ from typing import TypeVar
 T = TypeVar("T", int, float)
 
 
-def selection_sort(arr: list[int]) -> None:
+def selection_sort(arr: list[T]) -> None:
     for i, _num in enumerate(arr):
         minimum = arr[i]
         index = i
