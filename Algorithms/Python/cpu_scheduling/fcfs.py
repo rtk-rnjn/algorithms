@@ -19,7 +19,7 @@ class GanttChart:
         self.chart.append((process.process_id, time))
 
     def __str__(self):
-        return " -> ".join(f"P{process_id}({time})" for process_id, time in self.chart)
+        return " -> ".join(f"P{process_id}[{time}]" for process_id, time in self.chart)
 
     def __repr__(self) -> str:
         return str(self)
