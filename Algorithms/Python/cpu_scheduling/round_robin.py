@@ -20,7 +20,7 @@ class GanttChart:
         self.chart.append((process_id, time))
 
     def __str__(self) -> str:
-        return " -> ".join(f"P{process_id}[{time}]" for process_id, time in self.chart)
+        return " -> ".join(f"P{process_id} [{time}]" for process_id, time in self.chart)
 
 
 def round_robin(processes: list[Process], quantum: int) -> None:
@@ -59,9 +59,9 @@ def round_robin(processes: list[Process], quantum: int) -> None:
     avg_waiting_time /= len(processes)
     avg_turnaround_time /= len(processes)
 
-    print(f"Gantt Chart: {gantt_chart}")
+    print("Gantt Chart:", gantt_chart)
 
-    print("Process ID\tArrival Time\tBurst Time\tWaiting Time" "\tTurnaround Time")
+    print("Process ID\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time")
     for process in processes:
         print(
             f"{process.process_id}\t\t{process.arrival_time}\t\t"
@@ -74,10 +74,9 @@ def round_robin(processes: list[Process], quantum: int) -> None:
 
 if __name__ == "__main__":
     processes = [
-        Process(1, arrival_time=0, burst_time=5),
+        Process(1, arrival_time=0, burst_time=4),
         Process(2, arrival_time=1, burst_time=3),
-        Process(3, arrival_time=2, burst_time=8),
-        Process(4, arrival_time=3, burst_time=6),
-        Process(5, arrival_time=4, burst_time=4),
+        Process(3, arrival_time=2, burst_time=5),
+        Process(4, arrival_time=3, burst_time=2),
     ]
     round_robin(processes, quantum=2)
