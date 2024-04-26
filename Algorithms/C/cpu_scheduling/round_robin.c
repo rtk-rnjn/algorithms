@@ -120,7 +120,9 @@ void round_robin(struct process *processes, int total_processes, int time_quantu
         }
 
         struct process *current_process = get();
-        gantt_chart[gantt_chart_size++] = (struct gantt_chart_component){current_process->process_id, time};
+        gantt_chart[gantt_chart_size].process_id = current_process->process_id;
+        gantt_chart[gantt_chart_size].time = time;
+        gantt_chart_size++;
 
         if (current_process->remaining_time > time_quantum)
         {
@@ -188,12 +190,7 @@ int main()
     struct process p3 = {3, 2, 5, 5, 0};
     struct process p4 = {4, 3, 2, 2, 0};
     
-    struct process *processes = (struct process *)malloc(num_processes * sizeof(struct process));
-    
-    processes[0] = p1;
-    processes[1] = p2;
-    processes[2] = p3;
-    processes[3] = p4;
+    struct process processes[] = {p1, p2, p3, p4};
 
     round_robin(processes, num_processes, time_quantum);
 
