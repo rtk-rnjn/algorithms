@@ -1,3 +1,4 @@
+package searching;
 class LinearSearchRecursive {
     public static int linearSearch(final int[] arr, final int target, final int index) {
         if (index == arr.length) {

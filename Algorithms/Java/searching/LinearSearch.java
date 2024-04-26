@@ -1,3 +1,4 @@
+package searching;
 class LinearSearch {
     public static int linearSearch(final int[] arr, final int target) {
         for (int i = 0; i < arr.length; i++) {

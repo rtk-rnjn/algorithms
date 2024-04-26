@@ -1,3 +1,4 @@
+package sorting;
 class QuickSort {
     public static int partition(final int[] arr, final int low, final int high) {
         int pivot = arr[high];

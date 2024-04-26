@@ -1,3 +1,4 @@
+package sorting;
 class BubbleSort {
     public static void bubbleSort(final int[] arr) {
         boolean swapped;
