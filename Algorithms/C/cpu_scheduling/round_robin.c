@@ -134,7 +134,6 @@ void round_robin(struct process *processes, int total_processes, int time_quantu
         {
             time += current_process->remaining_time;
             current_process->waiting_time = time - current_process->arrival_time - current_process->burst_time;
-            printf("Current Process: %d\n", current_process->waiting_time);
             avg_waiting_time += (float)current_process->waiting_time;
             avg_turnaround_time += (float)time - (float)current_process->arrival_time;
             current_process->remaining_time = 0;
