@@ -23,7 +23,7 @@ class GanttChart:
 
     def __repr__(self) -> str:
         return str(self)
-    
+
     def __len__(self) -> int:
         return len(self.chart)
 
@@ -68,7 +68,9 @@ def sjf(processes: list[Process], /) -> None:
 
         if processes[min_burst_time_index].remaining_time == 0:
             completed += 1
-            processes[min_burst_time_index].waiting_time = current_time - processes[min_burst_time_index].arrival_time - processes[min_burst_time_index].burst_time
+            processes[min_burst_time_index].waiting_time = (
+                current_time - processes[min_burst_time_index].arrival_time - processes[min_burst_time_index].burst_time
+            )
             avg_waiting_time += processes[min_burst_time_index].waiting_time
             avg_turnaround_time += current_time - processes[min_burst_time_index].arrival_time
 
@@ -85,6 +87,7 @@ def sjf(processes: list[Process], /) -> None:
         )
     print(f"Average Waiting Time: {avg_waiting_time}")
     print(f"Average Turnaround Time: {avg_turnaround_time}")
+
 
 if __name__ == "__main__":
     processes = [
