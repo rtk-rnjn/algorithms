@@ -1,29 +1,29 @@
 #include <stdio.h>
 
-int interpolation_search(const int *array, int length, int targer)
+int interpolation_search(const int *array, int length, int target)
 {
     int low = 0;
     int high = length - 1;
 
-    while (low <= high && targer >= array[low] && targer <= array[high])
+    while (low <= high && target >= array[low] && target <= array[high])
     {
         if (low == high)
         {
-            if (array[low] == targer)
+            if (array[low] == target)
             {
                 return low;
             }
             return -1;
         }
 
-        int pos = (int)(low + (((double)(high - low) / (array[high] - array[low])) * (targer - array[low])));
+        int pos = (int)(low + (((double)(high - low) / (array[high] - array[low])) * (target - array[low])));
 
-        if (array[pos] == targer)
+        if (array[pos] == target)
         {
             return pos;
         }
 
-        if (array[pos] < targer)
+        if (array[pos] < target)
         {
             low = pos + 1;
         }
