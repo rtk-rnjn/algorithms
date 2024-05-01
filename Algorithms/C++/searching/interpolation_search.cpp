@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int interpolation_search(vector<int>array, int length, int target)
+int interpolation_search(const vector<int> &array, int length, int target)
 {
     int low = 0;
     int high = length - 1;
