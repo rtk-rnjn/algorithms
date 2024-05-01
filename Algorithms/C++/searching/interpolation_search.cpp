@@ -1,6 +1,9 @@
-#include <stdio.h>
+#include <iostream>
+#include <vector>
 
-int interpolation_search(const int *array, int length, int target)
+using namespace std;
+
+int interpolation_search(const vector<int> &array, int length, int target)
 {
     int low = 0;
     int high = length - 1;
@@ -38,21 +41,18 @@ int interpolation_search(const int *array, int length, int target)
 
 int main()
 {
-    int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-
-    int length = sizeof(array) / sizeof(array[0]);
-
+    vector<int> array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int target = 7;
 
-    int index = interpolation_search(array, length, target);
+    int index = interpolation_search(array, (int)array.size(), target);
 
     if (index != -1)
     {
-        printf("Element found at index %d\n", index);
+        cout<<"Element found at index "<<index<<"\n";
     }
     else
     {
-        printf("Element not found\n");
+        cout<<("Element not found\n");
     }
 
     return 0;
