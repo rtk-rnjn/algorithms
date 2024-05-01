@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+void swap(char *a, char *b)
+{
+    char temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void reverse_string_recursive(char *str, int len)
 {
     if (len == 0)
@@ -11,9 +18,7 @@ void reverse_string_recursive(char *str, int len)
         return;
     }
 
-    char temp = str[0];
-    str[0] = str[len - 1];
-    str[len - 1] = temp;
+    swap(&str[0], &str[len - 1]);
 
     reverse_string_recursive(str + 1, len - 2);
 }
