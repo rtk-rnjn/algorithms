@@ -18,7 +18,7 @@ void duplicate_numbers(vector<int> &arr)
         }
         if (count > 1)
         {
-            cout<<arr[i]<<" appears "<<count<<" times\n";
+            cout << arr[i] << " appears " << count << " times\n";
         }
     }
 }
