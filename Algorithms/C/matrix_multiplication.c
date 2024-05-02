@@ -27,29 +27,27 @@ void multiply(int matrix_a[][MAX_SIZE], int matrix_b[][MAX_SIZE],
 
 void display(int matrix[][MAX_SIZE], int row, int col)
 {
-    printf("Matrix:\n");
     for (int i = 0; i < row; i++)
     {
-        printf("| ");
         for (int j = 0; j < col; j++)
         {
-            printf("%d ", matrix[i][j]);
+            printf("%d\t", matrix[i][j]);
         }
-        printf("|\n");
+        printf("\n");
     }
 }
 
 int main()
 {
-    int matrix_a[MAX_SIZE][MAX_SIZE] = {{1, 1}, {2, 2}};
-    int matrix_b[MAX_SIZE][MAX_SIZE] = {{1, 1}, {2, 2}};
+    int matrix_a[MAX_SIZE][MAX_SIZE] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+    int matrix_b[MAX_SIZE][MAX_SIZE] = {{17, 18, 19, 20}, {21, 22, 23, 24}, {25, 26, 27, 28}, {29, 30, 31, 32}};
     int matrix_c[MAX_SIZE][MAX_SIZE];
 
-    int row_a = 2;
-    int col_a = 2;
+    int row_a = 4;
+    int col_a = 4;
 
-    int row_b = 2;
-    int col_b = 2;
+    int row_b = 4;
+    int col_b = 4;
 
     multiply(matrix_a, matrix_b, matrix_c, row_a, col_a, row_b, col_b);
 

@@ -193,12 +193,11 @@ int main()
 
     multiply(n, A_matrix, B_matrix, C_matrix);
 
-    printf("Resultant matrix C:\n");
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", C_matrix[i][j]);
+            printf("%d\t", C_matrix[i][j]);
         }
         printf("\n");
     }
