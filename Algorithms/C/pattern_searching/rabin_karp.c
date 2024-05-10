@@ -58,8 +58,8 @@ int search_pattern(const char *text, const char *pattern, int q)
 
 int main()
 {
-    char text[] = "CAABAACAADAABAAABAA";
-    char pattern[] = "AABA";
+    char text[] = "CAABCAAABAACAADAABAAABAA";
+    char pattern[] = "AABAA";
 
     int q = 101; // A prime number
     int index = search_pattern(text, pattern, q);
