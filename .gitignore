@@ -10,6 +10,7 @@ build/
 tempCodeRunnerFile.*
 tempCodeRunnerFile
 test/
-test.*
+**/**/test.*
+**/**/temp.*
 .ipynb_checkpoints/
 tmp.sh
