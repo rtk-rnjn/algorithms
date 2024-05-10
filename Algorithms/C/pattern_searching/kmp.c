@@ -4,26 +4,28 @@
 
 void compute_LSP_array(const char *pattern, int pattern_length, int *LSP)
 {
-    int length = 0;
+    int len = 0;
     LSP[0] = 0;
+    int i = 1;
 
-    for (int i = 1; i < pattern_length; i++)
+    while (i < pattern_length)
     {
-        if (pattern[i] == pattern[length])
+        if (pattern[i] == pattern[len])
         {
-            length++;
-            LSP[i] = length;
+            len++;
+            LSP[i] = len;
+            i++;
         }
         else
         {
-            if (length != 0)
+            if (len != 0)
             {
-                length = LSP[length - 1];
-                i--;
+                len = LSP[len - 1];
             }
             else
             {
                 LSP[i] = 0;
+                i++;
             }
         }
     }
@@ -74,7 +76,7 @@ int search_pattern(char *text, char *pattern)
 int main()
 {
     char text[] = "CAABAACAADAABAAABAA";
-    char pattern[] = "AABA";
+    char pattern[] = "AABAA";
 
     int index = search_pattern(text, pattern);
 
