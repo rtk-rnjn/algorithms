@@ -36,6 +36,7 @@ def rabin_karp(text: str, pattern: str) -> int:
 
     return -1
 
+
 if __name__ == "__main__":
     text = "Hello, World!"
     pattern = "World"
