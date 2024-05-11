@@ -22,6 +22,5 @@ def binary_search(arr: list[int], target: int) -> int:
 
 
 if __name__ == "__main__":
-    numbers = [1, 2, 3, 4, 5, 6]
-    print(binary_search(numbers, 3))  # 2
-    print(binary_search(numbers, 7))  # -1
+    numbers = list(range(1, 15))
+    print(binary_search(numbers, 2))  # 2

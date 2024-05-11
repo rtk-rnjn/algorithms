@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define d 256
+#define d 26
 
 int search_pattern(const char *text, const char *pattern, int q)
 {
