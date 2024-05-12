@@ -3,10 +3,10 @@
 
 #define d 26
 
-int search_pattern(const char *text, const char *pattern, int q)
+int search_pattern(const char *text, const char *pattern, int q, int expected_text_len, int expected_pattern_len)
 {
-    int pattern_length = (int)strlen(pattern);
-    int text_length = (int)strlen(text);
+    int pattern_length = (int)strnlen(pattern, expected_pattern_len);
+    int text_length = (int)strnlen(text, expected_text_len);
 
     int i;
     int j;
@@ -61,8 +61,11 @@ int main()
     char text[] = "CAABCAAABAACAADAABAAABAA";
     char pattern[] = "AABAA";
 
+    int text_len = 25;
+    int pattern_len = 5;
+
     int q = 101; // A prime number
-    int index = search_pattern(text, pattern, q);
+    int index = search_pattern(text, pattern, q, text_len, pattern_len);
 
     if (index != -1)
     {

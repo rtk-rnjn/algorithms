@@ -10,9 +10,9 @@ float inverse_squre_root(float number)
 
     x2 = number * 0.5F;
     y = number;
-    i = * (long *)&y;
+    i = *(long *)&y;
     i = 0x5f3759df - (i >> 1);
-    y = * (float *)&i;
+    y = *(float *)&i;
     y = y * (threehalfs - (x2 * y * y));
 
     return y;
@@ -25,4 +25,3 @@ int main()
     printf("Inverse square root of %f is %f\n", number, result);
     return 0;
 }
-

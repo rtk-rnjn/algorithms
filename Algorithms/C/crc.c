@@ -7,7 +7,6 @@ unsigned long crc32(const unsigned char *message)
 {
     int i;
     int j;
-    unsigned long byte;
     unsigned long crc;
     unsigned long mask;
 
@@ -15,7 +14,7 @@ unsigned long crc32(const unsigned char *message)
     crc = 0xFFFFFFFF;
     while (message[i] != 0)
     {
-        byte = message[i];
+        unsigned long byte = message[i];
         crc = crc ^ byte;
         for (j = 7; j >= 0; j--)
         {
