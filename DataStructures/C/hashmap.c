@@ -84,17 +84,21 @@ void remove_entry(hashmap *map, char *key)
 int main()
 {
     hashmap *map = create_hashmap();
-    put(map, "key1", "value1");
-    put(map, "key2", "value2");
-    put(map, "key3", "value3");
-    put(map, "key4", "value4");
 
-    printf("%s\n", get(map, "key1"));
-    printf("%s\n", get(map, "key2"));
+    char key1[5] = "key1";
+    char value1[7] = "value1";
+    put(map, key1, value1);
 
-    remove_entry(map, "key1");
+    char key2[5] = "key2";
+    char value2[7] = "value2";
+    put(map, key2, value2);
 
-    char *value = get(map, "key1");
+    printf("%s\n", get(map, key1));
+    printf("%s\n", get(map, key2));
+
+    remove_entry(map, key1);
+
+    char *value = get(map, key1);
     if (value == NULL)
     {
         printf("Key not found\n");
