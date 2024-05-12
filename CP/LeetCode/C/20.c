@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define btoa(x) ((x) ? "true" : "false")
+
 struct Node
 {
     char data;
@@ -80,8 +82,8 @@ bool isValid(char *s)
 int main()
 {
     char s[] = "()";
-    int valid = isValid(s);
-    printf("%d\n", valid);
+    bool valid = isValid(s);
+    printf("%s\n", btoa(valid));
 
     return 0;
 }
