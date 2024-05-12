@@ -1,18 +1,21 @@
 #include <stdio.h>
 
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void print_series(int n)
 {
     int a = 0;
     int b = 1;
 
-    int temp;
-
     while (n-- > 0)
     {
         printf("%d\n", a);
-        temp = a;
-        a = b;
-        b = temp + b;
+        swap(&a, &b);
     }
 }
 

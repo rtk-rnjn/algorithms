@@ -74,13 +74,13 @@ bool isNumber(char s[]) // NOLINT
             return false;
         }
     }
-    return num && num_after_e;
+    return (num && num_after_e) != 0;
 }
 
 int main()
 {
     char s[] = "-1. ";
-
-    printf("%d\n", isNumber(s));
+    int number = (int)isNumber(s);
+    printf("%d\n", number);
     return 0;
 }

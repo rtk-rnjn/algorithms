@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int search_pattern(char *text, char *pattern)
+int search_pattern(char *text, char *pattern, int expected_text_len, int expected_pattern_len)
 {
-    int text_length = (int)strlen(text);
-    int pattern_length = (int)strlen(pattern);
+    int text_length = (int)strnlen(text, expected_text_len);
+    int pattern_length = (int)strnlen(pattern, expected_pattern_len);
 
     for (int i = 0; i <= text_length - pattern_length; i++)
     {
@@ -32,7 +32,10 @@ int main()
     char text[] = "CAABAACAADAABAAABAA";
     char pattern[] = "AABA";
 
-    int index = search_pattern(text, pattern);
+    int text_len = 20;
+    int pattern_len = 4;
+
+    int index = search_pattern(text, pattern, text_len, pattern_len);
 
     if (index != -1)
     {

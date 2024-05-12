@@ -7,7 +7,7 @@ const duplicateNumbers = (arr) => {
             }
         }
         if (count > 1) {
-            console.log(`${arr[i]} appears ${count} times\n`, arr[i], count);
+            console.log(`${arr[i]} appears ${count} times\n`);
         }
     }
 };
