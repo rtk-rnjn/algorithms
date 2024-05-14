@@ -13,7 +13,7 @@ void stack_init(struct stack *s)
 {
     s->size = 0;
     s->capacity = 4;
-    s->data = malloc(sizeof(char) * s->capacity);
+    s->data = (char *)malloc(sizeof(char) * s->capacity);
 }
 
 void stack_push(struct stack *s, char value)
@@ -21,7 +21,7 @@ void stack_push(struct stack *s, char value)
     if (s->size >= s->capacity)
     {
         s->capacity *= 2;
-        s->data = realloc(s->data, sizeof(char) * s->capacity);
+        s->data = (char *)realloc(s->data, sizeof(char) * s->capacity);
     }
     s->data[s->size++] = value;
 }
@@ -85,9 +85,9 @@ int precedence(char op)
 
 char *infix_to_postfix(char *infix)
 {
-    struct stack *s = malloc(sizeof(struct stack));
+    struct stack *s = (struct stack *)malloc(sizeof(struct stack));
     stack_init(s);
-    char *postfix = malloc(sizeof(char) * ((int)strlen(infix) + 1));
+    char *postfix = (char *)malloc(sizeof(char) * ((int)strlen(infix) + 1));
     int j = 0;
     for (int i = 0; infix[i]; i++)
     {
@@ -127,7 +127,7 @@ char *infix_to_postfix(char *infix)
 
 int main()
 {
-    char *infix = "1+2*3";
+    char infix[] = "1+2*3";
     char *postfix = infix_to_postfix(infix);
     printf("%s\n", postfix);
     free(postfix);

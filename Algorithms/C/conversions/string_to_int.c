@@ -20,7 +20,7 @@ int string_to_int(char *str)
 
 int main()
 {
-    char *str = "-12345";
+    char str[] = "-12345";
     int n = string_to_int(str);
     printf("%d\n", n);
     return 0;

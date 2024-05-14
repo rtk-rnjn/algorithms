@@ -4,7 +4,7 @@
 char *int_to_string(int n)
 {
     int length = snprintf(NULL, 0, "%d", n);
-    char *str = malloc(length + 1);
+    char *str = (char *)malloc(length + 1);
     snprintf(str, length + 1, "%d", n);
     return str;
 }
