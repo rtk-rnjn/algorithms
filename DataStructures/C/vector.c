@@ -12,7 +12,7 @@ void vector_init(struct vector *v)
 {
     v->size = 0;
     v->capacity = 4;
-    v->data = malloc(sizeof(int) * v->capacity);
+    v->data = (int *)malloc(sizeof(int) * v->capacity);
 }
 
 void vector_push_back(struct vector *v, int value)
@@ -20,7 +20,7 @@ void vector_push_back(struct vector *v, int value)
     if (v->size >= v->capacity)
     {
         v->capacity *= 2;
-        v->data = realloc(v->data, sizeof(int) * v->capacity);
+        v->data = (int *)realloc(v->data, sizeof(int) * v->capacity);
     }
     v->data[v->size++] = value;
 }
@@ -61,7 +61,7 @@ void display(struct vector *v)
 
 int main()
 {
-    struct vector *v = malloc(sizeof(struct vector));
+    struct vector *v = (struct vector *)malloc(sizeof(struct vector));
     vector_init(v);
 
     for (int i = 0; i < 10; i++)
