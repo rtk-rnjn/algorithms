@@ -45,7 +45,9 @@ def _helper_multiplier(A, B, recursive_matrix_multiplication):
     return merge_matrices(C11, C12, C21, C22)
 
 
-def split_matrix(A: list[list[int]]) -> tuple[list[list[int]], list[list[int]], list[list[int]], list[list[int]]]:
+def split_matrix(
+    A: list[list[int]],
+) -> tuple[list[list[int]], list[list[int]], list[list[int]], list[list[int]]]:
     """Split a matrix into four submatrices."""
     n = len(A) // 2
     A11 = [row[:n] for row in A[:n]]
