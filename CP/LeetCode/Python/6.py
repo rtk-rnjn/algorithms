@@ -17,4 +17,3 @@ class Solution:
                 down = not down
             row += 1 if down else -1
         return ''.join(rows)
-
