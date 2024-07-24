@@ -11,7 +11,7 @@ public:
     int rear = 0;
     vector<int> array;
 
-    queue(int size)
+    explicit queue(int size)
     {
         this->size = size;
         this->array = vector<int>(size);

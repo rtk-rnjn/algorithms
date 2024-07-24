@@ -12,7 +12,7 @@ public:
     int rear = 0;
     vector<T> array;
 
-    circular_queue(int size)
+    explicit circular_queue(int size)
     {
         this->size = size + 1;
         this->array = vector<T>(this->size);

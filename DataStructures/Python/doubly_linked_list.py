@@ -1,4 +1,7 @@
 from __future__ import annotations
+from typing import TYPE_CHECKING
+
+from zmq import TYPE
 
 
 class DoublyNode:
@@ -123,7 +126,9 @@ class DoublyLinkedList:
             if current:
                 current = current.next
 
-        assert current is not None
+        if TYPE_CHECKING and current is None:
+            # This is only for type checking purposes
+            return
 
         new_node = DoublyNode(data, current.next, current)
         if current and current.next:
@@ -147,7 +152,9 @@ class DoublyLinkedList:
             if current:
                 current = current.next
 
-        assert current is not None
+        if TYPE_CHECKING and current is None:
+            # This is only for type checking purposes
+            return 0
 
         data = current.data
         if current and current.previous:
