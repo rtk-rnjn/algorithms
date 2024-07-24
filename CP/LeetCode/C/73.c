@@ -1,6 +1,7 @@
 // 73. Set Matrix Zeroes
 
 #include <stdlib.h>
+#include <stdio.h>
 
 void setZeroes(int **matrix, int matrixSize, int *matrixColSize)
 {
@@ -40,4 +41,47 @@ void setZeroes(int **matrix, int matrixSize, int *matrixColSize)
 
     free(rowZero);
     free(colZero);
+}
+
+void free_matrix(int **matrix, int matrixSize)
+{
+    for (int i = 0; i < matrixSize; i++)
+    {
+        free(matrix[i]);
+    }
+    free(matrix);
+}
+
+int main()
+{
+    int matrixSize = 3;
+    int matrixColSize = 4;
+    int **matrix = (int **)malloc(sizeof(int *) * matrixSize);
+    for (int i = 0; i < matrixSize; i++)
+    {
+        matrix[i] = (int *)malloc(sizeof(int) * matrixColSize);
+    }
+    matrix[0][0] = 1;
+    matrix[0][1] = 1;
+    matrix[0][2] = 1;
+    matrix[0][3] = 1;
+    matrix[1][0] = 1;
+    matrix[1][1] = 0;
+    matrix[1][2] = 1;
+    matrix[1][3] = 1;
+    matrix[2][0] = 1;
+    matrix[2][1] = 1;
+    matrix[2][2] = 1;
+    matrix[2][3] = 1;
+    setZeroes(matrix, matrixSize, &matrixColSize);
+    for (int i = 0; i < matrixSize; i++)
+    {
+        for (int j = 0; j < matrixColSize; j++)
+        {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+    free_matrix(matrix, matrixSize);
+    return 0;
 }
