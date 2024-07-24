@@ -13,7 +13,7 @@ typedef struct {
     int turnaround_time;
 } Process;
 
-void calculate_waiting_and_turnaround_times(Process processes[], int n) {
+void calculate_waiting_and_turnaround_times(Process *processes, int n) {
     int current_time = 0;
 
     for (int i = 0; i < n; i++) {
@@ -28,7 +28,7 @@ void calculate_waiting_and_turnaround_times(Process processes[], int n) {
     }
 }
 
-void print_gantt_chart(Process processes[], int n) {
+void print_gantt_chart(Process *processes, int n) {
     printf("Gantt Chart:\n");
     printf(" ");
 
@@ -70,7 +70,7 @@ void print_gantt_chart(Process processes[], int n) {
     printf("\n");
 }
 
-void print_process_table(Process processes[], int n) {
+void print_process_table(Process *processes, int n) {
     printf("P_ID\tAT\tBT\tPR\tIO\tST\tET\tWT\tTAT\n");
 
     for (int i = 0; i < n; i++) {
@@ -89,16 +89,61 @@ void print_process_table(Process processes[], int n) {
 
 int main() {
     int n = 4;
-    Process processes[n];
+    Process *processes = (Process *)malloc(n * sizeof(Process));
 
-    processes[0] = (Process){1, 0, 5, 3, 2, 0, 0, 0, 0};
-    processes[1] = (Process){2, 1, 3, 1, 1, 0, 0, 0, 0};
-    processes[2] = (Process){3, 2, 8, 4, 3, 0, 0, 0, 0};
-    processes[3] = (Process){4, 3, 6, 2, 2, 0, 0, 0, 0};    
+    // Hear me our, g++ compiler just throw error `ISO C++ forbids compound-literals [-Werror=pedantic]`
+    // (Command: g++ -Wall -Wextra -Werror -pedantic fcfs.c -o fcfs.out && ./fcfs.out)
+    // Which means, I can't create process array like this:
+    // Process processes[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+    // So, I have to use malloc to allocate memory for the array of processes
+    // and then assign values to each process in the array
+    // If you know the better way, pls open an PR
+    processes[0].process_id = 1;
+    processes[0].arrival_time = 0;
+    processes[0].burst_time = 5;
+    processes[0].priority = 3;
+    processes[0].io_time = 2;
+    processes[0].start_time = 0;
+    processes[0].end_time = 0;
+    processes[0].waiting_time = 0;
+    processes[0].turnaround_time = 0;
+
+    processes[1].process_id = 2;
+    processes[1].arrival_time = 1;
+    processes[1].burst_time = 3;
+    processes[1].priority = 1;
+    processes[1].io_time = 1;
+    processes[1].start_time = 0;
+    processes[1].end_time = 0;
+    processes[1].waiting_time = 0;
+    processes[1].turnaround_time = 0;
+
+    processes[2].process_id = 3;
+    processes[2].arrival_time = 2;
+    processes[2].burst_time = 8;
+    processes[2].priority = 4;
+    processes[2].io_time = 3;
+    processes[2].start_time = 0;
+    processes[2].end_time = 0;
+    processes[2].waiting_time = 0;
+    processes[2].turnaround_time = 0;
+
+    processes[3].process_id = 4;
+    processes[3].arrival_time = 3;
+    processes[3].burst_time = 6;
+    processes[3].priority = 2;
+    processes[3].io_time = 2;
+    processes[3].start_time = 0;
+    processes[3].end_time = 0;
+    processes[3].waiting_time = 0;
+    processes[3].turnaround_time = 0;
 
     calculate_waiting_and_turnaround_times(processes, n);
     print_process_table(processes, n);
     print_gantt_chart(processes, n);
 
+    free(processes);
     return 0;
 }
+
