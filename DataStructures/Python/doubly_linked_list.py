@@ -1,7 +1,6 @@
 from __future__ import annotations
-from typing import TYPE_CHECKING
 
-from zmq import TYPE
+from typing import TYPE_CHECKING
 
 
 class DoublyNode:
