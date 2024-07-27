@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct {
+typedef struct
+{
     int process_id;
     int arrival_time;
     int burst_time;
@@ -13,11 +14,14 @@ typedef struct {
     int turnaround_time;
 } Process;
 
-void calculate_waiting_and_turnaround_times(Process *processes, int n) {
+void calculate_waiting_and_turnaround_times(Process *processes, int n)
+{
     int current_time = 0;
 
-    for (int i = 0; i < n; i++) {
-        if (current_time < processes[i].arrival_time) {
+    for (int i = 0; i < n; i++)
+    {
+        if (current_time < processes[i].arrival_time)
+        {
             current_time = processes[i].arrival_time;
         }
         processes[i].start_time = current_time;
@@ -28,32 +32,40 @@ void calculate_waiting_and_turnaround_times(Process *processes, int n) {
     }
 }
 
-void print_gantt_chart(Process *processes, int n) {
+void print_gantt_chart(Process *processes, int n)
+{
     printf("Gantt Chart:\n");
     printf(" ");
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < processes[i].burst_time; j++) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < processes[i].burst_time; j++)
+        {
             printf("--");
         }
         printf(" ");
     }
     printf("\n|");
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < processes[i].burst_time - 1; j++) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < processes[i].burst_time - 1; j++)
+        {
             printf(" ");
         }
         printf("P%d", processes[i].process_id);
-        for (int j = 0; j < processes[i].burst_time - 1; j++) {
+        for (int j = 0; j < processes[i].burst_time - 1; j++)
+        {
             printf(" ");
         }
         printf("|");
     }
     printf("\n ");
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < processes[i].burst_time; j++) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < processes[i].burst_time; j++)
+        {
             printf("--");
         }
         printf(" ");
@@ -63,31 +75,28 @@ void print_gantt_chart(Process *processes, int n) {
     int current_time = 0;
     printf("0");
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         current_time += processes[i].burst_time;
         printf("%2d", current_time);
     }
     printf("\n");
 }
 
-void print_process_table(Process *processes, int n) {
+void print_process_table(Process *processes, int n)
+{
     printf("P_ID\tAT\tBT\tPR\tIO\tST\tET\tWT\tTAT\n");
 
-    for (int i = 0; i < n; i++) {
-        printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n", 
-            processes[i].process_id, 
-            processes[i].arrival_time, 
-            processes[i].burst_time, 
-            processes[i].priority, 
-            processes[i].io_time, 
-            processes[i].start_time, 
-            processes[i].end_time, 
-            processes[i].waiting_time, 
-            processes[i].turnaround_time);
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n", processes[i].process_id, processes[i].arrival_time,
+               processes[i].burst_time, processes[i].priority, processes[i].io_time, processes[i].start_time,
+               processes[i].end_time, processes[i].waiting_time, processes[i].turnaround_time);
     }
 }
 
-int main() {
+int main()
+{
     int n = 4;
     Process *processes = (Process *)malloc(n * sizeof(Process));
 
@@ -146,4 +155,3 @@ int main() {
     free(processes);
     return 0;
 }
-
