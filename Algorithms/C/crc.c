@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 #define WIDTH (8 * sizeof(unsigned long))
 
