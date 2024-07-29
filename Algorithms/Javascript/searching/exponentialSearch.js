@@ -1,4 +1,3 @@
-
 function exponentialSearch(array, target) {
     if (array[0] === target) {
         return 0;
@@ -40,5 +39,5 @@ const index = exponentialSearch(array, target);
 if (index !== -1) {
     console.log(`Element found at index ${index}`);
 } else {
-    console.log(`Element not found`);
+    console.log('Element not found');
 }
