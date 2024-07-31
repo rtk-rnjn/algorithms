@@ -1,7 +1,7 @@
 const searchPattern = (text, pattern) => {
     const n = text.length;
     const m = pattern.length;
-    
+ 
     for (let i = 0; i <= n - m; i++) {
         let j;
         for (j = 0; j < m; j++) {
