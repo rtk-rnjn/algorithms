@@ -18,6 +18,6 @@ int main()
 {
     int n = 4;
     hanoi_tower(n, 'A', 'C', 'B');
-    
+
     return 0;
 }

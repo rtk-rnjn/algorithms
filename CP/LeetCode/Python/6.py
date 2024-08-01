@@ -8,7 +8,7 @@ class Solution:
         if numRows == 1:
             return s
 
-        rows = [''] * min(numRows, len(s))
+        rows = [""] * min(numRows, len(s))
         row = 0
         down = False
         for c in s:
@@ -16,4 +16,4 @@ class Solution:
             if row in [0, numRows - 1]:
                 down = not down
             row += 1 if down else -1
-        return ''.join(rows)
+        return "".join(rows)
