@@ -24,4 +24,3 @@ if __name__ == "__main__":
     sol = Solution()
     print(sol.isMatch("aa", "a"))  # False
     print(sol.isMatch("aa", "a*"))  # True
-

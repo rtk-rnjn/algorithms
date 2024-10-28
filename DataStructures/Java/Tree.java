@@ -1,4 +1,4 @@
-public class Tree {
+class Tree {
     private Node root;
 
     static class Node {

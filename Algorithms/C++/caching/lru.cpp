@@ -8,7 +8,12 @@ public:
     Node* next;
     Node* prev;
 
-    Node(int k, int v) : key(k), value(v), next(nullptr), prev(nullptr) {}
+    explicit Node(int key, int value) {
+        this->key = key;
+        this->value = value;
+        this->next = nullptr;
+        this->prev = nullptr;
+    }
 };
 
 class LRUCache {
@@ -43,11 +48,13 @@ private:
     }
 
 public:
-    LRUCache(int capacity) : capacity(capacity), size(0) {
-        head = new Node(0, 0);
-        tail = new Node(0, 0);
-        head->next = tail;
-        tail->prev = head;
+    explicit LRUCache(int capacity) {
+        this->capacity = capacity;
+        this->size = 0;
+        this->head = new Node(0, 0);
+        this->tail = new Node(0, 0);
+        this->head->next = this->tail;
+        this->tail->prev = this->head;
     }
 
     int get(int key) {

@@ -1,4 +1,4 @@
-public class DoublyLinkedList {
+class DoublyLinkedList {
     static class Node {
         // CSOFF: VisibilityModifier
         int data;

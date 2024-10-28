@@ -31,4 +31,3 @@ if __name__ == "__main__":
     print(sol.maxArea([4, 3, 2, 1, 4]))
     print(sol.maxArea([1, 2, 1]))
     print(sol.maxArea([1, 2, 4, 3]))
-

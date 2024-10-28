@@ -107,7 +107,7 @@ class DoublyCircularLinkedList {
     }
 
     public static void main(final String[] args) {
-        CircularLinkedList list = new CircularLinkedList();
+        DoublyCircularLinkedList list = new DoublyCircularLinkedList();
         list.insertAtLast(1);
         list.insertAtLast(2);
         list.insertAtLast(3);

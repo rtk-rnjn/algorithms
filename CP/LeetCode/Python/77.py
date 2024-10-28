@@ -7,8 +7,7 @@ class Solution:
 
         ls = []
 
-        for i in combinations(range(1, n+1), k):
+        for i in combinations(range(1, n + 1), k):
             ls.append(list(i))
 
         return ls
-
