@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DEBUG = bool(int(os.getenv("DEBUG", "0")))
+DEBUG = bool(int(os.getenv("DEBUG", "1")))
 SECRET_KEY = os.getenv("SECRET_KEY", secrets.token_urlsafe(16))
 SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI", "sqlite:///site.db")
 SQLALCHEMY_TRACK_MODIFICATIONS = True
