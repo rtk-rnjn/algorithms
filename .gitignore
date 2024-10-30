@@ -14,3 +14,6 @@ test/
 **/**/temp.*
 .ipynb_checkpoints/
 tmp.sh
+.venv/
+__pycache__/
+.env

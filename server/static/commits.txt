@@ -1,0 +1,2634 @@
+* [33mcommit 4c2888a[m[33m ([m[1;3;5;38;5;196mHEAD[m[33m -> [m[38;5;214mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   2 days ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     refactor: Update .clang-tidy configuration
+[1;38;5;160m|[m     
+[1;38;5;160m|[m     - Add header-filter and system-headers options to .clang-tidy configuration file
+[1;38;5;160m|[m     - Remove unused AnalyzeTemporaryDtors option
+[1;38;5;160m|[m     - Enable UseColor option for better readability
+[1;38;5;160m|[m 
+* [33mcommit 5954695[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   3 days ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     feat: Add pattern searching algorithms in C++, Python, and C
+[1;38;5;160m|[m     
+[1;38;5;160m|[m     - Added pattern searching algorithms in C++, Python, and C.
+[1;38;5;160m|[m     - Updated the README.md file.
+[1;38;5;160m|[m     - Removed whitespace.
+[1;38;5;160m|[m     - Added a new C++ implementation for the LRUCache class.
+[1;38;5;160m|[m     - Added a new C implementation for the Armstrong number algorithm.
+[1;38;5;160m|[m     - Added a new C implementation for the GCD algorithm.
+[1;38;5;160m|[m     - Added a new C implementation for the LCM algorithm.
+[1;38;5;160m|[m     - Added a new Python implementation for the Celsius to Fahrenheit conversion.
+[1;38;5;160m|[m     - Added a new Python implementation for the Fahrenheit to Celsius conversion.
+[1;38;5;160m|[m     - Added a new C implementation for the Combinations algorithm.
+[1;38;5;160m|[m   
+*   [33mcommit 4e0e8c4[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m  Merge: 34cc1a0 1637a7e
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     Merge pull request #94 from rtk-rnjn/rtk-rnjn-patch-1
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     Update README.md
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m * [33mcommit 1637a7e[m
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m  Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m   Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m       Update README.md
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 34cc1a0[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     feat: add more python algo
+[1;38;5;166m|[m 
+* [33mcommit 07b5bd4[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     remove whitespace
+[1;38;5;166m|[m 
+* [33mcommit c71c71e[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     feat: Add pattern searching algorithms in JavaScript and Python
+[1;38;5;166m|[m 
+* [33mcommit d23cf55[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     feat: Add primeNumber algorithm in JavaScript
+[1;38;5;166m|[m 
+* [33mcommit 3ad2670[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     feat: Add factorial and reverseString algorithms in JavaScript
+[1;38;5;166m|[m 
+* [33mcommit e39fbba[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor: Improve validation logic for Sudoku board
+[1;38;5;166m|[m 
+* [33mcommit a1c4cdd[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     chore: Add solution for grouping anagrams in Python
+[1;38;5;166m|[m 
+* [33mcommit 344df68[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor: Delete useless files
+[1;38;5;166m|[m 
+* [33mcommit 590b3f7[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor interpolationSearch.js to use single quotes
+[1;38;5;166m|[m 
+* [33mcommit 21d97a5[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor exponentialSearch.js use single quote
+[1;38;5;166m|[m 
+* [33mcommit 032186c[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   3 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     chore: Refactor binarySearch.js to use arrow function syntax
+[1;38;5;166m|[m   
+*   [33mcommit 0e2be48[m
+[1;30;48;5;214m|[m[1;32m\[m  Merge: 1b03e9a b627bcf
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   3 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Merge pull request #93 from abhirai7/main
+[1;30;48;5;214m|[m [1;32m|[m     
+[1;30;48;5;214m|[m [1;32m|[m     [Forced] feat: Add binary search, exponential search, and interpolation search algorithms in JavaScript
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m * [33mcommit b627bcf[m
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   3 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Update exponentialSearch.js
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m * [33mcommit 5e6b76c[m
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   3 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Update interpolationSearch.js
+[1;30;48;5;214m|[m [1;32m|[m     
+[1;30;48;5;214m|[m [1;32m|[m     Use: backtic instead of Double Quotes
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m * [33mcommit f893c5e[m
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   3 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Override: matrix_multiplication.js
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m * [33mcommit 0eb55dd[m
+[1;30;48;5;214m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   3 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     feat: Add binary search, exponential search, and interpolation search algorithms in JavaScript
+[1;30;48;5;214m|[m [1;32m|[m   
+[1;30;48;5;214m|[m *   [33mcommit bda6a99[m
+[1;30;48;5;214m|[m [1;38;5;24m|[m[1;30;48;5;214m\[m  Merge: ede06a5 1b03e9a
+[1;30;48;5;214m|[m [1;38;5;24m|[m[1;30;48;5;214m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;30;48;5;214m|[m[1;30;48;5;214m/[m[1;38;5;24m|[m   Date:   3 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m   
+[1;30;48;5;214m|[m [1;38;5;24m|[m       Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;30;48;5;214m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 1b03e9a[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     feat: Add prime number algorithm in Python
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 3dfed78[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     chore: Add Hanoi Tower algorithm in Python
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 003d94a[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     feat: Add factorial function in Python
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 1cd8b91[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     feat: Add factorial_recursive function in Python
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 99ca642[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     chore: Refactor FCFS algorithm to use pointer notation for process array
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 09bc657[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     Refactor CRC code in C file and add prime number algorithm
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 6459f40[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     chore: Refactor doubly_linked_list.py for better readability and maintainability
+[36m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 32af6f4[m
+[36m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;24m|[m Date:   3 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     chore: Explicitly declare constructor as explicit in circular_queue.cpp and queue.cpp
+[36m|[m [1;38;5;24m|[m   
+* [1;38;5;24m|[m   [33mcommit 082bf11[m
+[1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m [1;38;5;24m\[m  Merge: b42713e da20a05
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   3 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     Merge pull request #91 from abhirai7/main
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     chore: Add matrix multiplication algorithm in JavaScript
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;38;5;160m|[m * [1;38;5;24m|[m [33mcommit da20a05[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   3 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     Update matrix_multiplication.js
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     - Use better naming
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     - Lint with `eslint`
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;38;5;160m|[m * [1;38;5;24m|[m [33mcommit 26d6543[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: codefactor-io <support@codefactor.io>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   6 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     [CodeFactor] Apply fixes to commit d147445
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit b42713e[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     chore: Add ESLint configuration file
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit 1976d52[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     Refactor code to use pointer notation for process array in FCFS algorithm
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit 031f5a9[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     feat: Add function to free matrix memory in C code
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit 4012b0b[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     feat: Implement RPN Evaluation in C and Python
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit c636e9b[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   4 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     [py] leetcode 73
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit bef305b[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   4 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     Refactor code for LeetCode problem 10.py
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit e1671b1[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   4 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     feat: Implement Zigzag Conversion in C and Python
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit 4bb31ba[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   4 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     feat: Add regex matching implementation in C and Python
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit 6a61707[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   4 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     Create LICENSE
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit e4bd27e[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   5 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     add NQueen in Py
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [33mcommit f1ec012[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m Date:   5 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m     3152.c Special Array I
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m * [33mcommit ede06a5[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   Date:   3 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m       chore: Optimize matrix multiplication algorithm in JavaScript
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m * [33mcommit d147445[m
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m   Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m       chore: Add matrix multiplication algorithm in JavaScript
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 4d805ae[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     chore: Update memory allocation in C code
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 5c3329d[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     chore: Update memory allocation in C code
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 017f60d[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     feat: add conversions
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 62ed098[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     feat: Add vector data structure implementation in C
+[1;5;38;5;231;48;5;239m|[m   
+*   [33mcommit ab56ed1[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m  Merge: b86f764 d875f22
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   6 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Merge pull request #89 from rtk-rnjn/ritik
+[1;38;5;166m|[m [1;30;48;5;214m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m     chore: Update Node.js version to 20 in GitHub Actions workflow
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit d875f22[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   6 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     chore: Update Node.js version to 20 in GitHub Actions workflow
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+* [1;30;48;5;214m|[m [33mcommit b86f764[m
+[1;32m|[m[1;30;48;5;214m\[m[1;30;48;5;214m|[m Merge: 4894980 868d26d
+[1;32m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan+github@gmail.com>
+[1;32m|[m [1;30;48;5;214m|[m Date:   6 months ago
+[1;32m|[m [1;30;48;5;214m|[m 
+[1;32m|[m [1;30;48;5;214m|[m     Merge pull request #88 from rtk-rnjn/ritik
+[1;32m|[m [1;30;48;5;214m|[m     
+[1;32m|[m [1;30;48;5;214m|[m     fast inv_sqrt in c
+[1;32m|[m [1;30;48;5;214m|[m 
+[1;32m|[m * [33mcommit 868d26d[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   6 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Refactor code and improve security
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m * [33mcommit c6a8353[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   6 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Refactor code to use bool type instead of int for validity checks
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m * [33mcommit df2a1fc[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   6 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Refactor hashmap implementation in C
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m * [33mcommit b4313e4[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   6 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     fast inv_sqrt in c
+[1;32m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 4894980[m
+[36m|[m[1;38;5;24m\[m[1;38;5;24m|[m Merge: 5d5d0b8 82ec208
+[36m|[m [1;38;5;24m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[36m|[m [1;38;5;24m|[m Date:   6 months ago
+[36m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;24m|[m     Merge pull request #87 from rtk-rnjn/ritik
+[36m|[m [1;38;5;24m|[m     
+[36m|[m [1;38;5;24m|[m     Add algorithms in Python
+[36m|[m [1;38;5;24m|[m 
+[36m|[m * [33mcommit 82ec208[m
+[36m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [1;38;5;160m|[m Date:   6 months ago
+[36m|[m [1;38;5;160m|[m 
+[36m|[m [1;38;5;160m|[m     Refactor Rabin-Karp pattern searching algorithm implementation
+[36m|[m [1;38;5;160m|[m 
+[36m|[m * [33mcommit 2c7121c[m
+[36m|[m[36m/[m  Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m   Date:   6 months ago
+[36m|[m   
+[36m|[m       feat: Add reverse string algorithms in Python
+[36m|[m       
+[36m|[m       feat: Add recursive implementation of reverse string algorithm in Python
+[36m|[m       
+[36m|[m       feat: Add smallest element algorithm in Python
+[36m|[m       
+[36m|[m       feat: Add recursive implementation of smallest element algorithm in Python
+[36m|[m       
+[36m|[m       feat: Add recursive implementation of sum of digits algorithm in Python
+[36m|[m 
+* [33mcommit 5d5d0b8[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     feat: Add Rabin-Karp pattern searching algorithm in Python
+[1;38;5;160m|[m 
+* [33mcommit d896787[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor KMP and Rabin-Karp pattern searching algorithms
+[1;38;5;160m|[m 
+* [33mcommit 6871c44[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor KMP pattern searching algorithm implementation
+[1;38;5;160m|[m 
+* [33mcommit 7f5be3d[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     feat: Add array list implementation in C
+[1;38;5;160m|[m 
+* [33mcommit d0d1112[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     feat: Add factorial and Fibonacci series implementations in C
+[1;38;5;160m|[m 
+* [33mcommit 5b4874c[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor CPU scheduling algorithms algo
+[1;38;5;160m|[m 
+* [33mcommit eff9ef4[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     feat: Add CRC32 implementation in C
+[1;38;5;160m|[m 
+* [33mcommit 0770c1b[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor code and fix formatting issues
+[1;38;5;160m|[m 
+* [33mcommit 0f1cd57[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Add odd_even_sort implementation in C
+[1;38;5;160m|[m   
+*   [33mcommit 720663b[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m  Merge: 740a44e 5beea26
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     Merge pull request #86 from abhirai7/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     duplicate_numbers(.cpp)
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m   
+[1;5;38;5;231;48;5;239m|[m *   [33mcommit 5beea26[m
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m[1;32m\[m  Merge: c313616 8da6735
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;32m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;32m|[m     Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;32m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m *   [33mcommit 8da6735[m
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m[36m\[m  Merge: a7d738c e363aee
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m     Merge branch 'rtk-rnjn:main' into main
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;24m|[m [36m|[m [33mcommit c313616[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m[1;38;5;24m/[m [36m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [36m|[m   Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [36m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [36m|[m       Fix formatting in duplicate_numbers.cpp
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m * [36m|[m [33mcommit a7d738c[m
+[1;5;38;5;231;48;5;239m|[m [36m|[m [36m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [36m|[m [36m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [36m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m [36m|[m [36m|[m     duplicate_numbers(.cpp)
+[1;5;38;5;231;48;5;239m|[m [36m|[m [36m|[m 
+* [36m|[m [36m|[m [33mcommit 740a44e[m
+[36m|[m [36m|[m[36m/[m  Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m[36m/[m[36m|[m   Date:   6 months ago
+[36m|[m [36m|[m   
+[36m|[m [36m|[m       Fix bugs and improve code readability in replace_element.c, reverse_string_recursive.c, and kmp.py
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit e363aee[m
+[36m|[m [36m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[36m|[m [36m|[m Date:   6 months ago
+[36m|[m [36m|[m 
+[36m|[m [36m|[m     brute_force in python
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit 9d61d2d[m
+[1;38;5;160m|[m[36m\[m[36m|[m Merge: 9fe075f 6ee7109
+[1;38;5;160m|[m [36m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;38;5;160m|[m [36m|[m Date:   6 months ago
+[1;38;5;160m|[m [36m|[m 
+[1;38;5;160m|[m [36m|[m     Merge pull request #85 from abhirai7/main
+[1;38;5;160m|[m [36m|[m     
+[1;38;5;160m|[m [36m|[m     Interpolation_search(.cpp)
+[1;38;5;160m|[m [36m|[m 
+[1;38;5;160m|[m * [33mcommit 6ee7109[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   6 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     Interpolation_search(.cpp)
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;38;5;160m|[m *   [33mcommit 3b9415d[m
+[1;38;5;160m|[m [1;38;5;166m|[m[1;38;5;160m\[m  Merge: 41468a6 9fe075f
+[1;38;5;160m|[m [1;38;5;166m|[m[1;38;5;160m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m[1;38;5;160m/[m[1;38;5;166m|[m   Date:   6 months ago
+[1;38;5;160m|[m [1;38;5;166m|[m   
+[1;38;5;160m|[m [1;38;5;166m|[m       Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;38;5;160m|[m [1;38;5;166m|[m   
+* [1;38;5;166m|[m   [33mcommit 9fe075f[m
+[1;32m|[m[1;38;5;24m\[m [1;38;5;166m\[m  Merge: 3ed9ed6 3481198
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m Date:   6 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m     Merge pull request #83 from abhirai7/main
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m     
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m     Add jump search algorithm in C++
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m   
+* [1;38;5;24m|[m [1;38;5;166m|[m   [33mcommit 3ed9ed6[m
+[36m|[m[1;38;5;160m\[m [1;38;5;24m\[m [1;38;5;166m\[m  Merge: ca50aa5 9aef7ee
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m Date:   6 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m     Merge pull request #82 from abhirai7/main
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m     
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m     exponential_search(cpp)
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m * [33mcommit 41468a6[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m[1;38;5;24m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m   Date:   6 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m       Add interpolation search algorithm in C++ and C
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[36m|[m [1;38;5;160m|[m * [33mcommit 3481198[m
+[36m|[m [1;38;5;160m|[m[1;38;5;160m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m   Date:   6 months ago
+[36m|[m [1;38;5;160m|[m   
+[36m|[m [1;38;5;160m|[m       Add jump search algorithm in C++
+[36m|[m [1;38;5;160m|[m 
+[36m|[m * [33mcommit 9aef7ee[m
+[36m|[m [1;38;5;160m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m Date:   6 months ago
+[36m|[m [1;38;5;160m|[m 
+[36m|[m [1;38;5;160m|[m     exponential_search(cpp)
+[36m|[m [1;38;5;160m|[m 
+[36m|[m * [33mcommit 3b995d7[m
+[36m|[m[36m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m   Date:   6 months ago
+[36m|[m   
+[36m|[m       exponential_search(cpp)
+[36m|[m 
+* [33mcommit ca50aa5[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     add exponential search
+[1;38;5;160m|[m 
+* [33mcommit 17a4ea1[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Add interpolation search and jump search algorithms in C
+[1;38;5;160m|[m 
+* [33mcommit b38ef54[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor SJF algorithm implementation in Python
+[1;38;5;160m|[m 
+* [33mcommit bc6519a[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor round robin CPU scheduling algorithm and add pattern searching algorithms in C
+[1;38;5;160m|[m 
+* [33mcommit d90b866[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor FCFS algorithm implementation in C and Python
+[1;38;5;160m|[m 
+* [33mcommit a09c2c8[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor round robin CPU scheduling algorithm to improve readability and efficiency
+[1;38;5;160m|[m 
+* [33mcommit df1b3f7[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Reorganise codebase
+[1;38;5;160m|[m 
+* [33mcommit 7163b9e[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Refactor round robin CPU scheduling algorithm and add FCFS algorithm in Python
+[1;38;5;160m|[m 
+* [33mcommit e5b9ed6[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;160m|[m Date:   6 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Add round robin CPU scheduling algorithm in Python & C
+[1;38;5;160m|[m   
+*   [33mcommit 8de3757[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m  Merge: dff8a8a 9d82308
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     Merge pull request #80 from abhirai7/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     binary_search_recursive(in cpp)
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m * [33mcommit 9d82308[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Date:   6 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     binary_search_recursive(in cpp)
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+* [1;38;5;166m|[m [33mcommit dff8a8a[m
+[1;38;5;166m|[m[1;38;5;166m/[m  Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m   Date:   6 months ago
+[1;38;5;166m|[m   
+[1;38;5;166m|[m       Add bogobogo_sort and bozo_sort algorithms in Python
+[1;38;5;166m|[m 
+* [33mcommit 79ab4c6[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Add circular queue implementation in C++
+[1;38;5;166m|[m 
+* [33mcommit e0e74c9[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Add implementation of tim_sort algorithm in C++
+[1;38;5;166m|[m 
+* [33mcommit fef7054[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor function names and variables in 48.c for consistency
+[1;38;5;166m|[m 
+* [33mcommit 0b70305[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor matrix rotation algorithm in C and Python
+[1;38;5;166m|[m 
+* [33mcommit e4ee1c9[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan+github@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Refactor LRUCache function names to follow naming conventions
+[1;38;5;166m|[m 
+* [33mcommit 938f2ae[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Implement LRU Cache algorithm in C and Java
+[1;38;5;166m|[m 
+* [33mcommit 8cb581c[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Add SpiralTravel algorithm implementation in Java
+[1;38;5;166m|[m 
+* [33mcommit a81e68b[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     Add PairProduct algorithm implementation in Java and Python
+[1;38;5;166m|[m 
+* [33mcommit 4c20fd5[m
+[1;38;5;166m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m Date:   6 months ago
+[1;38;5;166m|[m 
+[1;38;5;166m|[m     shell sort in C and CPP
+[1;38;5;166m|[m   
+*   [33mcommit f0240f7[m
+[1;30;48;5;214m|[m[1;32m\[m  Merge: ecde79a 419c0c7
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <37435729+rtk-rnjn@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   6 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Merge pull request #79 from abhirai7/main
+[1;30;48;5;214m|[m [1;32m|[m     
+[1;30;48;5;214m|[m [1;32m|[m     shell_sort(.cpp)
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m * [33mcommit 419c0c7[m
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <37435729+rtk-rnjn@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   6 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Update shell_sort.cpp
+[1;30;48;5;214m|[m [1;32m|[m   
+[1;30;48;5;214m|[m *   [33mcommit 69b925d[m
+[1;30;48;5;214m|[m [1;38;5;24m|[m[36m\[m  Merge: ba068c2 f7316f9
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m Date:   6 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m 
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m     Merge branch 'rtk-rnjn:main' into main
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m 
+[1;30;48;5;214m|[m * [36m|[m [33mcommit ba068c2[m
+[1;30;48;5;214m|[m [36m|[m [36m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;30;48;5;214m|[m [36m|[m [36m|[m Date:   6 months ago
+[1;30;48;5;214m|[m [36m|[m [36m|[m 
+[1;30;48;5;214m|[m [36m|[m [36m|[m     Improved shell_sort(.cpp)
+[1;30;48;5;214m|[m [36m|[m [36m|[m 
+[1;30;48;5;214m|[m * [36m|[m [33mcommit 70f3382[m
+[1;30;48;5;214m|[m [36m|[m [36m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;30;48;5;214m|[m [36m|[m [36m|[m Date:   7 months ago
+[1;30;48;5;214m|[m [36m|[m [36m|[m 
+[1;30;48;5;214m|[m [36m|[m [36m|[m     shell_sort(in cpp)
+[1;30;48;5;214m|[m [36m|[m [36m|[m 
+* [36m|[m [36m|[m [33mcommit ecde79a[m
+[36m|[m [36m|[m[36m/[m  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m[36m/[m[36m|[m   Date:   6 months ago
+[36m|[m [36m|[m   
+[36m|[m [36m|[m       Refactor matrix multiplication algorithm in C to use dynamic memory allocation
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit f7316f9[m
+[36m|[m [36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m [36m|[m Date:   6 months ago
+[36m|[m [36m|[m 
+[36m|[m [36m|[m     Add TimSort algorithm implementation in Java
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit b8636c8[m
+[36m|[m [36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m [36m|[m Date:   7 months ago
+[36m|[m [36m|[m 
+[36m|[m [36m|[m     Add matrix multiplication and Tim sort algorithm implementations in C
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit bfa9e9e[m
+[36m|[m [36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m [36m|[m Date:   7 months ago
+[36m|[m [36m|[m 
+[36m|[m [36m|[m     Add Tim sort algorithm implementation in Python
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit d11fc1f[m
+[36m|[m[36m/[m  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m   Date:   7 months ago
+[36m|[m   
+[36m|[m       Add matrix multiplication algorithms in Python
+[36m|[m 
+* [33mcommit 15587e3[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add solution for LeetCode problem 1614: Maximum Nesting Depth of the Parentheses
+[36m|[m 
+* [33mcommit fec4178[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add counting sort and radix sort implementations in C++ and Java
+[36m|[m 
+* [33mcommit 91dc732[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add flake8 configuration and fix code formatting
+[36m|[m 
+* [33mcommit 0505b94[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add radix sort implementation in C and Python
+[36m|[m 
+* [33mcommit fd419b0[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add radix sort algorithm implementation in Python
+[36m|[m 
+* [33mcommit defb668[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add counting sort algorithm implementation in C and Python
+[36m|[m 
+* [33mcommit a5fd458[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add counting sort, optimize linear search, and fix merge sort and selection sort
+[36m|[m 
+* [33mcommit f1c44fa[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   7 months ago
+[36m|[m 
+[36m|[m     Add linear search algorithm in JavaScript
+[36m|[m   
+*   [33mcommit e8ce98d[m
+[1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m  Merge: 0cf38fb 114ec65
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   7 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     Merge pull request #77 from abhirai7/main
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     mergesort(in python)
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m * [33mcommit 114ec65[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   7 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     merge_sort(in python)
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m * [33mcommit 68589cc[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   7 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     linear_search(in Python)
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m * [33mcommit a860815[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   7 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     merge_sort(in python)
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m * [33mcommit 134655f[m
+[1;38;5;160m|[m[1;38;5;160m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m   Date:   7 months ago
+[1;38;5;160m|[m   
+[1;38;5;160m|[m       linear_search(in python)
+[1;38;5;160m|[m 
+* [33mcommit 0cf38fb[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   8 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     Refactor countAndSay method in Solution class
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit f625800[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   8 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     Add solution for LeetCode problem 11 in C and Python
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit a64c2f1[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   8 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     Add solution for LeetCode problem 61 in C and Python
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 1d5079c[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   8 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     Refactor spiral_travel function and add new LeetCode solutions
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 1cbd72a[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   8 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     Add spiral_travel function in C and Python
+[1;5;38;5;231;48;5;239m|[m   
+*   [33mcommit c9fb021[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m  Merge: f814894 167edee
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Merge pull request #73 from abhirai7/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Fixed the BubbleSort.java file
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit 167edee[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Update BubbleSort.java
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit dc8cd5b[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Fixed the BubbleSort.java file
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit 20f3edc[m
+[1;38;5;166m|[m[1;38;5;166m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;166m|[m   Date:   9 months ago
+[1;38;5;166m|[m   
+[1;38;5;166m|[m       Fixed BubbleSort.java
+[1;38;5;166m|[m 
+* [33mcommit f814894[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     Change constructor to explicit in Stack class
+[1;30;48;5;214m|[m 
+* [33mcommit f9c4e32[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     Remove unnecessary header file inclusion
+[1;30;48;5;214m|[m   
+*   [33mcommit 0d6588f[m
+[1;32m|[m[1;38;5;24m\[m  Merge: e964976 87fc71d
+[1;32m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   9 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Merge pull request #71 from abhirai7/main
+[1;32m|[m [1;38;5;24m|[m     
+[1;32m|[m [1;38;5;24m|[m     Stack.cpp
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m * [33mcommit 87fc71d[m
+[1;32m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   9 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Update stack.cpp
+[1;32m|[m [1;38;5;24m|[m     
+[1;32m|[m [1;38;5;24m|[m     imaging using pointers in static codes
+[1;32m|[m [1;38;5;24m|[m   
+[1;32m|[m *   [33mcommit cb56dc1[m
+[1;32m|[m [36m|[m[1;32m\[m  Merge: e9e5133 e964976
+[1;32m|[m [36m|[m[1;32m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;32m|[m[1;32m/[m[36m|[m   Date:   9 months ago
+[1;32m|[m [36m|[m   
+[1;32m|[m [36m|[m       Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;32m|[m [36m|[m   
+* [36m|[m   [33mcommit e964976[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m [36m\[m  Merge: 46ae0b9 d864298
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m     Merge pull request #70 from stud-addy-vans/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m     Insertion sort in python
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m * [36m|[m [33mcommit d864298[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m     fix return type
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m * [36m|[m [33mcommit 343728b[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m     Update insertion_sort.py
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m   
+[1;5;38;5;231;48;5;239m|[m * [36m|[m   [33mcommit d84413a[m
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m[1;5;38;5;231;48;5;239m\[m [36m\[m  Merge: 1547ccb 46ae0b9
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m[1;5;38;5;231;48;5;239m/[m [36m/[m  Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m[1;30;48;5;214m|[m [36m|[m   Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [36m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [36m|[m       Merge branch 'main' of https://github.com/stud-addy-vans/algorithms
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [36m|[m   
+* [1;30;48;5;214m|[m [36m|[m   [33mcommit 46ae0b9[m
+[1;38;5;24m|[m[36m\[m [1;30;48;5;214m\[m [36m\[m  Merge: b6b7a78 e98f7d1
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m     Merge pull request #69 from abhirai7/main
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m     
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m     linked_list.cpp
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m * [1;30;48;5;214m|[m [36m|[m [33mcommit e98f7d1[m
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m     Update linked_list.cpp
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m     
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m     use delete instead of free
+[1;38;5;24m|[m [36m|[m [1;30;48;5;214m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m * [36m|[m   [33mcommit 1547ccb[m
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m [36m\[m  Merge: 55733d4 ac1eb66
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m     Merge branch 'main' of https://github.com/stud-addy-vans/algorithms
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m * [36m|[m   [33mcommit ac1eb66[m
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;166m|[m[1;30;48;5;214m\[m [36m\[m  Merge: 84708bd 3704f1f
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;166m|[m [1;30;48;5;214m|[m [36m|[m Author: Singh_Prtp_AdityA <125665011+stud-addy-vans@users.noreply.github.com>
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;166m|[m [1;30;48;5;214m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;166m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;166m|[m [1;30;48;5;214m|[m [36m|[m     Merge branch 'rtk-rnjn:main' into main
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;166m|[m [1;30;48;5;214m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m * [1;30;48;5;214m|[m [36m|[m   [33mcommit 84708bd[m
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;32m|[m[1;38;5;24m\[m [1;30;48;5;214m\[m [36m\[m  Merge: 4fb660e 098da45
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m Author: Singh_Prtp_AdityA <125665011+stud-addy-vans@users.noreply.github.com>
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m     Merge branch 'rtk-rnjn:main' into main
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m * [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m [33mcommit 55733d4[m
+[1;38;5;24m|[m [36m|[m [1;32m|[m[1;32m/[m [1;38;5;24m/[m [1;30;48;5;214m/[m [36m/[m  Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m   Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m       Edited file name to follow naming convention.
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m * [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m   [33mcommit 4fb660e[m
+[1;38;5;24m|[m [36m|[m [36m|[m[1;38;5;160m\[m [1;38;5;24m\[m [1;30;48;5;214m\[m [36m\[m  Merge: 827b484 3d1eaba
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m     Merge branch 'main' of https://github.com/stud-addy-vans/algorithms
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m * [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m [33mcommit 827b484[m
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m     Insertion Sort Algorithm in Python.
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m * [33mcommit e9e5133[m
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m[36m_[m[1;38;5;160m|[m[36m_[m[1;38;5;24m|[m[36m_[m[1;30;48;5;214m|[m[36m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;24m|[m [36m|[m[36m/[m[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m   Date:   9 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m   
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m       Stack.cpp
+[1;38;5;24m|[m [36m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;24m|[m * [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 6448897[m
+[1;38;5;24m|[m[1;38;5;24m/[m [1;38;5;160m/[m [1;38;5;160m/[m [1;38;5;24m/[m [1;30;48;5;214m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m   Date:   9 months ago
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m   
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m       linked_list.cpp
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit b6b7a78[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Add necessary header file and fix function parameter
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 687c512[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     + [C] 65. Valid Numbers
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 242217a[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Add solution for LeetCode problem 65 in Java and Python, and implement a Tree data structure in Python
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit c21b54b[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Refactor doubly linked list implementation in Java and add new implementations in C
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 8e26bf0[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Refactor CI/CD workflows and optimize merge sort algorithm
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 29d17e4[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Update stack_using_linked_list.c, QuickSort.java, linked_list.c, HeapSort.java, quick_sort.py, MergeSort.java, Deque.java, LinkedList.java
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit e75e6f1[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Revert recent commit
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 4100b07[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Refactor code for improved performance
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 59bf85b[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Fix CheckStyle linting issue and optimize code in 219.java
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit c46d387[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     + [java] 219. Contains Duplicate II
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit dc5c60c[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     + [java] 145: Binary Tree Postorder Traversal
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 9f22721[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Fix initialization of LinkedList head variable
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 56e0e6c[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Add C and C++ memory check workflows
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 3d053c4[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Add LeetCode solutions in C, Java, and Python
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit acd5fee[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     + [c] 219. Contains Duplicate II
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 1f39ad2[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     Update C/C++ style guide
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 14a6c36[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m     + [py] 219. Contains Duplicate II
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;30;48;5;214m|[m [33mcommit 4db218e[m
+[1;30;48;5;214m|[m [1;38;5;160m|[m[1;30;48;5;214m_[m[1;38;5;160m|[m[1;30;48;5;214m_[m[1;38;5;24m|[m[1;30;48;5;214m/[m  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m[1;30;48;5;214m/[m[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m   Date:   9 months ago
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m       + [c/py] Leetcode 144 and 145
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit 3704f1f[m
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m_[m[1;38;5;160m|[m[1;38;5;24m/[m  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m[1;38;5;24m/[m[1;38;5;160m|[m [1;38;5;160m|[m   Date:   9 months ago
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m   
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m       Fix all cppcheck voilations
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 098da45[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Refactor linked list implementation in JavaScript
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 2d14a97[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Update .deepsource.toml and CHECKSTYLE_GUIDE.md, and fix bugs in 13.cpp and 3.cpp. Add linkedList.js.
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit e47ea63[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Refactor romanToInt function in 13.cpp
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 0e81d09[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     + [java] LeetCode problem 20: Valid Parentheses
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit d1629b5[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     + [java] LeetCode problems 13 and 4
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 7582eea[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Add SumOfDigitsRecursive.java
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit fc96c10[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Add SumOfDigits algorithm in Java
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit bf71282[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Fix formatting in twoSum function
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 865c1b8[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Format 13.py
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit c18ff32[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Fix linting issues and update Roman to Integer conversion logic
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit cc66403[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     + [py] Leetcode 13 & Leetcode 20
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit ce60675[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Fix memory check exit code issue
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit c9ef02b[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Update workflow names and add new C code files
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit c929242[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Refactor TreeNode class and Solution class in Python files
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 1dc5699[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Fix CheckStyle download and update maxDepth implementation
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 4f621c9[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     + [py] 104. Maximum Depth of Binary Tree
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit 5febaaa[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     + [py] 94. Binary Tree Inorder Traversal
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [1;38;5;160m|[m [33mcommit ab8dd33[m
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m     Fix YML(s) & [+] type annotation for 2.py
+[1;38;5;160m|[m [1;38;5;160m|[m [1;38;5;160m|[m   
+* [1;38;5;160m|[m [1;38;5;160m|[m   [33mcommit 9a680fe[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;160m\[m [1;38;5;160m\[m [1;38;5;160m\[m  Merge: 0b3f9b1 3d1eaba
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;160m|[m[1;38;5;160m/[m  Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m[1;38;5;160m/[m[1;38;5;160m|[m   Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;160m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;160m|[m       Merge pull request #66 from stud-addy-vans/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;160m|[m       
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;160m|[m       MatrixMultiplication in JAVA
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;160m|[m 
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;160m|[m [33mcommit 3d1eaba[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m     String[] args be final
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m 
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;160m|[m [33mcommit e8156b4[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m     Update MatrixMultiplication.java
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m   
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;160m|[m   [33mcommit c56e00e[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m [1;38;5;160m\[m  Merge: 8f990f8 0b3f9b1
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m[1;5;38;5;231;48;5;239m/[m [1;38;5;160m/[m  Author: Singh_Prtp_AdityA <125665011+stud-addy-vans@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m[1;38;5;160m|[m [1;38;5;160m/[m   Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m[1;38;5;160m/[m    
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m         Merge branch 'rtk-rnjn:main' into main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m 
+* [1;38;5;160m|[m [33mcommit 0b3f9b1[m[33m ([m[1;34mgrafted[m[33m)[m
+ [1;38;5;160m/[m  Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m   Date:   9 months ago
+[1;38;5;160m|[m   
+[1;38;5;160m|[m       + [Java] Longest Substring Without Repeating ...
+[1;38;5;160m|[m 
+* [33mcommit 8f990f8[m
+[1;32m|[m Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;32m|[m Date:   9 months ago
+[1;32m|[m 
+[1;32m|[m     Updated Matrix Multiplication without using
+[1;32m|[m     scanner class
+[1;32m|[m 
+* [33mcommit d4193ab[m
+[1;32m|[m Author: Singh_Prtp_AdityA <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;32m|[m Date:   9 months ago
+[1;32m|[m 
+[1;32m|[m     MatrixMultiplication in JAVA
+[1;32m|[m 
+* [33mcommit b46a031[m
+[1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m Date:   9 months ago
+[1;32m|[m 
+[1;32m|[m     + [C/Java] add more data structures
+[1;32m|[m 
+* [33mcommit 64e0400[m
+[1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m Date:   9 months ago
+[1;32m|[m 
+[1;32m|[m     minor
+[1;32m|[m 
+* [33mcommit 68044a7[m
+[1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m Date:   9 months ago
+[1;32m|[m 
+[1;32m|[m     + [c] 4. Median of Two Sorted Arrays
+[1;32m|[m 
+* [33mcommit edbbfe5[m
+[1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m Date:   9 months ago
+[1;32m|[m 
+[1;32m|[m     + [c/py] 38. Count and Say
+[1;32m|[m   
+*   [33mcommit d79f52d[m
+[1;38;5;24m|[m[36m\[m  Merge: c019e9a 306b152
+[1;38;5;24m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m Date:   9 months ago
+[1;38;5;24m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m     Merge pull request #58 from Shambhavirani625/main
+[1;38;5;24m|[m [36m|[m     
+[1;38;5;24m|[m [36m|[m     Update 412.cpp
+[1;38;5;24m|[m [36m|[m 
+[1;38;5;24m|[m * [33mcommit 306b152[m
+[1;38;5;24m|[m[1;38;5;24m/[m  Author: Shambhavi Rani <121641188+Shambhavirani625@users.noreply.github.com>
+[1;38;5;24m|[m   Date:   9 months ago
+[1;38;5;24m|[m   
+[1;38;5;24m|[m       Update 412.cpp
+[1;38;5;24m|[m 
+* [33mcommit c019e9a[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     + [C] add reverse_linked_list.c
+[36m|[m 
+* [33mcommit e078653[m
+[36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     + [py] longest substring without repeating chracters
+[36m|[m 
+* [33mcommit 6996797[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     use fixed reference
+[36m|[m 
+* [33mcommit 361d7ee[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     Fix code
+[36m|[m 
+* [33mcommit 3c9453e[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     Fix code style as per Codacy
+[36m|[m 
+* [33mcommit 0d796ac[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     Format CP/LeetCode/CPP/*.cpp with clang-format
+[36m|[m 
+* [33mcommit 2bc15f5[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     dont copy entire vector
+[36m|[m 
+* [33mcommit 77ec096[m
+[36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m Date:   9 months ago
+[36m|[m 
+[36m|[m     Fix DeepSource Issues
+[36m|[m   
+*   [33mcommit 4659200[m
+[1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m  Merge: 65e5661 8207dba
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   9 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     Merge pull request #57 from rtk-rnjn/deepsource-autofix-e9550616
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     refactor: refactor unnecessary `else` / `elif` when `if` block has a `return` statement
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m * [33mcommit 8207dba[m
+[1;38;5;160m|[m[1;38;5;160m/[m  Author: deepsource-autofix[bot] <62050782+deepsource-autofix[bot]@users.noreply.github.com>
+[1;38;5;160m|[m   Date:   9 months ago
+[1;38;5;160m|[m   
+[1;38;5;160m|[m       refactor: refactor unnecessary `else` / `elif` when `if` block has a `return` statement
+[1;38;5;160m|[m       
+[1;38;5;160m|[m       The use of `else` or `elif` becomes redundant and can be dropped if the last statement under the leading `if` / `elif` block is a `return` statement.
+[1;38;5;160m|[m       In the case of an `elif` after `return`, it can be written as a separate `if` block.
+[1;38;5;160m|[m       For `else` blocks after `return`, the statements can be shifted out of `else`. Please refer to the examples below for reference.
+[1;38;5;160m|[m       
+[1;38;5;160m|[m       Refactoring the code this way can improve code-readability and make it easier to maintain.
+[1;38;5;160m|[m 
+* [33mcommit 65e5661[m
+[1;5;38;5;231;48;5;239m|[m Author: deepsource-io[bot] <42547082+deepsource-io[bot]@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     ci: update .deepsource.toml
+[1;5;38;5;231;48;5;239m|[m 
+* [33mcommit 0bb5ffc[m
+[1;5;38;5;231;48;5;239m|[m Author: deepsource-io[bot] <42547082+deepsource-io[bot]@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m Date:   9 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     ci: update .deepsource.toml
+[1;5;38;5;231;48;5;239m|[m   
+*   [33mcommit 882521f[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m  Merge: bde693e c8b4228
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Merge pull request #54 from rtk-rnjn/Go-Lang
+[1;38;5;166m|[m [1;30;48;5;214m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m     + [Go] Add sorting algo & tower of hanoi
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit c8b4228[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   9 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     + [Go] Add sorting algo & tower of hanoi
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+* [1;30;48;5;214m|[m [33mcommit bde693e[m
+[1;30;48;5;214m|[m[1;30;48;5;214m/[m  Author: deepsource-io[bot] <42547082+deepsource-io[bot]@users.noreply.github.com>
+[1;30;48;5;214m|[m   Date:   9 months ago
+[1;30;48;5;214m|[m   
+[1;30;48;5;214m|[m       ci: update .deepsource.toml
+[1;30;48;5;214m|[m 
+* [33mcommit 3a5707c[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     Minor fix
+[1;30;48;5;214m|[m 
+* [33mcommit a903d3e[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     + [c] heap_sort
+[1;30;48;5;214m|[m 
+* [33mcommit 73e339c[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     + [cpp] add sorting algorithms & minor updates
+[1;30;48;5;214m|[m 
+* [33mcommit aecd430[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     + [c] selection sort
+[1;30;48;5;214m|[m 
+* [33mcommit 0973643[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     + [c] linear search recursive
+[1;30;48;5;214m|[m 
+* [33mcommit f30ea52[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     + [c] insertion_sort & merge_sort
+[1;30;48;5;214m|[m 
+* [33mcommit 384379d[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     + [c] 3. Longest Substring
+[1;30;48;5;214m|[m 
+* [33mcommit 0eb3f85[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   9 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     consider all warnings as errors
+[1;30;48;5;214m|[m 
+* [33mcommit fbff363[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   10 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     Fix DeepSource issues
+[1;30;48;5;214m|[m 
+* [33mcommit c317eae[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   10 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     use `const int arr[]` instead of `int arr[]`
+[1;30;48;5;214m|[m 
+* [33mcommit f90c9cd[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   10 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     Fix mem check in reverse_string.cpp
+[1;30;48;5;214m|[m 
+* [33mcommit cc584e5[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   10 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     fix mem leak
+[1;30;48;5;214m|[m   
+*   [33mcommit 78293ce[m
+[1;32m|[m[1;38;5;24m\[m  Merge: e7b6a9f fccf2c8
+[1;32m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Merge pull request #47 from abhirai7/main
+[1;32m|[m [1;38;5;24m|[m     
+[1;32m|[m [1;38;5;24m|[m     Issue Resolved: C-style array declaration replaced with vector.
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m * [33mcommit fccf2c8[m
+[1;32m|[m[1;32m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;32m|[m   Date:   10 months ago
+[1;32m|[m   
+[1;32m|[m       Issue Resolved : C-style array replaced w vector
+[1;32m|[m 
+* [33mcommit e7b6a9f[m
+[1;38;5;24m|[m Author: deepsource-io[bot] <42547082+deepsource-io[bot]@users.noreply.github.com>
+[1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m 
+[1;38;5;24m|[m     ci: update .deepsource.toml
+[1;38;5;24m|[m 
+* [33mcommit 5bc0501[m
+[1;38;5;24m|[m Author: deepsource-io[bot] <42547082+deepsource-io[bot]@users.noreply.github.com>
+[1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m 
+[1;38;5;24m|[m     ci: update .deepsource.toml
+[1;38;5;24m|[m 
+* [33mcommit ce6473a[m
+[1;38;5;24m|[m Author: deepsource-io[bot] <42547082+deepsource-io[bot]@users.noreply.github.com>
+[1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m 
+[1;38;5;24m|[m     ci: add .deepsource.toml
+[1;38;5;24m|[m   
+*   [33mcommit b03512f[m
+[36m|[m[1;38;5;160m\[m  Merge: 3356886 51d39d9
+[36m|[m [1;38;5;160m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;160m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m 
+[36m|[m [1;38;5;160m|[m     Merge pull request #42 from Shambhavirani625/main
+[36m|[m [1;38;5;160m|[m     
+[36m|[m [1;38;5;160m|[m     Linear search in c
+[36m|[m [1;38;5;160m|[m 
+[36m|[m * [33mcommit 51d39d9[m
+[36m|[m [1;38;5;160m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;160m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m 
+[36m|[m [1;38;5;160m|[m     Update linear_search.c
+[36m|[m [1;38;5;160m|[m   
+[36m|[m *   [33mcommit d6c45e1[m
+[36m|[m [1;5;38;5;231;48;5;239m|[m[36m\[m  Merge: 70ff326 3356886
+[36m|[m [1;5;38;5;231;48;5;239m|[m[36m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[36m|[m[36m/[m[1;5;38;5;231;48;5;239m|[m   Date:   10 months ago
+[36m|[m [1;5;38;5;231;48;5;239m|[m   
+[36m|[m [1;5;38;5;231;48;5;239m|[m       Merge branch 'main' of https://github.com/Shambhavirani625/algorithms
+[36m|[m [1;5;38;5;231;48;5;239m|[m   
+* [1;5;38;5;231;48;5;239m|[m   [33mcommit 3356886[m
+[1;30;48;5;214m|[m[1;32m\[m [1;5;38;5;231;48;5;239m\[m  Merge: 0a85402 496505b
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m     Merge pull request #40 from vikram0088/main
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m     
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m     Moving array elements by Dth position
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m * [1;5;38;5;231;48;5;239m|[m [33mcommit 496505b[m
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m     Update movebyDposition.cpp
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m * [1;5;38;5;231;48;5;239m|[m [33mcommit 930cb44[m
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m     Moving array elements by Dth position
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;30;48;5;214m|[m * [1;5;38;5;231;48;5;239m|[m   [33mcommit 42dfc38[m
+[1;30;48;5;214m|[m [1;38;5;24m|[m[36m\[m [1;5;38;5;231;48;5;239m\[m  Merge: 078b8cf 22ddb88
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m [1;5;38;5;231;48;5;239m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m [1;5;38;5;231;48;5;239m|[m     Merge branch 'main' of https://github.com/vikram0088/algorithms
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;30;48;5;214m|[m [1;38;5;24m|[m * [1;5;38;5;231;48;5;239m|[m   [33mcommit 22ddb88[m
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m [1;5;38;5;231;48;5;239m\[m  Merge: b11acdf 18e89bc
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: vikram0088 <155892330+vikram0088@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     Merge branch 'rtk-rnjn:main' into main
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m * [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit 078b8cf[m
+[1;30;48;5;214m|[m [1;38;5;160m|[m[1;38;5;160m/[m [1;5;38;5;231;48;5;239m/[m [1;5;38;5;231;48;5;239m/[m  Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m       Moving array elements by Dth position
+[1;30;48;5;214m|[m [1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m * [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit b11acdf[m
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     Updated movebyDposition.cpp
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m * [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit 7cb1a0d[m
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     MOVING ARRAY BY Dth POSITION
+[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit 0a85402[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     + heapsort & README
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit 2115d01[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     minor formatting in codes
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+* [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit 31dba88[m
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     minor improvements
+[1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   
+* [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   [33mcommit 5c0e9f2[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m [1;5;38;5;231;48;5;239m\[m [1;5;38;5;231;48;5;239m\[m [1;5;38;5;231;48;5;239m\[m  Merge: e62a0e0 f389d75
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     Merge pull request #41 from Shambhavirani625/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     Tower of Hanoi in Cpp
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+* [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit e62a0e0[m
+[1;30;48;5;214m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;30;48;5;214m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m     proper lint in cpp
+[1;30;48;5;214m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+* [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m [33mcommit 837ab45[m
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m[1;5;38;5;231;48;5;239m_[m[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m [1;5;38;5;231;48;5;239m/[m  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m[1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m       fix memory leak in 21.cpp
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m * [33mcommit 70ff326[m
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m[1;30;48;5;214m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m[1;30;48;5;214m/[m[1;5;38;5;231;48;5;239m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m       Linear search in c
+[1;5;38;5;231;48;5;239m|[m [1;30;48;5;214m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m * [1;5;38;5;231;48;5;239m|[m   [33mcommit f389d75[m
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;5;38;5;231;48;5;239m\[m [1;5;38;5;231;48;5;239m\[m  Merge: 6a070de 18e89bc
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;5;38;5;231;48;5;239m/[m [1;5;38;5;231;48;5;239m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m[1;32m|[m [1;5;38;5;231;48;5;239m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m       Merge branch 'main' of https://github.com/Shambhavirani625/algorithms
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m   
+* [1;32m|[m [1;5;38;5;231;48;5;239m|[m   [33mcommit 18e89bc[m
+[36m|[m[1;5;38;5;231;48;5;239m\[m [1;32m\[m [1;5;38;5;231;48;5;239m\[m  Merge: 7569599 34d2dc3
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;5;38;5;231;48;5;239m/[m  Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m[1;32m|[m   Date:   10 months ago
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;32m|[m   
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;32m|[m       Merge pull request #34 from vikram0088/main
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;32m|[m       
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;32m|[m       Largest element in an array.
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;32m|[m 
+[36m|[m * [1;32m|[m [33mcommit 34d2dc3[m
+[36m|[m [1;38;5;160m|[m [1;32m|[m Author: vikram0088 <155892330+vikram0088@users.noreply.github.com>
+[36m|[m [1;38;5;160m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;32m|[m     Update secondlargest.cpp
+[36m|[m [1;38;5;160m|[m [1;32m|[m   
+[36m|[m * [1;32m|[m   [33mcommit dd82d9b[m
+[36m|[m [1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m [1;32m\[m  Merge: 7d6dda0 0d76722
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;32m|[m Author: vikram0088 <155892330+vikram0088@users.noreply.github.com>
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;32m|[m 
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;32m|[m     Merge branch 'rtk-rnjn:main' into main
+[36m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;32m|[m   
+[36m|[m * [1;38;5;166m|[m [1;32m|[m   [33mcommit 7d6dda0[m
+[36m|[m [1;30;48;5;214m|[m[1;32m\[m [1;38;5;166m\[m [1;32m\[m  Merge: 9e00b88 914d403
+[36m|[m [1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: vikram0088 <kv97924413@gmail.com>
+[36m|[m [1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[36m|[m [1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Merge branch 'main' of https://github.com/vikram0088/algorithms
+[36m|[m [1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[36m|[m * [1;32m|[m [1;38;5;166m|[m [1;32m|[m [33mcommit 9e00b88[m
+[36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: vikram0088 <kv97924413@gmail.com>
+[36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Largest element in an array
+[36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   
+* [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   [33mcommit 7569599[m
+[1;38;5;24m|[m[36m\[m [1;32m\[m [1;32m\[m [1;38;5;166m\[m [1;32m\[m  Merge: 1ccc6b8 95d3990
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Merge pull request #35 from stud-addy-vans/main
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Updated DS
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;38;5;24m|[m * [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m [33mcommit 95d3990[m
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: stud-addy-vans <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Updated 21.cpp Fix Memory leakage
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   
+[1;38;5;24m|[m * [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   [33mcommit 340fe82[m
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m\[m [1;32m\[m [1;32m\[m [1;38;5;166m\[m [1;32m\[m  Merge: 135e98c 1ccc6b8
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m/[m [1;32m/[m [1;32m/[m [1;38;5;166m/[m [1;32m/[m  Author: stud-addy-vans <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;24m|[m[1;38;5;24m/[m[1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   
+[1;38;5;24m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m       Merge branch 'main' of https://github.com/stud-addy-vans/algorithms
+[1;38;5;24m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+* [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m [33mcommit 1ccc6b8[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     add memory profiler for c/cpp
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+* [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m [33mcommit e77e2ae[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     fix java files
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   
+* [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m   [33mcommit 1727afe[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m [1;38;5;160m\[m [1;32m\[m [1;32m\[m [1;38;5;166m\[m [1;32m\[m  Merge: afd6706 ad2e675
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Merge pull request #33 from stud-addy-vans/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     String reverse using string builder
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;38;5;166m|[m * [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m [33mcommit ad2e675[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m     Update StringReverse.java
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m 
+* [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;38;5;166m|[m [1;32m|[m [33mcommit afd6706[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m[1;38;5;166m_[m[1;38;5;160m|[m[1;38;5;166m_[m[1;32m|[m[1;38;5;166m_[m[1;32m|[m[1;38;5;166m/[m [1;32m/[m  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m[1;38;5;166m/[m[1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;32m|[m       fix yml file
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m * [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 135e98c[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m[1;30;48;5;214m/[m [1;32m/[m [1;32m/[m [1;32m/[m  Author: stud-addy-vans <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;32m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;32m|[m [1;32m|[m [1;32m|[m       Updated DS
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m * [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 174324a[m
+[1;38;5;166m|[m[1;38;5;166m/[m [1;32m/[m [1;32m/[m [1;32m/[m  Author: stud-addy-vans <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;166m|[m [1;32m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;32m|[m [1;32m|[m [1;32m|[m       String reverse using string builder
+[1;38;5;166m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+* [1;32m|[m [1;32m|[m [1;32m|[m   [33mcommit 0d76722[m
+[1;32m|[m[1;38;5;24m\[m [1;32m\[m [1;32m\[m [1;32m\[m  Merge: 9f11a43 7bfcd03
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Merge pull request #29 from Shambhavirani625/main
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Smallest Element in an array using java
+[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 9f11a43[m
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     / [py] add type annotations in tree
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 60defdc[m
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     + [c] add tree.c
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   [33mcommit 6463d4f[m
+[36m|[m[1;38;5;160m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m [1;32m\[m  Merge: b23b284 c435c70
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Merge pull request #32 from abhirai7/main
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Roman to Integer
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit c435c70[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Lint CPP
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit ec58a8b[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Remove duplicates from sorted array
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit b8a27cb[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Merge Two Sorted Lists
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 89c9116[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Valid Parentheses
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit b76d410[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     LeetCode 14. Longest Common Prefix
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 5babd14[m
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Roman to Integer
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 298fe35[m
+[36m|[m[36m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m       Roman to Integer
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit b23b284[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Format Java Codes
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 36f652a[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     fix .eslintrc.js
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 851ae7c[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Format `.json` files
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 07cfe00[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Refactor codes
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 6debc11[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Format code with black
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 151c2c6[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     + [py] add lru algorithms
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   [33mcommit 50014cf[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m [1;32m\[m  Merge: 50cd4ba c2cedd3
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Merge pull request #31 from utkarshbhola/patch-2
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Update README.md
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit c2cedd3[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: utkarshbhola <63907963+utkarshbhola@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Update README.md
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   [33mcommit 50cd4ba[m
+[1;38;5;166m|[m[1;32m\[m [1;38;5;166m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m [1;32m\[m  Merge: 102d3dc 0b9dc4a
+[1;38;5;166m|[m [1;32m|[m[1;38;5;166m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m [1;32m/[m  Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m[1;38;5;166m/[m[1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m       Merge pull request #30 from utkarshbhola/patch-1
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m       
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m       Create quicksort
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 0b9dc4a[m
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m     Format CodeStyle
+[1;38;5;166m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m [33mcommit 91c32d1[m
+[1;38;5;166m|[m[1;38;5;166m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m [1;32m/[m  Author: utkarshbhola <63907963+utkarshbhola@users.noreply.github.com>
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m       Create quicksort
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m * [33mcommit 6a070de[m
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m[1;38;5;24m_[m[1;32m|[m[1;38;5;24m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;166m|[m [1;38;5;24m|[m[1;38;5;24m/[m[1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Tower of Hanoi in Cpp
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m * [1;32m|[m [1;32m|[m   [33mcommit 7bfcd03[m
+[1;38;5;166m|[m [1;38;5;24m|[m[1;38;5;166m\[m [1;32m\[m [1;32m\[m  Merge: d12ddbe 102d3dc
+[1;38;5;166m|[m [1;38;5;24m|[m[1;38;5;166m/[m [1;32m/[m [1;32m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;166m|[m[1;38;5;166m/[m[1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Merge branch 'main' of https://github.com/Shambhavirani625/algorithms
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 102d3dc[m
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     * [py] modified stack_using_linked_list.py
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 1917f3b[m
+[1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: 6fd2656 c32a0dc
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #28 from abhirai7/main
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     412.Fizz Buzz
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit c32a0dc[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Fizz Buzz
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 05374af[m
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Fizz Buzz
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;160m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 1b7e9a7[m
+[1;38;5;160m|[m [1;38;5;166m|[m[1;38;5;160m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: c2c4784 6fd2656
+[1;38;5;160m|[m [1;38;5;166m|[m[1;38;5;160m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;38;5;160m|[m[1;38;5;160m/[m[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;160m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;38;5;160m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 6fd2656[m
+[1;32m|[m[1;38;5;24m\[m [1;38;5;166m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: 01cbb31 0d38bc0
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #27 from abhirai7/main
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     + [cpp] 3. Longest Substring Without [...]
+[1;32m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 01cbb31[m
+[36m|[m[1;38;5;160m\[m [1;38;5;24m\[m [1;38;5;166m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: bdf1d29 161e9ac
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #26 from abhirai7/main
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     updated readme
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit bdf1d29[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m [1;38;5;160m\[m [1;38;5;24m\[m [1;38;5;166m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: d5e434c 0df23e7
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #25 from abhirai7/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Updated 350.cpp
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit d5e434c[m
+[1;30;48;5;214m|[m[1;32m\[m [1;38;5;166m\[m [1;38;5;160m\[m [1;38;5;24m\[m [1;38;5;166m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: 6448e54 16357a4
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #24 from abhirai7/main
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Update 387.cpp
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit c2c4784[m
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m[1;38;5;24m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Fizz Buzz
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 0d38bc0[m
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m[1;38;5;160m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhirai5031k@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       + [cpp] 3. Longest Substring Without [...]
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 161e9ac[m
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m[1;38;5;166m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       updated readme
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 0df23e7[m
+[1;30;48;5;214m|[m [1;32m|[m[1;32m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Updated 350.cpp
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;30;48;5;214m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 16357a4[m
+[1;30;48;5;214m|[m[1;30;48;5;214m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Update 387.cpp
+[1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 6448e54[m
+[1;38;5;24m|[m[36m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: c1b3f44 907101c
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #23 from abhirai7/main
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Updated
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;24m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 907101c[m
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: 07a0db3 c1b3f44
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;38;5;24m|[m[1;38;5;24m/[m[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit c1b3f44[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m [1;38;5;160m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: fb9d7f3 bea4f38
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #22 from abhirai7/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     387. First Unique Character in a String
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 07a0db3[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m[1;30;48;5;214m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       LGTM
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;166m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit bea4f38[m
+[1;38;5;166m|[m[1;38;5;166m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       387. First Unique Character in a String
+[1;38;5;166m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit fb9d7f3[m
+[1;32m|[m[1;38;5;24m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: 8287793 d2ba458
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhrai5031k@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge branch 'main' of https://github.com/rtk-rnjn/algorithms
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit d2ba458[m
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     + [py] heap sort, tree list, queue list
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 6190cfe[m
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     free pointer on exit
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 8287793[m
+[1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: abhirai7 <abhrai5031k@gmail.com>
+[1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     387. First Unique Character in a String
+[1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 525b925[m
+[1;38;5;24m|[m[1;38;5;24m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       387. First Unique Character in a String
+[1;38;5;24m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 8abcc10[m
+[36m|[m[1;38;5;160m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: 8fd3848 90a9aef
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Merge pull request #21 from abhirai7/main
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     + [cpp] 350. Intersection of Two Arrays II
+[36m|[m [1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[36m|[m * [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 90a9aef[m
+[36m|[m[36m/[m [1;38;5;24m/[m [1;32m/[m [1;32m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   Date:   10 months ago
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m       + [cpp] 350. Intersection of Two Arrays II
+[36m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 8fd3848[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     Format py codes
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit aee4ff3[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     + [Py] 4. Median of Two Sorted Arrays
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 968b633[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     add CP/ dir
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m [33mcommit 3bc9952[m
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m 
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m     add bogo sort in py
+[1;38;5;160m|[m [1;38;5;24m|[m [1;32m|[m [1;32m|[m   
+* [1;38;5;24m|[m [1;32m|[m [1;32m|[m   [33mcommit 2c59719[m
+[1;5;38;5;231;48;5;239m|[m[1;32m\[m [1;38;5;24m\[m [1;32m\[m [1;32m\[m  Merge: c0df998 914d403
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m[1;32m_[m[1;32m|[m[1;32m/[m  Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;32m/[m[1;38;5;24m|[m [1;32m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m       Merge pull request #20 from vikram0088/main
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m       
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m       Add more Algorithms
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m [1;32m|[m   
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;24m|[m [1;32m|[m   [33mcommit 914d403[m
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;5;38;5;231;48;5;239m\[m [1;38;5;24m\[m [1;32m\[m  Merge: 5eeb579 c0df998
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;5;38;5;231;48;5;239m/[m [1;38;5;24m/[m [1;32m/[m  Author: vikram0088 <155892330+vikram0088@users.noreply.github.com>
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m[1;32m|[m [1;38;5;24m|[m [1;32m/[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m[1;32m/[m    
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m[1;32m/[m[1;38;5;24m|[m         Merge branch 'rtk-rnjn:main' into main
+[1;5;38;5;231;48;5;239m|[m [1;32m|[m [1;38;5;24m|[m   
+* [1;32m|[m [1;38;5;24m|[m   [33mcommit c0df998[m
+[1;38;5;24m|[m[36m\[m [1;32m\[m [1;38;5;24m\[m  Merge: ecf60ec f263839
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m     Merge pull request #19 from vikram0088/main
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m     
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m     add more files
+[1;38;5;24m|[m [36m|[m [1;32m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m * [1;38;5;24m|[m [33mcommit 5eeb579[m
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m     Add reverse_string in cpp
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m * [1;38;5;24m|[m [33mcommit a0a85f9[m
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m     sum_of_digits in cpp
+[1;38;5;24m|[m [36m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m * [1;38;5;24m|[m [33mcommit 74a5eab[m
+[1;38;5;24m|[m [36m|[m[36m/[m [1;38;5;24m/[m  Author: vikram0088 <kv97924413@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m   
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m       Formated CPP code
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m   
+[1;38;5;24m|[m * [1;38;5;24m|[m   [33mcommit f263839[m
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m\[m [1;38;5;24m\[m  Merge: 6fb1de1 ecf60ec
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m/[m [1;38;5;24m/[m  Author: vikram0088 <155892330+vikram0088@users.noreply.github.com>
+[1;38;5;24m|[m[1;38;5;24m/[m[1;38;5;160m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m       Merge branch 'main' into main
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit ecf60ec[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     fix java.yml
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit c7bc2ad[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     fix java yml
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit 650b1dc[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     add more yml files
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit fe3a2b1[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     install eslint
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit 62d72df[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     fix syntax error
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit e258d77[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     add lint for js
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit aee80f2[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     Minor improvements
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+* [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit 2250c6b[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m     add type ignore
+[1;5;38;5;231;48;5;239m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+* [1;38;5;160m|[m [1;38;5;24m|[m   [33mcommit c0b4607[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m [1;38;5;160m\[m [1;38;5;24m\[m  Merge: 4794475 ef29358
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m     Merge pull request #18 from stud-addy-vans/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m     Beutify js with prettier
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;38;5;166m|[m * [1;38;5;160m|[m [1;38;5;24m|[m [33mcommit ef29358[m
+[1;38;5;166m|[m[1;38;5;166m/[m [1;38;5;160m/[m [1;38;5;24m/[m  Author: stud-addy-vans <aditya.22scse1010958@galgotiasuniversity.edu.in>
+[1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+[1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m       Beutify js with prettier
+[1;38;5;166m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+* [1;38;5;160m|[m [1;38;5;24m|[m   [33mcommit 4794475[m
+[1;32m|[m[1;38;5;24m\[m [1;38;5;160m\[m [1;38;5;24m\[m  Merge: 332818e 4231fe2
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m     Merge pull request #17 from vikram0088/main
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m     
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m     Adding the elements of an array.
+[1;32m|[m [1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m * [1;38;5;24m|[m [33mcommit 6fb1de1[m
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m     add ignore for .out files
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m * [1;38;5;24m|[m [33mcommit 161f27a[m
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m Author: vikram0088 <kv97924413@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m     + reverse_array
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m [1;38;5;24m|[m   
+[1;32m|[m [1;38;5;24m|[m * [1;38;5;24m|[m   [33mcommit d1b6941[m
+[1;32m|[m [1;38;5;24m|[m [36m|[m[1;38;5;24m\[m [1;38;5;24m\[m  Merge: a9b81d8 4231fe2
+[1;32m|[m [1;38;5;24m|[m [36m|[m[1;38;5;24m/[m [1;38;5;24m/[m  Author: vikram0088 <kv97924413@gmail.com>
+[1;32m|[m [1;38;5;24m|[m[1;38;5;24m/[m[36m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [36m|[m [1;38;5;24m|[m   
+[1;32m|[m [1;38;5;24m|[m [36m|[m [1;38;5;24m|[m       Merge branch 'main' of https://github.com/vikram0088/algorithms
+[1;32m|[m [1;38;5;24m|[m [36m|[m [1;38;5;24m|[m   
+[1;32m|[m * [36m|[m [1;38;5;24m|[m   [33mcommit 4231fe2[m
+[1;32m|[m [1;5;38;5;231;48;5;239m|[m[1;32m\[m [36m\[m [1;38;5;24m\[m  Merge: cfcae12 332818e
+[1;32m|[m [1;5;38;5;231;48;5;239m|[m[1;32m/[m [36m/[m [1;38;5;24m/[m  Author: vikram0088 <155892330+vikram0088@users.noreply.github.com>
+[1;32m|[m[1;32m/[m[1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m   
+[1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m       Merge branch 'rtk-rnjn:main' into main
+[1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m   
+* [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m   [33mcommit 332818e[m
+[1;30;48;5;214m|[m[1;32m\[m [1;5;38;5;231;48;5;239m\[m [36m\[m [1;38;5;24m\[m  Merge: 6b009f5 94a6797
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m     Merge pull request #16 from vikram0088/main
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m     
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m     add sum of digits in cpp
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m [1;38;5;24m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m * [1;38;5;24m|[m [33mcommit a9b81d8[m
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m [1;38;5;24m/[m  Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m   
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m       Reverse an array using iteration.
+[1;30;48;5;214m|[m [1;32m|[m [1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m 
+[1;30;48;5;214m|[m [1;32m|[m * [1;38;5;24m|[m [33mcommit cfcae12[m
+[1;30;48;5;214m|[m [1;32m|[m[1;32m/[m [1;38;5;24m/[m  Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m   
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m       Adding the elements of an array using iterator.
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m 
+[1;30;48;5;214m|[m * [1;38;5;24m|[m [33mcommit 94a6797[m
+[1;30;48;5;214m|[m[1;30;48;5;214m/[m [1;38;5;24m/[m  Author: vikram0088 <kv97924413@gmail.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m   
+[1;30;48;5;214m|[m [1;38;5;24m|[m       add sum of digits in cpp
+[1;30;48;5;214m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 6b009f5[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     + Add more DS
+[1;32m|[m [1;38;5;24m|[m     ++ Add queue using array in C
+[1;32m|[m [1;38;5;24m|[m     ++ Formatted all other codes
+[1;32m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit 08b2872[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     + More DS and Algo
+[1;32m|[m [1;38;5;24m|[m     ++ Stack using Array in C
+[1;32m|[m [1;38;5;24m|[m     ++ Binary Search Recursive in Py
+[1;32m|[m [1;38;5;24m|[m     ++ Queue using List in Py
+[1;32m|[m [1;38;5;24m|[m   
+* [1;38;5;24m|[m   [33mcommit 3a5b0ff[m
+[1;38;5;24m|[m[36m\[m [1;38;5;24m\[m  Merge: 5d58f87 c8a2f65
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m     Merge pull request #15 from raiyan-wasim/main
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m     
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m     BinarySearch
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m   
+[1;38;5;24m|[m * [1;38;5;24m|[m   [33mcommit c8a2f65[m
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m\[m [1;38;5;24m\[m  Merge: 35d640c 5d58f87
+[1;38;5;24m|[m [1;38;5;160m|[m[1;38;5;24m/[m [1;38;5;24m/[m  Author: Raiyan Wasim <117515203+raiyan-wasim@users.noreply.github.com>
+[1;38;5;24m|[m[1;38;5;24m/[m[1;38;5;160m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m       Merge branch 'rtk-rnjn:main' into main
+[1;38;5;24m|[m [1;38;5;160m|[m [1;38;5;24m|[m   
+* [1;38;5;160m|[m [1;38;5;24m|[m   [33mcommit 5d58f87[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m [1;38;5;160m\[m [1;38;5;24m\[m  Merge: 880c538 a401de9
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m     Merge pull request #14 from raiyan-wasim/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m     linear search in cpp
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;160m|[m [1;38;5;24m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m * [1;38;5;24m|[m [33mcommit 35d640c[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m[1;30;48;5;214m/[m [1;38;5;24m/[m  Author: raiyan-wasim <gokuendou12@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m   
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m       add binary search in cpp
+[1;38;5;166m|[m [1;30;48;5;214m|[m [1;38;5;24m|[m 
+[1;38;5;166m|[m * [1;38;5;24m|[m [33mcommit a401de9[m
+[1;38;5;166m|[m[1;38;5;166m/[m [1;38;5;24m/[m  Author: raiyan-wasim <gokuendou12@gmail.com>
+[1;38;5;166m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;38;5;24m|[m   
+[1;38;5;166m|[m [1;38;5;24m|[m       linear search in cpp
+[1;38;5;166m|[m [1;38;5;24m|[m   
+* [1;38;5;24m|[m   [33mcommit 880c538[m
+[1;32m|[m[1;38;5;24m\[m [1;38;5;24m\[m  Merge: e81a1bb ed785b6
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m     Merge pull request #13 from abhirai7/main
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m     
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m     Updated Algorithms in Javascript
+[1;32m|[m [1;38;5;24m|[m [1;38;5;24m|[m   
+[1;32m|[m * [1;38;5;24m|[m   [33mcommit ed785b6[m
+[1;32m|[m [36m|[m[1;32m\[m [1;38;5;24m\[m  Merge: c5bb80e e81a1bb
+[1;32m|[m [36m|[m[1;32m/[m [1;38;5;24m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;32m|[m[1;32m/[m[36m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;32m|[m [36m|[m [1;38;5;24m|[m   
+[1;32m|[m [36m|[m [1;38;5;24m|[m       Merge branch 'main' of https://github.com/abhirai7/algorithms
+[1;32m|[m [36m|[m [1;38;5;24m|[m   
+* [36m|[m [1;38;5;24m|[m   [33mcommit e81a1bb[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m [36m\[m [1;38;5;24m\[m  Merge: c49b8fa ba3d528
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m     Merge pull request #12 from abhirai7/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m     Formatted the code
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [36m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m * [1;38;5;24m|[m [33mcommit c5bb80e[m
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m[1;38;5;166m/[m [1;38;5;24m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m       Algorithms in Javascript
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m [1;38;5;24m|[m 
+[1;5;38;5;231;48;5;239m|[m * [1;38;5;24m|[m [33mcommit ba3d528[m
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m [1;38;5;24m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m   
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m       Formatted the code
+[1;5;38;5;231;48;5;239m|[m [1;38;5;24m|[m   
+* [1;38;5;24m|[m   [33mcommit c49b8fa[m
+[1;30;48;5;214m|[m[1;32m\[m [1;38;5;24m\[m  Merge: e2cb2de adb6838
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m 
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m     Merge pull request #11 from abhirai7/main
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m     
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m     Update python-apps.yml
+[1;30;48;5;214m|[m [1;32m|[m [1;38;5;24m|[m 
+[1;30;48;5;214m|[m * [1;38;5;24m|[m [33mcommit adb6838[m
+[1;30;48;5;214m|[m[1;30;48;5;214m/[m [1;38;5;24m/[m  Author: Abhishek <111655497+abhirai7@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m   Date:   10 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m   
+[1;30;48;5;214m|[m [1;38;5;24m|[m       Update python-apps.yml
+[1;30;48;5;214m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit e2cb2de[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     Fix syntax error in yml
+[1;32m|[m [1;38;5;24m|[m 
+* [1;38;5;24m|[m [33mcommit e09222e[m
+[1;32m|[m [1;38;5;24m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;32m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;32m|[m [1;38;5;24m|[m 
+[1;32m|[m [1;38;5;24m|[m     + python workflow to check syntax
+[1;32m|[m [1;38;5;24m|[m   
+* [1;38;5;24m|[m   [33mcommit 113f3ed[m
+[1;38;5;24m|[m[36m\[m [1;38;5;24m\[m  Merge: ea3fc60 cf4b026
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m     Merge pull request #10 from Shambhavirani625/main
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m     
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m     Head Recursion in java
+[1;38;5;24m|[m [36m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [36m|[m * [33mcommit d12ddbe[m
+[1;38;5;24m|[m [36m|[m[36m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;24m|[m [36m|[m   Date:   10 months ago
+[1;38;5;24m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m       SmallestElement in an aaray using java
+[1;38;5;24m|[m [36m|[m 
+[1;38;5;24m|[m * [33mcommit cf4b026[m
+[1;38;5;24m|[m [36m|[m Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;24m|[m [36m|[m Date:   10 months ago
+[1;38;5;24m|[m [36m|[m 
+[1;38;5;24m|[m [36m|[m     Head Recursion in java
+[1;38;5;24m|[m [36m|[m 
+[1;38;5;24m|[m * [33mcommit c6b65dd[m
+[1;38;5;24m|[m[1;38;5;24m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;24m|[m   Date:   10 months ago
+[1;38;5;24m|[m   
+[1;38;5;24m|[m       Tail Recursion in java
+[1;38;5;24m|[m   
+*   [33mcommit ea3fc60[m
+[1;38;5;160m|[m[1;5;38;5;231;48;5;239m\[m  Merge: e11d170 3ac4bd9
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     Merge pull request #8 from abhirai7/main
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m     Tower of Hanoi for 3 and 4 rods
+[1;38;5;160m|[m [1;5;38;5;231;48;5;239m|[m 
+[1;38;5;160m|[m * [33mcommit 3ac4bd9[m
+[1;38;5;160m|[m[1;38;5;160m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[1;38;5;160m|[m   Date:   10 months ago
+[1;38;5;160m|[m   
+[1;38;5;160m|[m       Tower of hanoi for 3 and 4 rods
+[1;38;5;160m|[m 
+* [33mcommit e11d170[m
+[1;5;38;5;231;48;5;239m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m 
+[1;5;38;5;231;48;5;239m|[m     adding more datastructures
+[1;5;38;5;231;48;5;239m|[m   
+*   [33mcommit 191edc9[m
+[1;38;5;166m|[m[1;30;48;5;214m\[m  Merge: 929ba0a 1fdccae
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Merge pull request #7 from Shambhavirani625/main
+[1;38;5;166m|[m [1;30;48;5;214m|[m     
+[1;38;5;166m|[m [1;30;48;5;214m|[m      LinearSearchRecursive in java
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit 1fdccae[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m     Delete Algorithms/SearchingRecursive.java
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m * [33mcommit 11fe2a8[m
+[1;38;5;166m|[m [1;30;48;5;214m|[m Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;166m|[m [1;30;48;5;214m|[m Date:   10 months ago
+[1;38;5;166m|[m [1;30;48;5;214m|[m 
+[1;38;5;166m|[m [1;30;48;5;214m|[m      LinearSearchRecursive in java
+[1;38;5;166m|[m [1;30;48;5;214m|[m   
+[1;38;5;166m|[m *   [33mcommit d43ce88[m
+[1;38;5;166m|[m [1;32m|[m[1;38;5;166m\[m  Merge: d3561cb 929ba0a
+[1;38;5;166m|[m [1;32m|[m[1;38;5;166m/[m  Author: Shambhavi Rani <121641188+Shambhavirani625@users.noreply.github.com>
+[1;38;5;166m|[m[1;38;5;166m/[m[1;32m|[m   Date:   10 months ago
+[1;38;5;166m|[m [1;32m|[m   
+[1;38;5;166m|[m [1;32m|[m       Merge branch 'rtk-rnjn:main' into main
+[1;38;5;166m|[m [1;32m|[m 
+* [1;32m|[m [33mcommit 929ba0a[m
+[1;38;5;24m|[m [1;32m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;24m|[m [1;32m|[m Date:   10 months ago
+[1;38;5;24m|[m [1;32m|[m 
+[1;38;5;24m|[m [1;32m|[m     [+] Datastructure directory
+[1;38;5;24m|[m [1;32m|[m 
+[1;38;5;24m|[m * [33mcommit d3561cb[m
+[1;38;5;24m|[m [1;38;5;24m|[m Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;24m|[m [1;38;5;24m|[m Date:   10 months ago
+[1;38;5;24m|[m [1;38;5;24m|[m 
+[1;38;5;24m|[m [1;38;5;24m|[m     LinearSearchRecursive in java
+[1;38;5;24m|[m [1;38;5;24m|[m   
+[1;38;5;24m|[m *   [33mcommit a630d82[m
+[1;38;5;24m|[m [36m|[m[1;38;5;24m\[m  Merge: d88831e 6dc5a15
+[1;38;5;24m|[m [36m|[m[1;38;5;24m/[m  Author: Shambhavi Rani <121641188+Shambhavirani625@users.noreply.github.com>
+[1;38;5;24m|[m[1;38;5;24m/[m[36m|[m   Date:   10 months ago
+[1;38;5;24m|[m [36m|[m   
+[1;38;5;24m|[m [36m|[m       Merge branch 'rtk-rnjn:main' into main
+[1;38;5;24m|[m [36m|[m 
+* [36m|[m [33mcommit 6dc5a15[m
+[1;38;5;160m|[m [36m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m [36m|[m Date:   10 months ago
+[1;38;5;160m|[m [36m|[m 
+[1;38;5;160m|[m [36m|[m     [+] Python directory
+[1;38;5;160m|[m [36m|[m 
+[1;38;5;160m|[m * [33mcommit d88831e[m
+[1;38;5;160m|[m[1;38;5;160m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;160m|[m   Date:   10 months ago
+[1;38;5;160m|[m   
+[1;38;5;160m|[m       SearchingRecursive in java
+[1;38;5;160m|[m 
+* [33mcommit 3a143fe[m
+[1;38;5;160m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;38;5;160m|[m Date:   10 months ago
+[1;38;5;160m|[m 
+[1;38;5;160m|[m     Minor changes to the Java files
+[1;38;5;160m|[m   
+*   [33mcommit adb13b0[m
+[1;5;38;5;231;48;5;239m|[m[1;38;5;166m\[m  Merge: a5feabd 532abdf
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     Merge pull request #4 from Shambhavirani625/main
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m     LinearSearch in java
+[1;5;38;5;231;48;5;239m|[m [1;38;5;166m|[m 
+[1;5;38;5;231;48;5;239m|[m * [33mcommit 532abdf[m
+[1;5;38;5;231;48;5;239m|[m[1;5;38;5;231;48;5;239m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;5;38;5;231;48;5;239m|[m   Date:   10 months ago
+[1;5;38;5;231;48;5;239m|[m   
+[1;5;38;5;231;48;5;239m|[m       LinearSearch in java
+[1;5;38;5;231;48;5;239m|[m   
+*   [33mcommit a5feabd[m
+[1;30;48;5;214m|[m[1;32m\[m  Merge: 934a95c e556ec7
+[1;30;48;5;214m|[m [1;32m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m [1;32m|[m Date:   11 months ago
+[1;30;48;5;214m|[m [1;32m|[m 
+[1;30;48;5;214m|[m [1;32m|[m     Merge pull request #2 from Shambhavirani625/main
+[1;30;48;5;214m|[m [1;32m|[m     
+[1;30;48;5;214m|[m [1;32m|[m     Added Binary Search Algorithm in Java
+[1;30;48;5;214m|[m [1;32m|[m   
+[1;30;48;5;214m|[m *   [33mcommit e556ec7[m
+[1;30;48;5;214m|[m [1;38;5;24m|[m[36m\[m  Merge: fdf9431 2f8fdac
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m Author: Shambhavi Rani <121641188+Shambhavirani625@users.noreply.github.com>
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m Date:   11 months ago
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m 
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m     Merge branch 'rtk-rnjn:main' into main
+[1;30;48;5;214m|[m [1;38;5;24m|[m [36m|[m 
+[1;30;48;5;214m|[m * [36m|[m [33mcommit fdf9431[m
+[1;30;48;5;214m|[m [36m|[m [36m|[m Author: Shambhavi <shambhavirani625@gmail.com>
+[1;30;48;5;214m|[m [36m|[m [36m|[m Date:   11 months ago
+[1;30;48;5;214m|[m [36m|[m [36m|[m 
+[1;30;48;5;214m|[m [36m|[m [36m|[m     [+] Binary Search
+[1;30;48;5;214m|[m [36m|[m [36m|[m   
+* [36m|[m [36m|[m   [33mcommit 934a95c[m
+[36m|[m[1;5;38;5;231;48;5;239m\[m [36m\[m [36m\[m  Merge: 2f8fdac a0b7163
+[36m|[m [1;5;38;5;231;48;5;239m|[m[36m_[m[36m|[m[36m/[m  Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[36m|[m[36m/[m[1;5;38;5;231;48;5;239m|[m [36m|[m   Date:   11 months ago
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m   
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m       Merge pull request #3 from abhirai7/main
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m       
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m       Sorting Algorithms
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m 
+[36m|[m * [36m|[m [33mcommit a0b7163[m
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m Author: abhirai7 <abhrai5031k@gmail.com>
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m Date:   11 months ago
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m 
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m     Sorting Algorithms
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m 
+[36m|[m * [36m|[m [33mcommit ae9f751[m
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m Author: abhirai7 <abhrai5031k@gmail.com>
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m Date:   11 months ago
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m 
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m     Sorting Algorithms
+[36m|[m [1;5;38;5;231;48;5;239m|[m [36m|[m 
+[36m|[m * [36m|[m [33mcommit 9b42141[m
+[36m|[m[36m/[m [36m/[m  Author: abhirai7 <abhrai5031k@gmail.com>
+[36m|[m [36m|[m   Date:   11 months ago
+[36m|[m [36m|[m   
+[36m|[m [36m|[m       Sorting Techniques
+[36m|[m [36m|[m 
+* [36m|[m [33mcommit 2f8fdac[m
+[1;38;5;166m|[m[36m\[m[36m|[m Merge: af8dc1c b9ac01c
+[1;38;5;166m|[m [36m|[m Author: Ritik Ranjan <ritik0ranjan@gmail.com>
+[1;38;5;166m|[m [36m|[m Date:   11 months ago
+[1;38;5;166m|[m [36m|[m 
+[1;38;5;166m|[m [36m|[m     Merge pull request #1 from Shambhavirani625/main
+[1;38;5;166m|[m [36m|[m     
+[1;38;5;166m|[m [36m|[m     [+] Binary search recursive in java
+[1;38;5;166m|[m [36m|[m 
+[1;38;5;166m|[m * [33mcommit b9ac01c[m
+[1;38;5;166m|[m[1;38;5;166m/[m  Author: Shambhavi <shambhavirani625@gmail.com>
+[1;38;5;166m|[m   Date:   11 months ago
+[1;38;5;166m|[m   
+[1;38;5;166m|[m       [+] Binary search recursive in java
+[1;38;5;166m|[m 
+* [33mcommit af8dc1c[m
+[1;30;48;5;214m|[m Author: rtk-rnjn <ritik0ranjan@gmail.com>
+[1;30;48;5;214m|[m Date:   11 months ago
+[1;30;48;5;214m|[m 
+[1;30;48;5;214m|[m     Create README & LICENCE
+[1;30;48;5;214m|[m 
+* [33mcommit ec22937[m
+  Author: rtk-rnjn <ritik0ranjan@gmail.com>
+  Date:   11 months ago
+  
+      Initial commit
