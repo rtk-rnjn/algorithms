@@ -5,7 +5,7 @@ import urllib.parse
 import pygments
 import pygments.lexers
 import yarl
-from flask import render_template, request, send_file, url_for
+from flask import render_template, request
 from pygments.formatters import HtmlFormatter
 from sqlalchemy import select
 
