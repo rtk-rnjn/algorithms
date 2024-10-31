@@ -1,14 +1,8 @@
 {% extends "base.html" %}
-
 {% from "utils.jinja" import navbar %}
-
-{% block head %}
-<style>
-    {{ css }}
-</style>
-{% endblock %}
+{% block head %}<style>{{ css }}</style>{% endblock %}
 {% block scripts %}
-<script>
+    <script>
     document.addEventListener('DOMContentLoaded', () => {
         const divCommits = document.getElementById('commits');
         if (divCommits) {
@@ -39,26 +33,28 @@
             divCommits.focus();
         }
     });
-</script>
+    </script>
 {% endblock %}
 {% block content %}
-{{ navbar() }}
-<div class="min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="display-3 text-center mb-5 text-dark">Commit Graph</h1>
-            </div>
-            <div class="col-12">
-                <div class="overflow-hidden" id="commits" style="height: 40vh" tabindex="0">
-                    {{ html | safe }}
+    {{ navbar() }}
+    <div class="min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 text-center mb-5 text-dark">Commit Graph</h1>
                 </div>
-                <div class="text-center mt-4">
-                    <p><kbd class="text-white">SPACE</kbd> to scroll</p>
-                    <p><kbd class="text-white">SHIFT</kbd> + <kbd class="text-white">SPACE</kbd> to reverse</p>
+                <div class="col-12">
+                    <div class="overflow-hidden" id="commits" style="height: 40vh" tabindex="0">{{ html | safe }}</div>
+                    <div class="text-center mt-4">
+                        <p>
+                            <kbd class="text-white">SPACE</kbd> to scroll
+                        </p>
+                        <p>
+                            <kbd class="text-white">SHIFT</kbd> + <kbd class="text-white">SPACE</kbd> to reverse
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}

@@ -56,11 +56,10 @@ class Tio:
     cache: dict = {}
     language_mapper = {
         "py": "python38pr",
-        "java": "java",
-        "c": "c",
-        "cpp": "cpp",
-        "js": "nodejs",
-        "c++": "cpp",
+        "java": "java-jdk",
+        "c": "c-gcc",
+        "cpp": "cpp-gcc",
+        "js": "javascript-node",
     }
 
     def __init__(
@@ -120,18 +119,17 @@ class Tio:
         if not self.session:
             self.session = aiohttp.ClientSession()
 
-        async with self.session as client_session:
-            res = await client_session.post(self.backend, data=self.request)
-            if res.status != 200:
-                raise aiohttp.ClientError(res.status)
+        res = await self.session.post(self.backend, data=self.request)
+        if res.status != 200:
+            raise aiohttp.ClientError(res.status)
 
-            buffer_data = await res.read()
-            data: str = buffer_data.decode("utf-8")
-            data = data.replace(data[:16], "")
+        buffer_data = await res.read()
+        data: str = buffer_data.decode("utf-8")
+        data = data.replace(data[:16], "")
 
-            Tio.cache[(self.__string["lang"][0], self.__string[".code.tio"])] = data
+        Tio.cache[(self.__string["lang"][0], self.__string[".code.tio"])] = data
 
-            return data
+        return data
 
 
 def execute_python(code_string: str) -> dict:

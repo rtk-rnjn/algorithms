@@ -72,6 +72,13 @@ def auto_complete(query: str):
 def auto_complete_route():
     query = request.args.get("query", "")
 
-    results = auto_complete(query)
+    results: list[tuple[str, int, str]] = auto_complete(query)  # type: ignore
+    results = [
+        (code, -1, filename) for code, score, filename in results
+        if score > 85
+    ]
 
-    return jsonify(results)
+    if not results:
+        return [["No results found", 100, "Please contribute by adding more code snippets by opening a PR"]], 404
+
+    return jsonify(results), 200
