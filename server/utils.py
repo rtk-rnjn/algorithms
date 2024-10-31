@@ -77,6 +77,7 @@ class Tio:
         args = args or []
         self.backend = "https://tio.run/cgi-bin/run/api/"
         self.json = "https://tio.run/languages.json"
+        self.session = aiohttp.ClientSession()
 
         self.init(
             language or "py",
@@ -116,7 +117,7 @@ class Tio:
         if (self.__string["lang"][0], self.__string[".code.tio"]) in Tio.cache:
             return Tio.cache[(self.__string["lang"][0], self.__string[".code.tio"])]
 
-        async with aiohttp.ClientSession() as client_session:
+        async with self.session as client_session:
             res = await client_session.post(self.backend, data=self.request)
             if res.status != 200:
                 raise aiohttp.ClientError(res.status)
