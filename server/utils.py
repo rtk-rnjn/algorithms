@@ -116,7 +116,7 @@ class Tio:
         if (self.__string["lang"][0], self.__string[".code.tio"]) in Tio.cache:
             return Tio.cache[(self.__string["lang"][0], self.__string[".code.tio"])]
 
-        if not self.session:
+        if not self.session or self.session.closed:
             self.session = aiohttp.ClientSession()
 
         res = await self.session.post(self.backend, data=self.request)
