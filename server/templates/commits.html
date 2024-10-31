@@ -5,27 +5,23 @@
     <script>
         $(document).ready(function () {
             const $divCommits = $('#commits');
-            
-            if ($divCommits.length) {
-                $divCommits.on('keydown', function (e) {
-                    if (e.key === ' ' || e.key === 'Spacebar') {
-                        e.preventDefault();
-                        $divCommits.animate({ scrollTop: '+=100px' }, 'smooth');
+
+            $divCommits.on('keydown', function (e) {
+                if (e.key == " " || e.key == "Spacebar") {
+                    e.preventDefault();
+                    if (e.shiftKey) {
+                        $divCommits.scrollTop($divCommits.scrollTop() - 100, 200);
+                    } else {
+                        $divCommits.scrollTop($divCommits.scrollTop() + 100, 200);
                     }
-                    if (e.shiftKey && (e.key === ' ' || e.key === 'Spacebar')) {
-                        e.preventDefault();
-                        $divCommits.animate({ scrollTop: '-=100px' }, 'smooth');
-                    }
-                });
+                }
+            });
 
-                $divCommits.attr('tabindex', '0');
+            $divCommits.on('focus', function () {
+                $divCommits.css('outline', 'none');
+            });
 
-                $divCommits.on('focus', function () {
-                    $divCommits.css('outline', 'none');
-                });
-
-                $divCommits.focus();
-            }
+            $divCommits.focus();
         });
     </script>
 {% endblock %}
@@ -38,7 +34,7 @@
                     <h1 class="display-3 text-center mb-5 text-dark">Commit Graph</h1>
                 </div>
                 <div class="col-12">
-                    <div class="overflow-hidden" id="commits" style="height: 40vh" tabindex="0">{{ html | safe }}</div>
+                    <div class="overflow-hidden" id="commits" style="height: 50vh" tabindex="0">{{ html | safe }}</div>
                     <div class="text-center mt-4">
                         <p>
                             <kbd class="text-white">SPACE</kbd> to scroll

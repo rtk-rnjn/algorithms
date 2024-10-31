@@ -73,10 +73,7 @@ def auto_complete_route():
     query = request.args.get("query", "")
 
     results: list[tuple[str, int, str]] = auto_complete(query)  # type: ignore
-    results = [
-        (code, score, filename) for code, score, filename in results
-        if score > 85
-    ]
+    results = [(code, score, filename) for code, score, filename in results if score > 85]
 
     if not results:
         return [["No results found", -1, "Please contribute by adding more code snippets by opening a PR"]], 404

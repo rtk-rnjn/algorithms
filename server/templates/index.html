@@ -80,7 +80,7 @@
                         const href = item[1] === -1 ? 'https://github.com/rtk-rnjn/algorithms/issues/new/choose' : `/view/${item[2]}`;
 
                         const $li = $(`
-                            <li class="list-group-item">
+                            <li class="list-group-item bg-transparent" style="backdrop-filter: blur(2px);">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="${href}" class="text-dark">${item[2]}</a>
                                     <span class="badge bg-secondary rounded-pill">${item[1]}</span>

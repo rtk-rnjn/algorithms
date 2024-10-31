@@ -5,7 +5,7 @@ import urllib.parse
 import pygments
 import pygments.lexers
 import yarl
-from flask import render_template, request
+from flask import render_template, request, send_file, url_for
 from pygments.formatters import HtmlFormatter
 from sqlalchemy import select
 
@@ -70,7 +70,7 @@ def code_to_html(code: str, filename: str) -> tuple[str, str]:
     return pygments.highlight(code, lexer(), formatter), formatter.get_style_defs()
 
 
-@app.route("/tio", methods=["POST"])
+@app.route("/tio/", methods=["POST"])
 async def tio_route():
     path: str = request.get_json().get("path", "")
 

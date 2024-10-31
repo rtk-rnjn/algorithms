@@ -23,7 +23,7 @@
                 success: function (data) {
                     const stats = `CPU share: ${data.cpu_share}\nSystem time: ${data.sys_time}\nUser time: ${data.user_time}\nReal time: ${data.real_time}`;
                     $tio.html(`
-                        <div class="card rounded rounded-0 m-0 h-100">
+                        <div class="card rounded rounded-0 m-0 h-100 bg-transparent" style="backdrop-filter: blur(4px);">
                             <div class="card-body" style="max-height: auto; overflow-y: auto;">
                                 <pre>${data.output}</pre>
                             </div>
@@ -49,12 +49,21 @@
             </p>
             <div class="row mt-2">
                 <div class="col">
-                    <div class="card rounded rounded-0 m-0">
+                    <div class="card rounded rounded-0 m-0 bg-transparent" style="backdrop-filter: blur(4px);">
                         <div class="card-body">{{ code | safe }}</div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="h-100" id="tio"></div>
+                    <div class="h-100" id="tio">
+                        <div class="card rounded rounded-0 m-0 h-100 bg-transparent" style="backdrop-filter: blur(4px);">
+                            <div class="card-body" style="max-height: auto; overflow-y: auto;">
+                                <pre>Loading...</pre>
+                            </div>
+                        </div>
+                        <div class="card-footer m-0">
+                            <pre class="text-muted m-0">Loading...</pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
