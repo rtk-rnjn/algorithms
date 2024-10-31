@@ -11,7 +11,6 @@ DEBUG = bool(int(os.getenv("DEBUG", "1")))
 SECRET_KEY = os.getenv("SECRET_KEY", secrets.token_urlsafe(16))
 SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI", "sqlite:///site.db")
 SQLALCHEMY_TRACK_MODIFICATIONS = True
-SQLALCHEMY_ECHO = True
 SQLALCHEMY_RECORD_QUERIES = True
 SQLALCHEMY_ENGINE_OPTIONS = {"pool_pre_ping": True}
 SQLALCHEMY_POOL_SIZE = 5

@@ -6,18 +6,16 @@ from flask import Flask
 from flask_security.core import Security
 from flask_security.datastore import SQLAlchemyUserDatastore
 from flask_security.models import fsqla_v3 as fsqla
-from flask_socketio import SocketIO
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import insert, select
 
 app = Flask(__name__)
 app.config.from_pyfile("config.py")
-socketio = SocketIO(app)
 
 db = SQLAlchemy(app)
 fsqla.FsModels.set_db_info(db)
 
-from server.models import *  # noqa
+from server.models import Code, Role, User  # noqa
 
 user_datastore = SQLAlchemyUserDatastore(db, User, Role)
 
