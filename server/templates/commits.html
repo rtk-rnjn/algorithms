@@ -3,36 +3,30 @@
 {% block head %}<style>{{ css }}</style>{% endblock %}
 {% block scripts %}
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const divCommits = document.getElementById('commits');
-        if (divCommits) {
-            divCommits.addEventListener('keydown', (e) => {
-                if (e.key === ' ' || e.key === 'Spacebar') {
-                    e.preventDefault();
-                    divCommits.scrollBy({
-                        top: 100,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
-                }
-                if (e.shiftKey && (e.key === ' ' || e.key === 'Spacebar')) {
-                    e.preventDefault();
-                    divCommits.scrollBy({
-                        top: -100,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-
-            divCommits.setAttribute('tabindex', '0');
+        $(document).ready(function () {
+            const $divCommits = $('#commits');
             
-            divCommits.addEventListener('focus', () => {
-                divCommits.style.outline = 'none';
-            });
-            divCommits.focus();
-        }
-    });
+            if ($divCommits.length) {
+                $divCommits.on('keydown', function (e) {
+                    if (e.key === ' ' || e.key === 'Spacebar') {
+                        e.preventDefault();
+                        $divCommits.animate({ scrollTop: '+=100px' }, 'smooth');
+                    }
+                    if (e.shiftKey && (e.key === ' ' || e.key === 'Spacebar')) {
+                        e.preventDefault();
+                        $divCommits.animate({ scrollTop: '-=100px' }, 'smooth');
+                    }
+                });
+
+                $divCommits.attr('tabindex', '0');
+
+                $divCommits.on('focus', function () {
+                    $divCommits.css('outline', 'none');
+                });
+
+                $divCommits.focus();
+            }
+        });
     </script>
 {% endblock %}
 {% block content %}

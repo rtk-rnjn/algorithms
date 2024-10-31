@@ -35,46 +35,42 @@
     </div>
 </nav>
 <script>
-    const owner = 'rtk-rnjn';
-    const repo = 'algorithms';
+    $(document).ready(async function () {
+        const owner = 'rtk-rnjn';
+        const repo = 'algorithms';
 
-    async function fetchGitHubData() {
-        try {
-            const repoResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
-            const repoData = await repoResponse.json();
+        async function fetchGitHubData() {
+            try {
+                const repoData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}`);
+                const commitsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/commits`);
+                const workflowsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/actions/runs`);
 
-            const commitsResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits`);
-            const commitsData = await commitsResponse.json();
+                $('#repo-name').text(repoData.full_name);
+                $('#repo-heading').attr('href', repoData.html_url);
 
-            const workflowsResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/runs`);
-            const workflowsData = await workflowsResponse.json();
+                $('#stars .badge').text(repoData.stargazers_count);
+                $('#stars').attr('href', repoData.html_url);
 
-            document.getElementById('repo-name').textContent = repoData.full_name;
-            document.getElementById('repo-heading').href = repoData.html_url;
+                $('#forks .badge').text(repoData.forks_count);
+                $('#forks').attr('href', repoData.html_url);
 
-            document.getElementById('stars').querySelector('.badge').textContent = repoData.stargazers_count;
-            document.getElementById('stars').href = repoData.html_url;
+                $('#last-commit .badge').text(new Date(commitsData[0].commit.author.date).toLocaleString());
+                $('#last-commit').attr('href', commitsData[0].html_url);
 
-            document.getElementById('forks').querySelector('.badge').textContent = repoData.forks_count;
-            document.getElementById('forks').href = repoData.html_url;
+                const latestRun = workflowsData.workflow_runs[0];
+                const workflowStatus = latestRun.status === 'completed' ? 'Success' : latestRun.status;
+                $('#workflow-status .badge').text(workflowStatus);
+                $('#workflow-status').attr('href', latestRun.html_url);
 
-            document.getElementById('last-commit').querySelector('.badge').textContent = new Date(commitsData[0].commit.author.date).toLocaleString();
-            document.getElementById('last-commit').href = commitsData[0].html_url;
-
-            const latestRun = workflowsData.workflow_runs[0];
-            const workflowStatus = latestRun.status === 'completed' ? 'Success' : latestRun.status;
-            document.getElementById('workflow-status').querySelector('.badge').textContent = workflowStatus;
-            document.getElementById('workflow-status').href = latestRun.html_url;
-
-            window.scroll({
-                top: document.body.scrollHeight,
-                behavior: 'smooth'
-            });
-        } catch (error) {
-            console.error('Error fetching GitHub data:', error);
+                $('html, body').animate({
+                    scrollTop: $(document).height()
+                }, 'smooth');
+            } catch (error) {
+                console.error('Error fetching GitHub data:', error);
+            }
         }
-    }
 
-    fetchGitHubData();
+        fetchGitHubData();
+    });
 </script>
 {% endmacro %}

@@ -3,37 +3,37 @@
 {% block head %}
     <style>{{ css }}</style>
     <style>
-    pre {
-        margin: 0;
-    }
+        pre {
+            margin: 0;
+        }
     </style>
 {% endblock %}
 {% block scripts %}
     <script>
-        const tio = document.getElementById('tio');
+        $(document).ready(function () {
+            const $tio = $('#tio');
 
-        fetch(`{{ url_for('tio_route') }}`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                path: `{{ path }}`
-            }
-        )})
-        .then(response => response.json())
-        .then(data => {
-            const stats = `CPU share: ${data.cpu_share}\nSystem time: ${data.sys_time}\nUser time: ${data.user_time}\nReal time: ${data.real_time}`;
-            tio.innerHTML = `
-                <div class="card rounded rounded-0 m-0 h-100">
-                    <div class="card-body" style="max-height: auto; overflow-y: auto;">
-                        <pre>${data.output}</pre>
-                    </div>
-                    <div class="card-footer m-0">
-                        <pre class="text-muted m-0">${stats}</pre>
-                    </div>
-                </div>
-            `;
+            $.ajax({
+                url: `{{ url_for('tio_route') }}`,
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    path: `{{ path }}`
+                }),
+                success: function (data) {
+                    const stats = `CPU share: ${data.cpu_share}\nSystem time: ${data.sys_time}\nUser time: ${data.user_time}\nReal time: ${data.real_time}`;
+                    $tio.html(`
+                        <div class="card rounded rounded-0 m-0 h-100">
+                            <div class="card-body" style="max-height: auto; overflow-y: auto;">
+                                <pre>${data.output}</pre>
+                            </div>
+                            <div class="card-footer m-0">
+                                <pre class="text-muted m-0">${stats}</pre>
+                            </div>
+                        </div>
+                    `);
+                }
+            });
         });
     </script>
 {% endblock %}
