@@ -65,16 +65,19 @@
             $searchField.on('input', function () {
                 const searchValue = $searchField.val().trim();
                 if (searchValue.length === 0) {
-                    $suggestions.html('');
+                    const $li = $(`
+                        <li class="list-group-item text-muted text-center bg-transparent">
+                            <kbd>Enter</kbd> to search
+                        </li>
+                    `);
+                    $suggestions.html($li);
                     return;
                 }
 
                 $.get(`{{ url_for('auto_complete_route') }}?query=${searchValue}`, function (data) {
                     $suggestions.html('');
                     data.forEach(function (item) {
-                        const href = item[1] !== -1 
-                            ? 'https://github.com/rtk-rnjn/algorithms/issues/new/choose' 
-                            : `/view/${item[2]}`;
+                        const href = item[1] === -1 ? 'https://github.com/rtk-rnjn/algorithms/issues/new/choose' : `/view/${item[2]}`;
 
                         const $li = $(`
                             <li class="list-group-item">
@@ -109,7 +112,7 @@
                         {{ search_form.search(class="form-control form-control-lg rounded rounded-0 shadow-none search-field font-monospace") }}
                         {{ search_form.submit(class="btn btn-outline-secondary rounded rounded-0 d-none") }}
                         <ul class="list-group mt-0 list-group-flush" id="suggestions">
-                            <li class="list-group-item text-muted text-center">
+                            <li class="list-group-item text-muted text-center bg-transparent">
                                 <kbd>Enter</kbd> to search
                             </li>
                         </ul>

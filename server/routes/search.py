@@ -44,7 +44,7 @@ def query_parser(query: str) -> dict[str, str]:
     return {"lang": lang or "", "in": in_ or "", "query": cleaned_query}
 
 
-@lru_cache
+@lru_cache(maxsize=32)
 def auto_complete(query: str):
     data = query_parser(query)
 
@@ -74,11 +74,11 @@ def auto_complete_route():
 
     results: list[tuple[str, int, str]] = auto_complete(query)  # type: ignore
     results = [
-        (code, -1, filename) for code, score, filename in results
+        (code, score, filename) for code, score, filename in results
         if score > 85
     ]
 
     if not results:
-        return [["No results found", 100, "Please contribute by adding more code snippets by opening a PR"]], 404
+        return [["No results found", -1, "Please contribute by adding more code snippets by opening a PR"]], 404
 
     return jsonify(results), 200
