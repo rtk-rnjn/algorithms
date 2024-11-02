@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TypeVar, Generic
+from typing import Generic, TypeVar
 
 T = TypeVar("T")
 
@@ -45,17 +45,24 @@ class Tree(Generic[T]):
         return self.__pretty_format(self.build_tree())
 
     def __pretty_format(
-        self, root: TreeNode[T] | None, prefix: str = "", is_left: bool = True
+        self,
+        root: TreeNode[T] | None,
+        prefix: str = "",
+        is_left: bool = True,
     ) -> str:
         if root is None:
             return ""
         string = ""
         string += self.__pretty_format(
-            root.right, prefix + ("│   " if is_left else "    "), False
+            root.right,
+            prefix + ("│   " if is_left else "    "),
+            False,
         )
         string += prefix + ("└── " if is_left else "┌── ") + str(root.data) + "\n"
         string += self.__pretty_format(
-            root.left, prefix + ("    " if is_left else "│   "), True
+            root.left,
+            prefix + ("    " if is_left else "│   "),
+            True,
         )
         return string
 

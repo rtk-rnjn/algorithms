@@ -5,7 +5,7 @@ from __future__ import annotations
 
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, val=0, next_node=None):
+    def __init__(self, val: int = 0, next_node: ListNode | None = None):
         self.val = val
         self.next = next_node
 
@@ -15,7 +15,9 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(
-        self, l1: ListNode | None, l2: ListNode | None
+        self,
+        l1: ListNode | None,
+        l2: ListNode | None,
     ) -> ListNode | None:
         # O(n) solution
         dummy = ListNode()

@@ -1,23 +1,29 @@
 from __future__ import annotations
 
+from typing import Generic, TypeVar
 
-class Queue:
+T = TypeVar("T", bound=int | float)
+
+
+class Queue(Generic[T]):
     def __init__(self, size: int) -> None:
         self.size = size
-        self.__queue: list[int | None] = [None] * size
+        self.__queue: list[T | None] = [None] * size
         self.front = self.rear = -1
 
-    def enqueue(self, item: int) -> None:
+    def enqueue(self, item: T) -> None:
         if self.rear == self.size - 1:
-            raise IndexError("Queue is full")
+            msg = "Queue is full"
+            raise IndexError(msg)
         if self.front == -1:
             self.front = 0
         self.rear += 1
         self.__queue[self.rear] = item
 
-    def dequeue(self) -> int | None:
+    def dequeue(self) -> T | None:
         if self.front == -1:
-            raise IndexError("Queue is empty")
+            msg = "Queue is empty"
+            raise IndexError(msg)
 
         item = self.__queue[self.front]
         self.front += 1

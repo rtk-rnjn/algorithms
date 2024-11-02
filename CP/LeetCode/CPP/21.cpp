@@ -8,10 +8,7 @@ struct ListNode
 {
     int val;
     ListNode *next;
-    ListNode() : val(0), next(nullptr)
-    {
-    }
-    ListNode(int x) : val(x), next(nullptr)
+    explicit ListNode(int x) : val(x), next(nullptr)
     {
     }
     ListNode(int x, ListNode *next) : val(x), next(next)
@@ -22,17 +19,18 @@ struct ListNode
 class Solution
 {
 public:
-    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
+    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) // NOLINT
     {
-        if (list1 == NULL)
+        if (list1 == nullptr)
         {
             return list2;
         }
-        else if (list2 == NULL)
+        if (list2 == nullptr)
         {
             return list1;
         }
-        ListNode *p1 = list1, *p2 = list2;
+        ListNode *p1 = list1;
+        ListNode *p2 = list2;
         ListNode *head;
         ListNode *p0;
         if (list1->val < list2->val)
@@ -46,7 +44,7 @@ public:
             p2 = p2->next;
         }
         p0 = head;
-        while (p1 != NULL && p2 != NULL)
+        while (p1 != nullptr && p2 != nullptr)
         {
             if (int(p1->val) >= int(p2->val))
             {
@@ -62,11 +60,11 @@ public:
             }
         }
 
-        if (p1 == NULL)
+        if (p1 == nullptr)
         {
             p0->next = p2;
         }
-        else if (p2 == NULL)
+        else if (p2 == nullptr)
         {
             p0->next = p1;
         }
@@ -77,7 +75,7 @@ public:
 void free_list(ListNode *head)
 {
     ListNode *p = head;
-    while (p != NULL)
+    while (p != nullptr)
     {
         ListNode *temp = p;
         p = p->next;
@@ -89,10 +87,9 @@ void free_list(ListNode *head)
 void display(ListNode *head)
 {
     ListNode *temp = head;
-    while (temp != NULL)
+    while (temp != nullptr)
     {
-        cout << "[" << temp << " " << temp->val << " -> " << temp->next
-             << "] -> ";
+        cout << "[" << temp << " " << temp->val << " -> " << temp->next << "] -> ";
         temp = temp->next;
     }
     cout << "NULL\n";
@@ -101,12 +98,12 @@ void display(ListNode *head)
 int main()
 {
     Solution s;
-    ListNode *list1 = new ListNode(1);
-    ListNode *list2 = new ListNode(2);
-    ListNode *list3 = new ListNode(3);
-    ListNode *list4 = new ListNode(1);
-    ListNode *list5 = new ListNode(2);
-    ListNode *list6 = new ListNode(3);
+    auto *list1 = new ListNode(1);
+    auto *list2 = new ListNode(2);
+    auto *list3 = new ListNode(3);
+    auto *list4 = new ListNode(1);
+    auto *list5 = new ListNode(2);
+    auto *list6 = new ListNode(3);
 
     list1->next = list2;
     list2->next = list3;
@@ -115,7 +112,7 @@ int main()
     ListNode *mergedHead = s.mergeTwoLists(list1, list4);
 
     ListNode *temp = mergedHead;
-    while (temp != NULL)
+    while (temp != nullptr)
     {
         cout << temp->val << " ";
         temp = temp->next;

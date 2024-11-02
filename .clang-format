@@ -12,3 +12,4 @@ BreakBeforeBinaryOperators: false
 AccessModifierOffset: -4
 SortIncludes: false
 NamespaceIndentation: All
+ColumnLimit: 120

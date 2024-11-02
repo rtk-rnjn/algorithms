@@ -53,7 +53,8 @@ class LinkedList:
         if index is None:
             index = self.size - 1
         if index < 0 or index >= self.size:
-            raise IndexError("Index out of range.")
+            msg = "Index out of range."
+            raise IndexError(msg)
         current = self.head
         previous = None
 
@@ -76,12 +77,14 @@ class Stack:
 
     def push(self, key: int) -> None:
         if self.is_full():
-            raise OverflowError("Stack is full.")
+            msg = "Stack is full."
+            raise OverflowError(msg)
         self.__stack.add(key)
 
     def pop(self) -> int | None:
         if self.is_empty():
-            raise IndexError("Stack is empty.")
+            msg = "Stack is empty."
+            raise IndexError(msg)
         return self.__stack.pop(0)
 
     def is_empty(self) -> bool:

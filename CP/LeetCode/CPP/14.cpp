@@ -1,4 +1,5 @@
 // Longest common prefix
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -7,45 +8,45 @@ using namespace std;
 
 class Solution
 {
-    public:
-        string longestCommonPrefix(vector<string> &strs)
+public:
+    string longestCommonPrefix(vector<string> &strs)  // NOLINT
+    {
+        int min_size = (int)strs[0].size();
+        bool flag = false;
+        int _strs_size = (int)strs.size();
+        for (int i = 0; i < _strs_size; i++)
         {
-            int min_size = strs[0].size();
-            bool flag = false;
-            int _strs_size = strs.size();
-            for (int i = 0; i < _strs_size; i++)
-            {
-                int _strs_i_size = strs[i].size();
+            int _strs_i_size = (int)strs[i].size();
 
-                if (min_size >= _strs_i_size)
-                {
-                    min_size = _strs_i_size;
-                }
-            }
-            string str = "";
-            if (_strs_size == 1)
+            if (min_size >= _strs_i_size)
             {
-                str = strs[0];
+                min_size = _strs_i_size;
             }
-            for (int i = 0; i < min_size; i++)
-            {
-                for (int j = 0; j < _strs_size - 1; j++)
-                {
-                    if (strs[j][i] == strs[j + 1][i] && !flag)
-                    {
-                        if (j == _strs_size - 2)
-                        {
-                            str += strs[0][i];
-                        }
-                    }
-                    else
-                    {
-                        flag = true;
-                    }
-                }
-            }
-            return str;
         }
+        string str;
+        if (_strs_size == 1)
+        {
+            str = strs[0];
+        }
+        for (int i = 0; i < min_size; i++)
+        {
+            for (int j = 0; j < _strs_size - 1; j++)
+            {
+                if (strs[j][i] == strs[j + 1][i] && !flag)
+                {
+                    if (j == _strs_size - 2)
+                    {
+                        str += strs[0][i];
+                    }
+                }
+                else
+                {
+                    flag = true;
+                }
+            }
+        }
+        return str;
+    }
 };
 
 int main()

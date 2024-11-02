@@ -16,7 +16,7 @@ void reversearray(vector<int> &arr, int start, int end)
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5};
-    int size = arr.size();
+    int size = (int)arr.size();
     int d = 2;
 
     d = d % size;

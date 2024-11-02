@@ -79,6 +79,24 @@ void delete_node_at(struct node *head, int index)
     free(temp1);
 }
 
+struct node *reverse(struct node *head)
+{
+    struct node *prev = NULL;
+    struct node *current = head;
+    struct node *next = NULL;
+
+    while (current != NULL)
+    {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    head = prev;
+
+    return head;
+}
+
 int main()
 {
     struct node *head = NULL;
@@ -94,6 +112,10 @@ int main()
     delete_node_at(head, 3);
 
     display(head);
+
+    head = reverse(head);
+    display(head);
+
     f_list(head);
 
     return 0;

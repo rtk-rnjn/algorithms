@@ -13,11 +13,9 @@ int push(int element)
         printf("Stack Overflow\n");
         return -1;
     }
-    else
-    {
-        TOP++;
-        STACK[TOP] = element;
-    }
+
+    TOP++;
+    STACK[TOP] = element;
 
     return 0;
 }
@@ -29,10 +27,8 @@ int pop()
         printf("Stack Underflow\n");
         return -1;
     }
-    else
-    {
-        TOP--;
-    }
+
+    TOP--;
 
     return 0;
 }
@@ -44,10 +40,8 @@ int peek()
         printf("Stack Underflow\n");
         return -1;
     }
-    else
-    {
-        return STACK[TOP];
-    }
+
+    return STACK[TOP];
 }
 
 void display()
@@ -57,15 +51,13 @@ void display()
         printf("Stack Underflow\n");
         return;
     }
-    else
+
+    printf("The stack is: ");
+    for (int i = 0; i <= TOP; i++)
     {
-        printf("The stack is: ");
-        for (int i = 0; i <= TOP; i++)
-        {
-            printf("%d ", STACK[i]);
-        }
-        printf("\n");
+        printf("%d ", STACK[i]);
     }
+    printf("\n");
 }
 
 int main()

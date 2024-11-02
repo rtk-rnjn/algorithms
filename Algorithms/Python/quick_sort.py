@@ -6,9 +6,6 @@ T = TypeVar("T", bound=int | float)
 
 
 def partition(arr: list[T], low: int, high: int) -> int:
-    """
-    Partition the array around the pivot.
-    """
     pivot = arr[high]
     i = low - 1
     for j in range(low, high):
@@ -21,17 +18,11 @@ def partition(arr: list[T], low: int, high: int) -> int:
 
 
 def quicksort(arr: list[T]) -> list[T]:
-    """
-    Sort the array using the quicksort algorithm.
-    """
     quicksort_helper(arr, 0, len(arr) - 1)
     return arr
 
 
 def quicksort_helper(arr: list[T], low: int, high: int) -> None:
-    """
-    Helper function for quicksort.
-    """
     if low < high:
         pivot = partition(arr, low, high)
         quicksort_helper(arr, low, pivot - 1)

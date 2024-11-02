@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int sum(vector<int> &arr, int size)
+int sum(const vector<int> &arr, int size)
 {
     int sum = 0;
     for (int i = 0; i < size; i++)
@@ -17,7 +17,7 @@ int sum(vector<int> &arr, int size)
 int main()
 {
     vector<int> arr = {2, 13, 14, 3, 5};
-    int size = arr.size();
+    int size = (int)arr.size();
 
     int result = sum(arr, size);
 

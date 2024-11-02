@@ -2,7 +2,8 @@
 
 void findNonCommonElements(int arr1[], int m, int arr2[], int n)
 {
-    int i = 0, j = 0;
+    int i = 0;
+    int j = 0;
 
     while (i < m && j < n)
     {

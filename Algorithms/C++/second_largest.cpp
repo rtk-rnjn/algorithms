@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int secondlargest(vector<int> &arr, int size)
+int secondlargest(const vector<int> &arr, int size)
 {
     int slargest = INT_MIN;
     int largest = arr[0];
@@ -27,7 +27,7 @@ int secondlargest(vector<int> &arr, int size)
 int main()
 {
     vector<int> arr = {4, 5, 6, 7, 45, 8, 9, 8};
-    int size = arr.size();
+    int size = (int)arr.size();
 
     int ans = secondlargest(arr, size);
 

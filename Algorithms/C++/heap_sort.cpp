@@ -36,7 +36,7 @@ void heapify(vector<int> &arr, int size, int i)
     }
 }
 
-void print_array(vector<int> &arr)
+void print_array(const vector<int> &arr)
 {
     for (const int &num : arr)
     {
@@ -47,7 +47,7 @@ void print_array(vector<int> &arr)
 int main()
 {
     vector<int> arr = {12, 11, 13, 5, 6, 7};
-    int size = arr.size();
+    int size = (int)arr.size();
 
     heap_sort(arr, size);
     print_array(arr);

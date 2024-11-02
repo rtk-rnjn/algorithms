@@ -3,13 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *twoSum(int *nums, int numsSize, int target)
+// cppcheck-suppress constParameter
+int *twoSum(int *nums, int numsSize, int target) // NOLINT 
 {
-    int i, j;
     int *result = (int *)malloc(2 * sizeof(int));
-    for (i = 0; i < numsSize; i++)
+    for (int i = 0; i < numsSize; i++)
     {
-        for (j = i + 1; j < numsSize; j++)
+        for (int j = i + 1; j < numsSize; j++)
         {
             if (nums[i] + nums[j] == target)
             {
