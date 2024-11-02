@@ -53,12 +53,12 @@ int main()
     root->right->right->right = NULL;
 
     /*
-    *       3
-    *      / \
-    *     9  20
-    *       /  \
-    *      15   7
-    */
+     *       3
+     *      / \
+     *     9  20
+     *       /  \
+     *      15   7
+     */
 
     printf("%d\n", maxDepth(root));
     free_tree(root);

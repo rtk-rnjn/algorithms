@@ -23,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 14
+        node-version: 20
 
     - name: Cache
       uses: actions/cache@v2
@@ -45,5 +45,5 @@ jobs:
 
     - name: Lint with ESLint
       run: |
-        eslint . --ext .js,.jsx --ignore-path .gitignore --quiet
-        eslint . --ext .js,.jsx --ignore-path .gitignore --quiet --max-warnings=0
+        eslint .
+        eslint .

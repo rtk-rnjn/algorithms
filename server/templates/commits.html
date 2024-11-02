@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "utils.jinja" import navbar %}
+{% block head %}<style>{{ css }}</style>{% endblock %}
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+            const $divCommits = $('#commits');
+
+            $divCommits.on('keydown', function (e) {
+                if (e.key == " " || e.key == "Spacebar") {
+                    e.preventDefault();
+                    if (e.shiftKey) {
+                        $divCommits.scrollTop($divCommits.scrollTop() - 100, 200);
+                    } else {
+                        $divCommits.scrollTop($divCommits.scrollTop() + 100, 200);
+                    }
+                }
+            });
+
+            $divCommits.on('focus', function () {
+                $divCommits.css('outline', 'none');
+            });
+
+            $divCommits.focus();
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    {{ navbar() }}
+    <div class="min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 text-center mb-5 text-dark">Commit Graph</h1>
+                </div>
+                <div class="col-12">
+                    <div class="overflow-hidden" id="commits" style="height: 50vh" tabindex="0">{{ html | safe }}</div>
+                    <div class="text-center mt-4">
+                        <p>
+                            <kbd class="text-white">SPACE</kbd> to scroll
+                        </p>
+                        <p>
+                            <kbd class="text-white">SHIFT</kbd> + <kbd class="text-white">SPACE</kbd> to reverse
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

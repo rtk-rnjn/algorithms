@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% from "utils.jinja" import navbar %}
+{% block head %}
+    <link rel="preload" href="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" as="script">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+{% endblock %}
+{% block scripts %}
+    <script>$(document).ready(() => { $(`.search-field`).focus(); });</script>
+    <script>
+        var headingTyped = new Typed(`#heading-typer`, {
+            strings: [`Algorithms`],
+            typeSpeed: 50,
+            loop: false,
+            showCursor: true,
+            smartBackspace: true,
+        });
+
+        var tipsTypes = new Typed(`#tips`, {
+            strings: [
+                `<i>in:</i>algo <b>binary search</b> <i>lang:</i>py`,
+                `<i>lang:</i>cpp <b>two sum</b> <i>in:</i>cp`,
+                `<i>lang:</i>java <b>linked list</b> <i>in:</i>ds`,
+                `<i>lang:</i>js <i>in:</i>algo <b>merge sort</b>`,
+                `<i>lang:</i>py <b>quick sort</b> <i>in:</i>algo`,
+                `<b>binary tree</b> <i>in:</i>ds <i>lang:</i>java`,
+                `<b>Valid Parentheses</b> <i>lang:</i>cpp <i>in:</i>cp`,
+            ],
+            typeSpeed: 40,
+            backSpeed: 20,
+            startDelay: 1000,
+            backDelay: 2000,
+            loop: true,
+            showCursor: true,
+        });
+    </script>
+    <script>
+        const highlight = (paragraph, substring) => {
+            const highlightTag = (text) => `<b>${text}</b>`;
+            const regex = new RegExp(substring.split('').join('|'), 'gi');
+            let highlighted = '';
+            let totalLength = 0;
+            let lastIndex = 0;
+
+            paragraph.replace(regex, function (match, index) {
+                if (totalLength >= 300) return;
+                highlighted += paragraph.slice(lastIndex, index);
+                highlighted += highlightTag(match);
+                totalLength = highlighted.length;
+                lastIndex = index + 1;
+            });
+
+            if (totalLength < 300) {
+                highlighted += paragraph.slice(lastIndex, lastIndex + (300 - totalLength));
+            }
+            if (lastIndex < paragraph.length) highlighted += '...';
+
+            return highlighted;
+        };
+    </script>
+    <script>
+        $(document).ready(function () {
+            const $suggestions = $('#suggestions');
+            const $searchField = $('.search-field');
+
+            $searchField.on('input', function () {
+                const searchValue = $searchField.val().trim();
+                if (searchValue.length === 0) {
+                    const $li = $(`
+                        <li class="list-group-item text-muted text-center bg-transparent">
+                            <kbd>Enter</kbd> to search
+                        </li>
+                    `);
+                    $suggestions.html($li);
+                    return;
+                }
+
+                $.get(`{{ url_for('auto_complete_route') }}?query=${searchValue}`, function (data) {
+                    $suggestions.html('');
+                    data.forEach(function (item) {
+                        const href = item[1] === -1 ? 'https://github.com/rtk-rnjn/algorithms/issues/new/choose' : `/view/${item[2]}`;
+
+                        const $li = $(`
+                            <li class="list-group-item bg-transparent" style="backdrop-filter: blur(2px);">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="${href}" class="text-dark">${item[2]}</a>
+                                    <span class="badge bg-secondary rounded-pill">${item[1]}</span>
+                                </div>
+                                <p class="text-muted">${highlight(item[0], searchValue)}</p>
+                            </li>
+                        `);
+                        $suggestions.append($li);
+                    });
+                });
+            });
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="min-vh-100">
+        <button class="btn btn-primary rounded rounded-circle shadow-lg position-fixed bottom-0 end-0 m-3" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        {{ navbar() }}
+        <div class="min-vh-100 d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h1 class="display-2 text-center mb-5">
+                    Search <span class="text-muted display-3" id="heading-typer"></span>
+                </h1>
+                <form action="#" method="POST" autocomplete="off" aria-autocomplete="none" spellcheck="false">
+                    {{ search_form.hidden_tag() }}
+                    <div class="mb-lg-5 mb-xl-5">
+                        {{ search_form.search(class="form-control form-control-lg rounded rounded-0 shadow-none search-field font-monospace") }}
+                        {{ search_form.submit(class="btn btn-outline-secondary rounded rounded-0 d-none") }}
+                        <ul class="list-group mt-0 list-group-flush" id="suggestions">
+                            <li class="list-group-item text-muted text-center bg-transparent">
+                                <kbd>Enter</kbd> to search
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-muted text-center">
+                            Search like <a href="https://www.google.com/advanced_search" target="_blank" rel="noopener noreferrer">Hacker (Google Dorking)</a>!
+                        </p>
+                        <p class="text-muted text-center">
+                            Example: <code id="tips"></code>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="container text-center">
+                <p class="text-muted">
+                    Made with <i class="fas fa-heart text-danger"></i> by <a href="https://github.com/rtk-rnjn/algorithms/graphs/contributors">our awesome contributors</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+{% endblock %}

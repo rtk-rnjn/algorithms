@@ -10,7 +10,7 @@ using namespace std;
 class Solution
 {
 public:
-    bool isValid(string s) // NOLINT
+    bool isValid(const string s) // NOLINT
     {
         stack<char> st;
         unordered_map<char, char> m;

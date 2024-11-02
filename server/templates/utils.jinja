@@ -1,0 +1,74 @@
+{% macro navbar() %}
+    <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="repo-heading">
+            <i class="fab fa-github"></i> <span id="repo-name">Loading...</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="stars">
+                        <i class="fas fa-star"></i> Stars: <span class="badge bg-warning text-dark">0</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="forks">
+                        <i class="fas fa-code-branch"></i> Forks: <span class="badge bg-secondary">0</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="last-commit">
+                        <i class="fas fa-clock"></i> Last Commit: <span class="badge bg-info">Loading...</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="workflow-status">
+                        <i class="fas fa-tasks"></i> Workflow: <span class="badge bg-success">Loading...</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    $(document).ready(async function () {
+        const owner = 'rtk-rnjn';
+        const repo = 'algorithms';
+
+        try {
+            const repoData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}`);
+            const commitsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/commits`);
+            const workflowsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/actions/runs`);
+        } catch (error) {
+            console.error('Error fetching GitHub data:', error);
+            return;
+        }
+
+        $('#repo-name').text(repoData.full_name);
+        $('#repo-heading').attr('href', repoData.html_url);
+
+        $('#stars .badge').text(repoData.stargazers_count);
+        $('#stars').attr('href', repoData.html_url);
+
+        $('#forks .badge').text(repoData.forks_count);
+        $('#forks').attr('href', repoData.html_url);
+
+        $('#last-commit .badge').text(new Date(commitsData[0].commit.author.date).toLocaleString());
+        $('#last-commit').attr('href', commitsData[0].html_url);
+
+        const latestRun = workflowsData.workflow_runs[0];
+        const workflowStatus = latestRun.status === 'completed' ? 'Success' : latestRun.status;
+        $('#workflow-status .badge').text(workflowStatus);
+        $('#workflow-status').attr('href', latestRun.html_url);
+
+        $('html, body').animate({
+            scrollTop: $(document).height()
+        }, 'smooth');
+       
+    });
+</script>
+{% endmacro %}

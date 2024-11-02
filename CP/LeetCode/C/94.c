@@ -54,12 +54,12 @@ int main()
     root->right->right = NULL;
 
     /*
-    *       1
-    *        \
-    *         2
-    *        /
-    *       3
-    */
+     *       1
+     *        \
+     *         2
+     *        /
+     *       3
+     */
 
     int returnSize;
     int *res = inorderTraversal(root, &returnSize);

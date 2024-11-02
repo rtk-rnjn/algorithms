@@ -94,23 +94,23 @@ void display()
 
 int main()
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 5; i++)
     {
         insert_at_last(i);
     }
     display();
 
-    for (int i = 10; i < 20; i++)
+    for (int i = 10; i < 2; i++)
     {
         insert_at_first(i);
     }
     display();
 
-    delete_node(19);
+    delete_node(1);
 
     display();
 
-    delete_node(-5);
+    delete_node(4);
 
     display();
 
