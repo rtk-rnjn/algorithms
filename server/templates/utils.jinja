@@ -39,14 +39,9 @@
         const owner = 'rtk-rnjn';
         const repo = 'algorithms';
 
-        try {
-            const repoData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}`);
-            const commitsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/commits`);
-            const workflowsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/actions/runs`);
-        } catch (error) {
-            console.error('Error fetching GitHub data:', error);
-            return;
-        }
+        let repoData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}`);
+        let commitsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/commits`);
+        let workflowsData = await $.getJSON(`https://api.github.com/repos/${owner}/${repo}/actions/runs`);
 
         $('#repo-name').text(repoData.full_name);
         $('#repo-heading').attr('href', repoData.html_url);
