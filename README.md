@@ -16,6 +16,18 @@ Make sure you have Python installed on your machine and required dependencies ar
 pip install -r requirements.txt
 ```
 
+---
+
+Fuck it! You are better, you don't need Python3 or install any requirements. Use Docker like a better programmer.
+
+```bash
+docker build -t algorithms_app .
+```
+
+```bash
+docker run -p 8000:8000 algorithms_app
+```
+
 ## Contributing
 
 All contributions are welcome! But please have a look at the [`STYLE_GUIDE.md`](STYLE_GUIDE.md) before contributing.
