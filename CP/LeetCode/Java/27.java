@@ -1,7 +1,7 @@
 // 27. Remove Element
 
 class Solution {
-    public int removeElement(final int[] nums, int val) {
+    public int removeElement(final int[] nums, int valToRemove) {
         int insertPos = 0;
         for (int current : nums) {
             if (current != valToRemove) {
