@@ -56,7 +56,7 @@ jobs:
         black --check . || exitcode=$?
         if [ $exitcode -ne 0 ]; then
           echo "Black check failed"
-          black --diff .
+          black . --check --diff --color --verbose
           exit 1
         fi
     
