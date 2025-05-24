@@ -62,7 +62,15 @@
             const $suggestions = $('#suggestions');
             const $searchField = $('.search-field');
 
-            $searchField.on('input', function () {
+            function debounce(func, delay) {
+                let timeout;
+                return function (...args) {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func.apply(this, args), delay);
+                };
+            }
+
+            function handleSearchInput() {
                 const searchValue = $searchField.val().trim();
                 if (searchValue.length === 0) {
                     const $li = $(`
@@ -91,9 +99,14 @@
                         $suggestions.append($li);
                     });
                 });
-            });
+            }
+
+            const debouncedSearch = debounce(handleSearchInput, 500);
+
+            $searchField.on('input', debouncedSearch);
         });
     </script>
+
 {% endblock %}
 {% block content %}
     <div class="min-vh-100">
