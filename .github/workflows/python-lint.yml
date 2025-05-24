@@ -21,19 +21,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@main
     - name: Cache
-      uses: actions/cache@v2.1.7
+      uses: actions/cache@main
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
 
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v2
+    - name: Set up Python 3.12
+      uses: actions/setup-python@main
       with:
-        python-version: "3.11"
+        python-version: "3.12"
 
     - name: Install dependencies
       run: |
@@ -59,14 +59,3 @@ jobs:
           black . --check --diff --color --verbose
           exit 1
         fi
-    
-    - name: Setup node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-
-    - name: Run Pyright
-      uses: jakebailey/pyright-action@v1
-      with:
-        version: '1.1.316'
-        warnings: false

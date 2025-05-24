@@ -20,16 +20,16 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
 
       - name: Set up Java 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@main
         with:
           distribution: 'adopt'
           java-version: '17'
 
       - name: Cache
-        uses: actions/cache@v2
+        uses: actions/cache@main
         with:
           path: checkstyle.jar
           key: ${{ runner.os }}-checkstyle-${{ hashFiles('**/checkstyle.xml') }}
