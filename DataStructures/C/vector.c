@@ -20,7 +20,12 @@ void vector_push_back(struct vector *v, int value)
     if (v->size >= v->capacity)
     {
         v->capacity *= 2;
-        v->data = (int *)realloc(v->data, sizeof(int) * v->capacity);
+        int *tmp = (int *)realloc(v->data, sizeof(int) * v->capacity);
+        if (tmp == NULL) {
+            printf("Memory allocation failed while resizing vector in vector_push_back\n");
+            exit(1);
+        }
+        v->data = tmp;
     }
     v->data[v->size++] = value;
 }

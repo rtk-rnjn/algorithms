@@ -36,10 +36,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-checkstyle-
 
-      - name: Downloading CheckStyle (10.13)
+      - name: Downloading CheckStyle (10.24.0)
         run: |
           if [ ! -f ./checkstyle.jar ]; then
-            wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.13.0/checkstyle-10.13.0-all.jar -O ./checkstyle.jar
+            wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.24.0/checkstyle-10.24.0-all.jar -O ./checkstyle.jar
           fi
 
       - name: Lint with CheckStyle

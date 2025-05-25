@@ -16,10 +16,9 @@ bool isMatch(char *s, char *p)
     {
         return isMatch(s, p + 2) || (firstMatch && isMatch(s + 1, p));
     }
-    else
-    {
-        return firstMatch && isMatch(s + 1, p + 1);
-    }
+    
+    return firstMatch && isMatch(s + 1, p + 1);
+   
 }
 
 int main()

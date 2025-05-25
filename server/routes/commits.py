@@ -4,8 +4,7 @@ import subprocess
 from functools import cache
 
 import pygments
-import pygments.lexers.console
-import pygments.styles
+from pygments.lexers import get_lexer_by_name
 import pygments.styles.vs
 from flask import render_template
 from pygments.formatters import HtmlFormatter
@@ -36,7 +35,7 @@ def log_to_html(path: str = FILE_PATH) -> tuple[str, str]:
         output = file.read()
 
     formatter = _HTMLFormatter(style=MyStyle)
-    lexer = pygments.lexers.get_lexer_by_name("ansi-color")
+    lexer = get_lexer_by_name("ansi-color")
     highlighted_output = pygments.highlight(output, lexer, formatter)
 
     return highlighted_output, formatter.get_style_defs()

@@ -16,8 +16,8 @@ struct tree *build_tree(int arr[], int size, int index)
     }
     struct tree *node = (struct tree *)malloc(sizeof(struct tree));
     node->data = arr[index];
-    node->left = build_tree(arr, size, 2 * index + 1);
-    node->right = build_tree(arr, size, 2 * index + 2);
+    node->left = build_tree(arr, size, (2 * index) + 1);
+    node->right = build_tree(arr, size, (2 * index) + 2);
 
     return node;
 }

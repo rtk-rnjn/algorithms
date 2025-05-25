@@ -17,3 +17,4 @@ tmp.sh
 .venv/
 __pycache__/
 .env
+checkstyle.jar
