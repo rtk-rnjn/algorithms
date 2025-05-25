@@ -1,27 +1,28 @@
 #include <stdio.h>
 
-float inverse_squre_root(float number)
+float fast_inverse_square_root(float value)
 {
-    long i;
-    float x2;
-    float y;
+    float half_value = value * 0.5F;
+    const float three_halves = 1.5F;
 
-    const float threehalfs = 1.5F;
+    union {
+        float f;
+        unsigned int i;
+    } conv;
 
-    x2 = number * 0.5F;
-    y = number;
-    i = *(long *)&y;
-    i = 0x5f3759df - (i >> 1);
-    y = *(float *)&i;
-    y = y * (threehalfs - (x2 * y * y));
+    conv.f = value;
+    conv.i = 0x5f3759df - (conv.i >> 1);
+    float approx = conv.f;
 
-    return y;
+    approx = approx * (three_halves - (half_value * approx * approx));
+
+    return approx;
 }
 
 int main()
 {
-    float number = 4.0F;
-    float result = inverse_squre_root(number);
-    printf("Inverse square root of %f is %f\n", number, result);
+    float input_value = 4.0F;
+    float inv_sqrt = fast_inverse_square_root(input_value);
+    printf("Inverse square root of %f is %f\n", input_value, inv_sqrt);
     return 0;
 }

@@ -68,7 +68,6 @@ def auto_complete(query: str) -> list[tuple[str, int, str]]:
     return fuzzywuzzy.process.extract(data["query"], searchable, limit=5, scorer=fuzzywuzzy.fuzz.token_set_ratio)  # type: ignore
 
 
-
 @app.route("/auto-complete", methods=["GET"])
 def auto_complete_route():
     query = request.args.get("query", "")
