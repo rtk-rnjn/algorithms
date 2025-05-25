@@ -32,7 +32,7 @@ def get_pythontutor_url(code: str, language: str) -> str:
     return url
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
     search_form: SearchForm = SearchForm()
     return render_template("index.html", search_form=search_form)

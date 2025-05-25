@@ -84,11 +84,11 @@
 
                 $.get(`{{ url_for('auto_complete_route') }}?query=${searchValue}`, function (data) {
                     $suggestions.html('');
-                    data.forEach(function (item) {
+                    data.forEach(function (item, idx) {
                         const href = item[1] === -1 ? 'https://github.com/rtk-rnjn/algorithms/issues/new/choose' : `/view/${item[2]}`;
 
                         const $li = $(`
-                            <li class="list-group-item bg-transparent" style="backdrop-filter: blur(2px);">
+                            <li class="list-group-item bg-transparent suggestion-item" style="backdrop-filter: blur(2px);">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a href="${href}" class="text-dark">${item[2]}</a>
                                     <span class="badge bg-secondary rounded-pill">${item[1]}</span>
@@ -97,15 +97,74 @@
                             </li>
                         `);
                         $suggestions.append($li);
+                        setTimeout(() => $li.addClass('fade-in'), 30 * idx);
                     });
+
+                    $suggestions.children('li').removeClass('active');
+                    $suggestions.children('li').first().addClass('active');
                 });
             }
 
             const debouncedSearch = debounce(handleSearchInput, 500);
 
             $searchField.on('input', debouncedSearch);
+
+            let suggestionHasFocus = false;
+            $searchField.on('keydown', function (e) {
+                const $items = $suggestions.children('li');
+                let $current = $items.filter('.active');
+                let idx = $items.index($current);
+
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    suggestionHasFocus = true;
+                    if (idx < $items.length - 1) {
+                        $current.removeClass('active');
+                        $items.eq(idx + 1).addClass('active');
+                    }
+                    $items.eq(idx + 1).focus();
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    suggestionHasFocus = true;
+                    if (idx > 0) {
+                        $current.removeClass('active');
+                        $items.eq(idx - 1).addClass('active');
+                    }
+                    $items.eq(idx - 1).focus();
+                } else if (e.key === 'Enter') {
+                    if ($current.length && $current.find('a').length) {
+                        window.location.href = $current.find('a').attr('href');
+                        e.preventDefault();
+                    }
+                }
+            });
+
+            $searchField.on('input mouseup', function () {
+                suggestionHasFocus = false;
+                $searchField.focus();
+            });
+
+            $suggestions.on('mouseenter', 'li', function () {
+                $suggestions.children('li').removeClass('active');
+                $(this).addClass('active');
+            });
         });
     </script>
+    <style>
+    #suggestions li.active {
+        background: rgba(0, 123, 255, 0.1);
+        outline: 1px solid #007bff;
+    }
+    .suggestion-item {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    .suggestion-item.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    </style>
 
 {% endblock %}
 {% block content %}

@@ -45,7 +45,7 @@ def query_parser(query: str) -> dict[str, str]:
 
 
 @lru_cache(maxsize=32)
-def auto_complete(query: str):
+def auto_complete(query: str) -> list[tuple[str, int, str]]:
     data = query_parser(query)
 
     codes = select(Code.filename, Code.code).where(
@@ -65,14 +65,15 @@ def auto_complete(query: str):
         if filename.endswith(data["lang"]) and filename.startswith(data["in"])
     }
 
-    return fuzzywuzzy.process.extract(data["query"], searchable, limit=5, scorer=fuzzywuzzy.fuzz.partial_token_sort_ratio)
+    return fuzzywuzzy.process.extract(data["query"], searchable, limit=5, scorer=fuzzywuzzy.fuzz.token_set_ratio)  # type: ignore
+
 
 
 @app.route("/auto-complete", methods=["GET"])
 def auto_complete_route():
     query = request.args.get("query", "")
 
-    results: list[tuple[str, int, str]] = auto_complete(query)  # type: ignore
+    results: list[tuple[str, int, str]] = auto_complete(query)
     results = [(code, score, filename) for code, score, filename in results if score > 85]
 
     if not results:
