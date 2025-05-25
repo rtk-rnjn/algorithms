@@ -31,11 +31,3 @@ docker run -p 8000:8000 algorithms_app
 ## Contributing
 
 All contributions are welcome! But please have a look at the [`STYLE_GUIDE.md`](STYLE_GUIDE.md) before contributing.
-
-## License
-
-Distributed under the MPL-2.0 License. See [`LICENSE`](LICENSE) for more information.
-
----
-
-![Alt](https://repobeats.axiom.co/api/embed/f90c6b582a461b668823532b72f57b5415df98f3.svg "Repobeats analytics image")
