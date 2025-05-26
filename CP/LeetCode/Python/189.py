@@ -13,8 +13,9 @@ class Solution:
         k = k % n
         if k == 0:
             return
-        
+
         from collections import deque
+
         dq = deque(nums)
         dq.rotate(k)
         nums[:] = list(dq)
