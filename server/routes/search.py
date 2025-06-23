@@ -60,7 +60,9 @@ def auto_complete(query: str) -> list[tuple[str, int, str]]:
         FILENAMES[filename] = result.code
 
     searchable = {
-        filename: code for filename, code in FILENAMES.items() if filename.endswith(data["lang"]) and filename.startswith(data["in"])
+        filename: code
+        for filename, code in FILENAMES.items()
+        if filename.endswith(data["lang"]) and filename.startswith(data["in"])
     }
 
     return fuzzywuzzy.process.extract(data["query"], searchable, limit=5, scorer=fuzzywuzzy.fuzz.token_set_ratio)  # type: ignore

@@ -15,7 +15,8 @@ class Solution:
             "M": 1000,
         }
         return sum(
-            (roman[s[i]] - 2 * roman[s[i - 1]] if i > 0 and roman[s[i]] > roman[s[i - 1]] else roman[s[i]]) for i in range(len(s))
+            (roman[s[i]] - 2 * roman[s[i - 1]] if i > 0 and roman[s[i]] > roman[s[i - 1]] else roman[s[i]])
+            for i in range(len(s))
         )
 
 
